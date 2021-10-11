@@ -1,0 +1,147 @@
+body {
+    margin: 0
+}
+
+.nav-item {
+    margin-left: 100px;
+}
+
+#navbar {
+    top: -10%;
+    width: 100%;
+    transition: top 0.3s;
+}
+
+.dropdown-item {
+    outline: none;
+}
+
+.bg-black {
+    background-color: black;
+}
+
+.dropdown-menu {
+    border-radius: 0px;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0;
+}
+
+body::-webkit-scrollbar {
+    width: 0
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+}
+
+a:hover {
+    color: rgb(160, 160, 255);
+}
+
+.index-header-text {
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+    font-size: 84px;
+    background-image: url(../img/marble.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#navbar-title {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.header-menu-text {
+    font-family: 'Montserrat', sans-serif;
+}
+
+hr {
+    color: rgb(255, 255, 255);
+    opacity: 1;
+}
+
+.feature-items-subtitle {
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+}
+
+.feature-items {
+    font-size: 24px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.navbar-item {
+    font-family: 'Raleway', sans-serif;
+}
+
+.bi-arrow-up-square {
+    background-color: black;
+}
+
+.zoom {
+    transition: 0.25s
+}
+
+.zoom:hover {
+    transform: scale(1.02); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+.btn-black {
+    background-color: black;
+}
+
+.btn:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.loader-wrapper {
+    z-index: 3 !important;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #151515;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loader {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    position: relative;
+    border: 4px solid #Fff;
+    animation: loader 2s infinite ease;
+}
+
+.loader-inner {
+    vertical-align: top;
+    display: inline-block;
+    width: 100%;
+    background-color: #fff;
+    animation: loader-inner 2s infinite ease-in;
+}
+
+@keyframes loader {
+    0% { transform: rotate(0deg);}
+    25% { transform: rotate(180deg);}
+    50% { transform: rotate(180deg);}
+    75% { transform: rotate(360deg);}
+    100% { transform: rotate(360deg);}
+}
+
+@keyframes loader-inner {
+    0% { height: 0%;}
+    25% { height: 0%;}
+    50% { height: 100%;}
+    75% { height: 100%;}
+    100% { height: 0%;}
+}
