@@ -48,8 +48,14 @@ a:hover {
     color: black;
     font-size: 84px;
     background-image: url(../img/marble.jpg);
-    background-size: cover;
     background-attachment: fixed;
+}
+
+.index-body-title {
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    font-size: 84px;
+    background-color: black;
 }
 
 #navbar-title {
@@ -72,6 +78,10 @@ hr {
 
 .feature-items {
     font-size: 24px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.index-carousel-subtitle {
     font-family: 'Montserrat', sans-serif;
 }
 

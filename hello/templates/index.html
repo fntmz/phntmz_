@@ -3,28 +3,39 @@
 
 {% block content %}
 <div style="height: 100vh; margin: 0; background-color: black;">
-  <ul class="list-group list-group-horizontal d-flex justify-content-around" style="padding-top: 25px;">
-    <li class="list-group-item header-menu border-0 bg-black"><a href="/" class="header-menu-text">Home</a></li>
-    <li class="list-group-item header-menu border-0 bg-black"><a href="#" class="header-menu-text">Projects</a></li>
-    <li class="list-group-item header-menu border-0 bg-black"><a href="#" class="header-menu-text">Contact</a></li>
-    <li class="list-group-item header-menu border-0 bg-black"><a href="#" class="header-menu-text">Information</a></li>
-  </ul>
   <div class="container">
+    <ul class="list-group list-group-horizontal d-flex justify-content-between" style="padding-top: 25px;">
+      <li class="list-group-item header-menu border-0 bg-black"><a href="/" class="header-menu-text">Home</a></li>
+      <li class="list-group-item header-menu border-0 bg-black"><a href="#" class="header-menu-text">Projects</a></li>
+      <li class="list-group-item header-menu border-0 bg-black"><a href="#" class="header-menu-text">Contact</a></li>
+      <li class="list-group-item header-menu border-0 bg-black"><a href="#" class="header-menu-text">Information</a>
+      </li>
+    </ul>
     <div class="row">
       <div class="col-4" style="margin-top: 225px;">
         <div style="align-items: right;">
           <h1 class="index-header-text">Featured</h1>
           <hr style="height: 5px; width: 150px;">
+          </h1>
         </div>
       </div>
-      <div class="col-8" style="margin-top: 250px; padding-left: 100px;">
-        <p style="color: white"><a href="https://github.com/fntmz/rio-chan" class="feature-items">Rio-chan Discord Music
-            Bot</a><br><span class="feature-items-subtitle">The experimental music bot with anime-based
-            responses.</span></p>
+      <div class="col-8" style="margin-top: 250px; padding-left: 200px;">
+        <div style="color: white"><a href="https://github.com/fntmz/rio-chan" class="feature-items">Rio-chan Discord
+            Music Bot</a><br><span class="feature-items-subtitle">The experimental music bot with anime-based
+            responses.</span></div>
       </div>
     </div>
     <div class="row">
-      <div class="col-8" style="margin-top: 225px; padding-right: 200px; text-align: right;">
+      <div class="col-4" style="margin-top: 225px">
+        <div class=" feature-items-subtitle text-white"
+          style="border-style: solid; border-width: 2px; padding-left: 20%;">
+          <a href="https://www.python.org/" style="font-size: 12px;">Python</a>
+          <a href="https://www.djangoproject.com/" style="margin-left: 75px; font-size: 12px;">Django</a><br>
+          <a href="https://reactjs.org/" style="margin-left: 75px; font-size: 12px;">React</a>
+          <a href="https://www.javascript.com/" style="margin-left: 75px; font-size: 12px;">JavaScript</a>
+        </div>
+      </div>
+      <div class=" col-4" style="margin-top: 225px; padding-right: 100px; text-align: right;">
         <p style="color: white"><a href="https://linktr.ee/phntmz_" class="feature-items">Linktree</a><br><span
             class="feature-items-subtitle">Everything about me.</span></p>
       </div>
@@ -37,6 +48,10 @@
     </div>
   </div>
 </div>
-<div style="height: 1000px; margin: 0">
+
+<div
+  style="background-image: url(../static/img/765801.jpg); background-attachment: fixed; background-size: cover; margin: 0; height: 100vh;">
+
 </div>
+
 {% endblock %}
