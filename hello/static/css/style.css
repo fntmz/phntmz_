@@ -3,7 +3,7 @@ body {
 }
 
 .nav-item {
-    margin-left: 100px;
+    margin-left: 5vw;
 }
 
 #navbar {
@@ -128,7 +128,7 @@ hr {
     width: 30px;
     height: 30px;
     position: relative;
-    border: 4px solid #Fff;
+    border: 4px solid #fff;
     animation: loader 2s infinite ease;
 }
 
