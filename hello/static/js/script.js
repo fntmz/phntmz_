@@ -16,7 +16,7 @@ $('.carousel').carousel({
     interval: 10000
 })
 
-const maxHeight = $(window).height()
+const maxHeight = $(window).height() * 0.5
 
 function scrollFunction() {
     if (document.body.scrollTop > maxHeight || document.documentElement.scrollTop > maxHeight) {

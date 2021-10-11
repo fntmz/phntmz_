@@ -60,6 +60,7 @@ a:hover {
 
 #navbar-title {
     font-family: 'Montserrat', sans-serif;
+    margin-top: 5px;
 }
 
 .header-menu-text {
@@ -121,6 +122,13 @@ hr {
     display:flex;
     justify-content: center;
     align-items: center;
+}
+
+.header-title {
+    background-color: black;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 84px;
 }
 
 .loader {
