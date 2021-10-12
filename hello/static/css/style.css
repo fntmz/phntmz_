@@ -118,7 +118,7 @@ hr {
     position: absolute;
     top: 0;
     left: 0;
-    background-color: #151515;
+    background-color: black;
     display:flex;
     justify-content: center;
     align-items: center;
@@ -167,7 +167,7 @@ hr {
 .easing-right {
     position: relative;
     right: 0;
-    transition: right ease 0.3s;
+    transition: right ease-out 0.3s;
 }
 .easing-right:hover {
     right: -5px;
@@ -176,7 +176,7 @@ hr {
 .easing-left {
     position: relative;
     left: 0;
-    transition: left ease 0.3s;
+    transition: left ease-out 0.3s;
 }
 .easing-left:hover {
     left: -5px;
@@ -185,7 +185,7 @@ hr {
 .easing-bottom {
     position: relative;
     bottom: 0;
-    transition: bottom ease 0.3s;
+    transition: bottom ease-out 0.3s;
 }
 .easing-down:hover {
     bottom: -5px;
