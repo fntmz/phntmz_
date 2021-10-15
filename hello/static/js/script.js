@@ -26,3 +26,14 @@ function scrollFunction() {
         document.getElementById("navbar").style.top = "-10vh";
     }
 }
+
+function scrollUp() {
+    $(document).ready(function () {
+        $(this).scrollTop(0);
+    });
+}
+
+// auto scroll to top on reload
+$(document).ready(function () {
+    $(this).scrollTop(0);
+});
