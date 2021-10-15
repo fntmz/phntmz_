@@ -17,11 +17,12 @@ $('.carousel').carousel({
 })
 
 const maxHeight = $(window).height() * 0.5
+const menuHeight = document.getElementById("navbar").height
 
 function scrollFunction() {
     if (document.body.scrollTop > maxHeight || document.documentElement.scrollTop > maxHeight) {
         document.getElementById("navbar").style.top = "0";
     } else {
-        document.getElementById("navbar").style.top = "-10%";
+        document.getElementById("navbar").style.top = "-10vh";
     }
 }
