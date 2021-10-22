@@ -190,3 +190,51 @@ hr {
 .easing-down:hover {
     bottom: -5px;
 }
+
+.contact-label {
+    font-family: 'Raleway', sans-serif;
+    font-size: 24px;
+}
+
+.contact-input {
+    width: 100%; 
+    background-color: transparent; 
+    border: 0;
+    border-bottom: 2px solid black
+}
+
+.contact-textarea {
+    width: 100%;
+    background-color: transparent; 
+    border: 0;
+    border-bottom: 2px solid black;
+    border-left: 2px solid black;
+    resize: none;
+}
+
+.contact-submit {
+    width: 100%;
+    background-color: transparent;
+    height: 50px;
+    color: black;
+    font-family: 'Raleway', sans-serif;
+    border-radius: 0px;
+    border: 2px solid black
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+
+input {
+    font-size:16px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+textarea {
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+}

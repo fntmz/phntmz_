@@ -27,7 +27,7 @@
         </div>
       </div>
       <div class="col-7" style="margin-top: 18vh; padding-left: 10vw;">
-        <div style="color: white" class="feature-items">Share your response on the experience.</div>
+        <div style="color: white" class="feature-items">Want to leave a note for phntmz_ ?</div>
       </div>
     </div>
   </div>
@@ -35,7 +35,35 @@
 
 <div
   style="background-image: url(../static/img/765801.jpg); background-attachment: fixed; background-size: cover; margin: 0; height: 100vh;">
-
+  <div class="container" style="padding-top: 150px;">
+    <form action="https://formspree.io/f/meqvwlwr" method="POST">
+      <div class="row">
+        <div class="col-6">
+          <label style="width: 100%;">
+            <span class="contact-label">Name</span><br>
+            <input class="contact-input" type="text" name="name" required>
+          </label>
+        </div>
+        <div class="col-6">
+          <label style="width: 100%;">
+            <span class="contact-label">Email</span><br>
+            <input class="contact-input" type="email" name="_replyto" required>
+          </label>
+        </div>
+      </div>
+      <label style="margin-top: 20px; width: 100%;">
+        <span class="contact-label">Leave a message</span><br>
+        <textarea style="margin-top: 10px" class="contact-textarea" name="message" rows="5" maxlength="1000"
+          required></textarea>
+      </label>
+      <!-- your other form fields go here -->
+      <div class="row d-flex flex-row-reverse" style="margin-top: 20px;">
+        <div class="col-3">
+          <button class="contact-submit" type="submit">Submit</button>
+        </div>
+      </div>
+    </form>
+  </div>
 </div>
 
 {% endblock %}
