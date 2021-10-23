@@ -22,7 +22,7 @@ $(window).on("load",
         function () {
             $(".loader-wrapper").fadeOut("slow");
             window.removeEventListener('scroll', noScroll);
-        }, 1500));
+        }, 2000));
 
 // carousel js
 $('.carousel').carousel({
