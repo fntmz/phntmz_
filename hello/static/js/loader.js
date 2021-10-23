@@ -24,10 +24,6 @@ $(window).on("load",
             window.removeEventListener('scroll', noScroll);
         }, 2000));
 
-// carousel js
-$('.carousel').carousel({
-    interval: 10000
-});
 
 function scrollUp() {
     $(document).ready(function () {

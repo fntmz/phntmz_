@@ -1,0 +1,21 @@
+.feature-items-subtitle {
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+}
+
+.feature-items {
+    font-size: 24px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.index-header-text {
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+    font-size: 84px;
+    background-image: url(../img/marble.jpg);
+    background-attachment: fixed;
+}
+
+.header-menu-text {
+    font-family: 'Montserrat', sans-serif;
+}

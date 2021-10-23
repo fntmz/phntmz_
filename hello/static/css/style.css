@@ -2,35 +2,12 @@ body {
     margin: 0
 }
 
-.nav-item {
-    margin-left: 5vw;
-}
-
-#navbar {
-    top: -10vh;
-    width: 100%;
-    transition: top 0.3s;
-}
-
-.dropdown-item {
-    outline: none;
+body::-webkit-scrollbar {
+    width: 0
 }
 
 .bg-black {
     background-color: black;
-}
-
-.dropdown-menu {
-    border-radius: 0px;
-}
-
-.dropdown:hover .dropdown-menu {
-    display: block;
-    margin-top: 0;
-}
-
-body::-webkit-scrollbar {
-    width: 0
 }
 
 a {
@@ -43,62 +20,8 @@ a:hover {
     color: rgb(160, 160, 255);
 }
 
-.index-header-text {
-    font-family: 'Montserrat', sans-serif;
-    color: black;
-    font-size: 84px;
-    background-image: url(../img/marble.jpg);
-    background-attachment: fixed;
-}
-
-.index-body-title {
-    font-family: 'Montserrat', sans-serif;
-    color: white;
-    font-size: 84px;
-    background-color: black;
-}
-
-#navbar-title {
-    font-family: 'Montserrat', sans-serif;
-    margin-top: 5px;
-}
-
-.header-menu-text {
-    font-family: 'Montserrat', sans-serif;
-}
-
 hr {
     opacity: 1;
-}
-
-.feature-items-subtitle {
-    font-family: 'Raleway', sans-serif;
-    font-size: 16px;
-}
-
-.feature-items {
-    font-size: 24px;
-    font-family: 'Montserrat', sans-serif;
-}
-
-.index-carousel-subtitle {
-    font-family: 'Montserrat', sans-serif;
-}
-
-.navbar-item {
-    font-family: 'Raleway', sans-serif;
-}
-
-.bi-arrow-up-square {
-    background-color: black;
-}
-
-.zoom {
-    transition: 0.25s
-}
-
-.zoom:hover {
-    transform: scale(1.02);
 }
 
 .btn-black {
@@ -108,121 +31,6 @@ hr {
 .btn:focus {
     outline: none;
     box-shadow: none;
-}
-
-.loader-wrapper {
-    z-index: 3 !important;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-color: black;
-    display:flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.header-title {
-    background-color: black;
-    color: white;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 84px;
-}
-
-.loader {
-    display: inline-block;
-    width: 30px;
-    height: 30px;
-    position: relative;
-    border: 2px solid #fff;
-    animation: loader 2s infinite ease;
-}
-
-.loader-inner {
-    vertical-align: top;
-    display: inline-block;
-    width: 100%;
-    background-color: #fff;
-    animation: loader-inner 2s infinite ease-in;
-}
-
-@keyframes loader {
-    0% { transform: rotate(0deg);}
-    25% { transform: rotate(180deg);}
-    50% { transform: rotate(180deg);}
-    75% { transform: rotate(360deg);}
-    100% { transform: rotate(360deg);}
-}
-
-@keyframes loader-inner {
-    0% { height: 0%;}
-    25% { height: 0%;}
-    50% { height: 100%;}
-    75% { height: 100%;}
-    100% { height: 0%;}
-}
-
-.easing-right {
-    position: relative;
-    right: 0;
-    transition: right ease-out 0.3s;
-}
-.easing-right:hover {
-    right: -5px;
-}
-
-.easing-left {
-    position: relative;
-    left: 0;
-    transition: left ease-out 0.3s;
-}
-.easing-left:hover {
-    left: -5px;
-}
-
-.easing-bottom {
-    position: relative;
-    bottom: 0;
-    transition: bottom ease-out 0.3s;
-}
-.easing-down:hover {
-    bottom: -5px;
-}
-
-.contact-label {
-    font-family: 'Raleway', sans-serif;
-    font-size: 24px;
-    color: black;
-}
-
-.contact-input {
-    width: 100%; 
-    background-color: transparent; 
-    border: 0;
-    border-bottom: 2px solid black;
-    color: black;
-}
-
-.contact-textarea {
-    width: 100%;
-    background-color: transparent; 
-    border: 0;
-    border-bottom: 2px solid black;
-    border-left: 2px solid black;
-    resize: none;
-    color: black;
-}
-
-.contact-submit {
-    width: 100%;
-    background-color: transparent;
-    height: 50px;
-    color: black;
-    font-family: 'Raleway', sans-serif;
-    border-radius: 0px;
-    border: 2px solid black;
-    color: black;
 }
 
 input:focus,
@@ -244,17 +52,4 @@ textarea {
     font-family: 'Montserrat', sans-serif;
     caret-color: transparent;
     color: black;
-}
-
-.profile-title {
-    font-family: 'Raleway', sans-serif;
-    color: black;
-}
-
-.profile-content {
-    font-family: 'Montserrat', sans-serif;
-}
-
-.loading-title {
-    font-family: 'Zen Kaku Gothic New', sans-serif;
 }
