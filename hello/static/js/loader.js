@@ -17,12 +17,13 @@ function scrollFunction() {
 }
 
 // loader js
-$(window).on("load",
+$(window).on("load", function () {
     setTimeout(
         function () {
             $(".loader-wrapper").fadeOut("slow");
             window.removeEventListener('scroll', noScroll);
-        }, 2000));
+        }, 2000)
+})
 
 
 function scrollUp() {
