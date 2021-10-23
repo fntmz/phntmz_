@@ -16,9 +16,9 @@ def contact(request):
     return render(request, "contact.html")
 
 
-def information(request):
+def profile(request):
     # return HttpResponse('Hello from Python!')
-    return render(request, "information.html")
+    return render(request, "profile.html")
 
 
 def projects(request):

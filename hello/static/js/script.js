@@ -5,19 +5,8 @@ function noScroll() {
     window.scrollTo(0, 0);
 }
 
-// loader js
-$(window).on("load", function () {
-    $(".loader-wrapper").fadeOut("slow");
-    window.removeEventListener('scroll', noScroll);
-})
-
-// carousel js
-$('.carousel').carousel({
-    interval: 10000
-})
-
-const maxHeight = $(window).height() * 0.5
-const menuHeight = document.getElementById("navbar").height
+const maxHeight = $(window).height() * 0.5;
+const menuHeight = document.getElementById("navbar").height;
 
 function scrollFunction() {
     if (document.body.scrollTop > maxHeight || document.documentElement.scrollTop > maxHeight) {
@@ -26,6 +15,19 @@ function scrollFunction() {
         document.getElementById("navbar").style.top = "-10vh";
     }
 }
+
+// loader js
+$(window).on("load",
+    setTimeout(
+        function () {
+            $(".loader-wrapper").fadeOut("slow");
+            window.removeEventListener('scroll', noScroll);
+        }, 1500));
+
+// carousel js
+$('.carousel').carousel({
+    interval: 10000
+});
 
 function scrollUp() {
     $(document).ready(function () {

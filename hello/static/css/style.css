@@ -68,7 +68,6 @@ a:hover {
 }
 
 hr {
-    color: rgb(255, 255, 255);
     opacity: 1;
 }
 
@@ -194,13 +193,15 @@ hr {
 .contact-label {
     font-family: 'Raleway', sans-serif;
     font-size: 24px;
+    color: black;
 }
 
 .contact-input {
     width: 100%; 
     background-color: transparent; 
     border: 0;
-    border-bottom: 2px solid black
+    border-bottom: 2px solid black;
+    color: black;
 }
 
 .contact-textarea {
@@ -210,6 +211,7 @@ hr {
     border-bottom: 2px solid black;
     border-left: 2px solid black;
     resize: none;
+    color: black;
 }
 
 .contact-submit {
@@ -219,7 +221,8 @@ hr {
     color: black;
     font-family: 'Raleway', sans-serif;
     border-radius: 0px;
-    border: 2px solid black
+    border: 2px solid black;
+    color: black;
 }
 
 input:focus,
@@ -230,13 +233,28 @@ button:focus {
 }
 
 input {
-    font-size:16px;
+    font-size: 16px;
     font-family: 'Montserrat', sans-serif;
     caret-color: transparent;
+    color: black;
 }
 
 textarea {
     font-size: 16px;
     font-family: 'Montserrat', sans-serif;
     caret-color: transparent;
+    color: black;
+}
+
+.profile-title {
+    font-family: 'Raleway', sans-serif;
+    color: black;
+}
+
+.profile-content {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.loading-title {
+    font-family: 'Zen Kaku Gothic New', sans-serif;
 }
