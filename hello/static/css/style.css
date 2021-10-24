@@ -78,6 +78,6 @@ textarea {
 .hr-animate {
     width: 0;
     transition: 1s;
-    height: 2px; 
+    height: 2px !important; 
     color: var(--color)
 }
