@@ -1,12 +1,3 @@
-.dropdown-menu {
-    border-radius: 0px;
-}
-
-.dropdown:hover .dropdown-menu {
-    display: block;
-    margin-top: 0;
-}
-
 .nav-item {
     margin-left: 5vw;
     background-color: transparent;
@@ -16,10 +7,6 @@
     top: -10vh;
     width: 100%;
     transition: top 0.3s;
-}
-
-.dropdown-item {
-    outline: none;
 }
 
 #navbar-title {
