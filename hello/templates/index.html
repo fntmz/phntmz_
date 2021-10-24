@@ -6,11 +6,15 @@
 <div style="height: 100vh; margin: 0; background-color: var(--background-color);">
   <div class="container">
     <ul class="list-group list-group-horizontal d-flex justify-content-between" style="padding-top: 25px;">
-      <li class="list-group-item header-menu border-0"><a href="/" class="header-menu-text">Home</a></li>
-      <li class="list-group-item header-menu border-0"><a href="/projects" class="header-menu-text">Projects</a></li>
-      <li class="list-group-item header-menu border-0"><a href="/contact" class="header-menu-text">Contact</a>
+      <li class="list-group-item header-menu border-0"><a href="{% url 'index' %}" class="header-menu-text">Home</a>
       </li>
-      <li class="list-group-item header-menu border-0"><a href="/profile" class="header-menu-text">Profile</a>
+      <li class="list-group-item header-menu border-0"><a href="{% url 'projects' %}"
+          class="header-menu-text">Projects</a></li>
+      <li class="list-group-item header-menu border-0"><a href="{% url 'contact' %}"
+          class="header-menu-text">Contact</a>
+      </li>
+      <li class="list-group-item header-menu border-0"><a href="{% url 'profile' %}"
+          class="header-menu-text">Profile</a>
       </li>
     </ul>
     <div class="row">

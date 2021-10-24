@@ -38,7 +38,7 @@
     <nav id="navbar" class="navbar navbar-expand-sm fixed-top"
       style="padding-left: 3%; padding-right: 3%; z-index: 2; background-color: var(--background-color);"
       data-toggle="affix">
-      <a class="d-flex justify-content-start" href="/" style="height: 50px;">
+      <a class="d-flex justify-content-start" href="{% url 'index' %}" style="height: 50px;">
         <h2 id="navbar-title"><b>phntmz_</b></h2>
       </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample11"
@@ -49,22 +49,22 @@
         style="margin-top: 10px">
         <ul class="navbar-nav">
           <li class="nav-item active">
-            <a href=" /">
+            <a href="{% url 'index' %}">
               <h6 class="navbar-item">Home</h6>
             </a>
           </li>
           <li class="nav-item">
-            <a href="/projects">
+            <a href="{% url 'projects' %}">
               <h6 class="navbar-item">Projects</h6>
             </a>
           </li>
           <li class="nav-item">
-            <a href="/contact">
+            <a href="{% url 'contact' %}">
               <h6 class="navbar-item">Contact</h6>
             </a>
           </li>
           <li class="nav-item dropdown">
-            <a href="/profile">
+            <a href="{% url 'profile' %}">
               <b>
                 <h6 class="navbar-item">Profile</h6>
               </b>
@@ -94,9 +94,9 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
     integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
     crossorigin="anonymous"></script>
-  <script src="../static/js/loader.js"></script>
-  <script src="../static/js/darkmode.js"></script>
-  <script src="../static/js/titletransform.js"></script>
+  <script src="{% static 'js/loader.js' %}"></script>
+  <script src="{% static 'js/darkmode.js' %}"></script>
+  <script src="{% static 'js/titletransform.js' %}"></script>
 </body>
 
 </html>
