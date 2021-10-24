@@ -20,5 +20,6 @@ urlpatterns = [
     path("contact/", hello.views.contact, name="contact"),
     path("profile/", hello.views.profile, name="profile"),
     path("projects/", hello.views.projects, name="projects"),
+    path("changelog/", hello.views.changelog, name="changelog"),
     path("admin/", admin.site.urls),
 ]

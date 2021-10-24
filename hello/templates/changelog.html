@@ -1,0 +1,48 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}
+𝐜𝐨𝐧𝐭𝐚𝐜𝐭
+{% endblock %}
+
+{% block content %}
+<div class="tab-header">
+    <div class="container">
+        <ul class="list-group list-group-horizontal d-flex justify-content-between" style="padding-top: 25px;">
+            <li class="list-group-item header-menu border-0"><a href="/" class="header-menu-text">Home</a></li>
+            <li class="list-group-item header-menu border-0"><a href="/projects" class="header-menu-text">Projects</a>
+            </li>
+            <li class="list-group-item header-menu border-0"><a href="/contact" class="header-menu-text">Contact</a>
+            </li>
+            <li class="list-group-item header-menu border-0"><a href="/profile" class="header-menu-text">Profile</a>
+            </li>
+        </ul>
+        <div class="row">
+            <div class="col-5" style="margin-top: 15vh;">
+                <div style="align-items: right;">
+                    <h1 class="index-header-text">Changelog</h1>
+                    <hr style="height: 5px; width: 8vw; color: var(--color)">
+                    </h1>
+                </div>
+            </div>
+            <div class="col-7" style="margin-top: 18vh; padding-left: 10vw;">
+                <div style="color: var(--color)" class="feature-items">Update history of the website : : . .</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="body-section" style="height: 100vh;">
+    <div class="container" style="padding-top: 200px">
+        <table class="table table-borderless">
+            <tbody>
+                <tr>
+                    <td class="col-4 changelog-item">October 24 : : . . 2021</td>
+                    <td class="col-8 changelog-item changelog-desc">Added a changelog</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+{% endblock %}

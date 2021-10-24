@@ -6,23 +6,23 @@ from .models import Greeting
 # Create your views here.
 
 
+def changelog(request):
+    return render(request, "changelog.html")
+
+
 def index(request):
-    # return HttpResponse('Hello from Python!')
     return render(request, "index.html")
 
 
 def contact(request):
-    # return HttpResponse('Hello from Python!')
     return render(request, "contact.html")
 
 
 def profile(request):
-    # return HttpResponse('Hello from Python!')
     return render(request, "profile.html")
 
 
 def projects(request):
-    # return HttpResponse('Hello from Python!')
     return render(request, "projects.html")
 
 
