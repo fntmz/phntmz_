@@ -21,6 +21,15 @@ $(window).on("load", function () {
     setTimeout(
         function () {
             $(".loader-wrapper").fadeOut("slow");
+            var hrAnimate = document.getElementsByClassName("hr-animate");
+            var indexHeaderText = document.getElementsByClassName("index-header-text");
+            for (var i = 0; i < hrAnimate.length; i++) {
+                hrAnimate[i].style.width = "25%";
+            };
+            for (var i = 0; i < indexHeaderText.length; i++) {
+                indexHeaderText[i].style.width = "100%";
+                indexHeaderText[i].style.color = "var(--background-color)";
+            };
             window.removeEventListener('scroll', noScroll);
         }, 2000)
 })

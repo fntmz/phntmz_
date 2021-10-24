@@ -12,10 +12,12 @@
 
 .index-header-text {
     font-family: 'Montserrat', sans-serif;
-    color: var(--background-color);
+    color: transparent;
     font-size: 84px;
     background-color: var(--color);
     background-attachment: fixed;
+    width: 0;
+    transition: 2s;
 }
 
 .header-menu-text {

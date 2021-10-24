@@ -74,3 +74,10 @@ textarea {
     background-size: cover; 
     margin: 0; 
 }
+
+.hr-animate {
+    width: 0;
+    transition: 1s;
+    height: 2px; 
+    color: var(--color)
+}
