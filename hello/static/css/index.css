@@ -1,21 +1,27 @@
 .feature-items-subtitle {
     font-family: 'Raleway', sans-serif;
     font-size: 16px;
+    color: var(--color);
 }
 
 .feature-items {
     font-size: 24px;
     font-family: 'Montserrat', sans-serif;
+    color: var(--color);
 }
 
 .index-header-text {
     font-family: 'Montserrat', sans-serif;
-    color: black;
+    color: var(--background-color);
     font-size: 84px;
-    background-image: url(../img/marble.jpg);
+    background-image: var(--header-image);
     background-attachment: fixed;
 }
 
 .header-menu-text {
     font-family: 'Montserrat', sans-serif;
+}
+
+.list-group-item {
+    background-color: transparent;
 }

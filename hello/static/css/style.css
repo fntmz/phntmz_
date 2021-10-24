@@ -12,7 +12,7 @@ body::-webkit-scrollbar {
 
 a {
     text-decoration: none;
-    color: white;
+    color: var(--color);
     transition: 0.3s;
 }
 
@@ -60,4 +60,17 @@ textarea {
    -khtml-user-select: none; /* Konqueror HTML */
    -moz-user-select: none; /* Firefox */
    -ms-user-select: none; /* Internet Explorer/Edge */
+}
+
+.tab-header {
+    height: 50vh; 
+    margin: 0; 
+    background-color: var(--header-color);
+}
+
+.body-section {
+    background-image: var(--background-image); 
+    background-attachment: fixed; 
+    background-size: cover; 
+    margin: 0; 
 }

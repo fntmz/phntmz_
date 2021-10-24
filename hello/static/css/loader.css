@@ -5,7 +5,7 @@
     position: absolute;
     top: 0;
     left: 0;
-    background-color: black;
+    background-color: var(--background-color);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -16,7 +16,7 @@
     width: 30px;
     height: 30px;
     position: relative;
-    border: 2px solid #fff;
+    border: 2px solid var(--color);
     animation: loader 2s infinite ease;
 }
 
@@ -24,7 +24,7 @@
     vertical-align: top;
     display: inline-block;
     width: 100%;
-    background-color: #fff;
+    background-color: var(--color);
     animation: loader-inner 2s infinite ease-in;
 }
 
@@ -46,4 +46,5 @@
 
 .loading-title {
     font-family: 'Zen Kaku Gothic New', sans-serif;
+    color: var(--color);
 }

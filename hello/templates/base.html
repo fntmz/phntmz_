@@ -17,6 +17,7 @@
   <link rel="stylesheet" href="{% static 'css/loader.css' %}">
   <link rel="stylesheet" href="{% static 'css/navbar.css' %}">
   <link rel="stylesheet" href="{% static 'css/profile.css' %}">
+  <link rel="stylesheet" href="{% static 'css/darkmode.css' %}">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
@@ -24,17 +25,17 @@
   <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@300&display=swap" rel="stylesheet">
 </head>
 
-<body class="disable-select" style="background-color: black; z-index: -1;">
+<body class="disable-select" style="background-color: var(--background-color); z-index: -1;">
   <main>
     <!-- loader -->
     <div class="loader-wrapper h-100 w-100" style="position: fixed;">
       <span class="loader"><span class="loader-inner"></span></span>
-      <h1 class="loading-title" style="margin-left: 5vw; color: white;">M Y N A M E I S // P H N T M Z _ // N I C E T
+      <h1 class="loading-title" style="margin-left: 5vw;">M Y N A M E I S // P H N T M Z _ // N I C E T
         O M E E T Y O U : : . .</h1>
     </div>
     <!-- navbar -->
-    <nav id="navbar" class="navbar navbar-expand-sm bg-black fixed-top"
-      style="padding-left: 3%; padding-right: 3%; z-index: 2; border-bottom: 2px; border-color: white;"
+    <nav id="navbar" class="navbar navbar-expand-sm fixed-top"
+      style="padding-left: 3%; padding-right: 3%; z-index: 2; background-color: var(--background-color);"
       data-toggle="affix">
       <a class="d-flex justify-content-start" href="/" style="height: 50px;">
         <h2 id="navbar-title"><b>phntmz_</b></h2>
@@ -75,7 +76,7 @@
     {% block content %}{% endblock %}
 
     <!-- footer -->
-    <footer class="bg-black text-center text-white" style="z-index: -1;">
+    <footer class="text-center" style="z-index: -1; background-color: var(--background-color); color: var(--color);">
       <div class="text-center p-3" style="font-family: 'Raleway', sans-serif;">
         © 2021 copyright:
         <a id="footer-href" href="https://linktr.ee/phntmz_">phntmz_</a>
@@ -94,3 +95,4 @@
   integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 <script src="../static/js/loader.js"></script>
 <script src="../static/js/titletransform.js"></script>
+<script src="../static/js/darkmode.js"></script>

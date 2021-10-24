@@ -1,8 +1,9 @@
 .profile-title {
     font-family: 'Raleway', sans-serif;
-    color: black;
+    color: var(--background-color);
 }
 
 .profile-content {
     font-family: 'Montserrat', sans-serif;
+    color: var(--background-color);
 }
