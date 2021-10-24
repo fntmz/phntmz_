@@ -1,13 +1,13 @@
-body[data-theme='light_theme'] {
-    --color: whitesmoke;
+body[data-theme='dark_theme'] {
+    --color: white;
     --background-color: black;
     --background-image: url(../img/765801.jpg);
     --header-image: url(../img/marble.jpg);
 }
 
-body[data-theme='dark_theme'] {
+body[data-theme='light_theme'] {
     --color: black;
-    --background-color: whitesmoke;
+    --background-color: white;
     --background-image: url(../img/headertextbg.jpg);
     --header-image: url(../img/headertextbg.jpg);
 }
