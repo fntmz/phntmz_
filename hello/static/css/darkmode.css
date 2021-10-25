@@ -1,7 +1,7 @@
 body[data-theme='dark_theme'] {
     --color: white;
     --background-color: black;
-    --background-image: url(../img/765801.jpg);
+    --background-image: url(../img/marble.jpg);
     --header-image: url(../img/marble.jpg);
     --a-highlight: rgb(160, 160, 255);
 }
