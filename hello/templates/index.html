@@ -1,60 +1,37 @@
 {% extends "base.html" %}
 {% load static %}
 
+{% block tab-header %}Featured{% endblock %}
+{% block tab-header-subtitle %}<p><a href="https://github.com/fntmz/rio-chan"
+    class="feature-items easing-right">Rio-chan Discord Music Bot</a><br><span class="feature-items-subtitle"
+    style="position: relative; top: -8px">The
+    experimental music bot that interacts with spotify API.</span></p>{% endblock %}
 
 {% block content %}
-<div style="height: 100vh; margin: 0; background-color: var(--background-color);">
-  <div class="container">
-    <ul class="list-group list-group-horizontal d-flex justify-content-between" style="padding-top: 25px;">
-      <li class="list-group-item header-menu border-0"><a href="{% url 'index' %}" class="header-menu-text">Home</a>
-      </li>
-      <li class="list-group-item header-menu border-0"><a href="{% url 'projects' %}"
-          class="header-menu-text">Projects</a></li>
-      <li class="list-group-item header-menu border-0"><a href="{% url 'contact' %}"
-          class="header-menu-text">Contact</a>
-      </li>
-      <li class="list-group-item header-menu border-0"><a href="{% url 'profile' %}"
-          class="header-menu-text">Profile</a>
-      </li>
-    </ul>
-    <div class="row">
-      <div class="col-4" style="margin-top: 22vh;">
-        <div style="align-items: right;">
-          <h1 class="index-header-text">Featured</h1>
-          <hr class="hr-animate">
-          </h1>
-        </div>
+<div class="container" style="height: 50vh;">
+  <div class="row">
+    <div class="col-4" style="margin-top: 12vh">
+      <div class="feature-items-subtitle">
+        // I have experience with : : . .
       </div>
-      <div class="col-8" style="margin-top: 25vh; padding-left: 15vw;">
-        <div><a href="https://github.com/fntmz/rio-chan" class="feature-items easing-right">Rio-chan Discord Music
-            Bot</a><br><span class="feature-items-subtitle">The experimental music bot that interacts with Spotify
-            API.</span></div>
+      <div class="feature-items-subtitle" style="border-style: solid; border-width: 2px; padding-left: 20%;">
+        <a class="easing-right" href="https://www.python.org/" style="font-size: 12px;">Python</a>
+        <a class="easing-right" href="https://www.djangoproject.com/"
+          style="margin-left: 4vw; font-size: 12px;">Django</a><br>
+        <a class="easing-right" href="https://www.javascript.com/"
+          style="margin-left: 3vw; font-size: 12px;">JavaScript</a>
+        <a class="easing-right" href="https://reactjs.org/" style="margin-left: 4vw; font-size: 12px;">React JS</a>
       </div>
     </div>
-    <div class="row">
-      <div class="col-4" style="margin-top: 24vh">
-        <div class="feature-items-subtitle">
-          // I have experience with : : . .
-        </div>
-        <div class="feature-items-subtitle" style="border-style: solid; border-width: 2px; padding-left: 20%;">
-          <a class="easing-right" href="https://www.python.org/" style="font-size: 12px;">Python</a>
-          <a class="easing-right" href="https://www.djangoproject.com/"
-            style="margin-left: 4vw; font-size: 12px;">Django</a><br>
-          <a class="easing-right" href="https://www.javascript.com/"
-            style="margin-left: 3vw; font-size: 12px;">JavaScript</a>
-          <a class="easing-right" href="https://reactjs.org/" style="margin-left: 4vw; font-size: 12px;">React JS</a>
-        </div>
-      </div>
-      <div class=" col-4" style="margin-top: 26vh; padding-right: 3vw; text-align: right;">
-        <p style="color: white"><a href="https://linktr.ee/phntmz_"
-            class="feature-items easing-left">Linktree</a><br><span class="feature-items-subtitle">Everything about
-            phntmz_</span></p>
-      </div>
-      <div class="col-4" style="margin-top: 24vh;">
-        <div>
-          <h1 class="index-header-text">Socials</h1>
-          <hr class="hr-animate">
-        </div>
+    <div class=" col-4" style="margin-top: 14vh; padding-right: 3vw; text-align: right;">
+      <p><a href="https://linktr.ee/phntmz_" class="feature-items easing-left">Linktree</a><br><span
+          class="feature-items-subtitle">Everything about
+          phntmz_</span></p>
+    </div>
+    <div class="col-4" style="margin-top: 12vh;">
+      <div>
+        <h1 class="index-header-text">Socials</h1>
+        <hr class="hr-animate">
       </div>
     </div>
   </div>

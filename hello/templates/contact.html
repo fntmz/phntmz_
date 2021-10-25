@@ -5,36 +5,10 @@
 𝐜𝐨𝐧𝐭𝐚𝐜𝐭
 {% endblock %}
 
-{% block content %}
-<div class="tab-header">
-  <div class="container">
-    <ul class="list-group list-group-horizontal d-flex justify-content-between" style="padding-top: 25px;">
-      <li class="list-group-item header-menu border-0"><a href="{% url 'index' %}" class="header-menu-text">Home</a>
-      </li>
-      <li class="list-group-item header-menu border-0"><a href="{% url 'projects' %}"
-          class="header-menu-text">Projects</a></li>
-      <li class="list-group-item header-menu border-0"><a href="{% url 'contact' %}"
-          class="header-menu-text">Contact</a>
-      </li>
-      <li class="list-group-item header-menu border-0"><a href="{% url 'profile' %}"
-          class="header-menu-text">Profile</a>
-      </li>
-    </ul>
-    <div class="row">
-      <div class="col-5" style="margin-top: 15vh;">
-        <div style="align-items: right;">
-          <h1 class="index-header-text">Contact</h1>
-          <hr class="hr-animate">
-          </h1>
-        </div>
-      </div>
-      <div class="col-7" style="margin-top: 18vh; padding-left: 10vw;">
-        <div style="color: var(--color)" class="feature-items">Leave me a note : : . .</div>
-      </div>
-    </div>
-  </div>
-</div>
+{% block tab-header %}Contact{% endblock %}
+{% block tab-header-subtitle %}Leave me a note : : . .{% endblock %}
 
+{% block content %}
 <div class="body-section" style="height: 100vh;">
   <div class="container" style="padding-top: 150px;">
     <form action="https://formspree.io/f/meqvwlwr" method="POST">
