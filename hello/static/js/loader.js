@@ -28,7 +28,6 @@ $(window).on("load", function () {
             };
             for (var i = 0; i < indexHeaderText.length; i++) {
                 indexHeaderText[i].style.width = "100%";
-                indexHeaderText[i].style.color = "var(--background-color)";
             };
             window.removeEventListener('scroll', noScroll);
         }, 2000)

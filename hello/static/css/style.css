@@ -17,7 +17,7 @@ a {
 }
 
 a:hover {
-    color: rgb(160, 160, 255);
+    color: var(--a-highlight);
 }
 
 hr {

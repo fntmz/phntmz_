@@ -12,7 +12,7 @@
 
 .index-header-text {
     font-family: 'Montserrat', sans-serif;
-    color: transparent;
+    color: var(--background-color);
     font-size: 84px;
     background-color: var(--color);
     background-attachment: fixed;
