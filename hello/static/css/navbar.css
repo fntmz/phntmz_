@@ -1,5 +1,4 @@
 .nav-item {
-    margin-left: 5vw;
     background-color: transparent;
 }
 
@@ -16,4 +15,46 @@
 
 .navbar-item {
     font-family: 'Raleway', sans-serif;
+}
+
+/* The Overlay (background) */
+.overlay {
+    /* Height & width depends on how you want to reveal the overlay (see JS below) */   
+    height: 100%;
+    width: 100vw;
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    right: -100vw;
+    top: 0;
+    background-color: var(--background-color);
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+.overlay-content {
+    position: relative;
+    top: 25%; 
+    width: 100%; 
+    text-align: center; 
+    margin-top: 30px; 
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 64px;
+}
+
+#menu-button {
+    top: -10vh;
+    right: 43px;
+    position: fixed;
+    transition: top 0.3s;
+}
+
+#navbar-brand {
+    position: relative;
+    top: 25px;
+    left: -50px
 }

@@ -6,13 +6,12 @@ function noScroll() {
 }
 
 const maxHeight = $(window).height() * 0.5;
-const menuHeight = document.getElementById("navbar").height;
 
 function scrollFunction() {
     if (document.body.scrollTop > maxHeight || document.documentElement.scrollTop > maxHeight) {
-        document.getElementById("navbar").style.top = "0";
+        document.getElementById("menu-button").style.top = "20px";
     } else {
-        document.getElementById("navbar").style.top = "-10vh";
+        document.getElementById("menu-button").style.top = "-10vh";
     }
 }
 
