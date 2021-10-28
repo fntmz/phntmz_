@@ -69,8 +69,8 @@
 }
 
 .border-box {
-    background-image: repeating-linear-gradient(60deg, transparent, transparent 30px, transparent 30px, transparent 60px, transparent 60px), repeating-linear-gradient(150deg, var(--color), var(--color) 30px, transparent 30px, transparent 60px, var(--color) 60px), repeating-linear-gradient(240deg, transparent, transparent 30px, transparent 30px, transparent 60px, transparent 60px), repeating-linear-gradient(330deg, transparent, transparent 30px, transparent 30px, transparent 60px, transparent 60px);
-    background-size: 1px calc(100% + 120px), calc(100% + 120px) 1px, 1px calc(100% + 120px) , calc(100% + 120px) 1px;
+    background-image: repeating-linear-gradient(-60deg, transparent, transparent 10px, transparent 10px, transparent 40px, transparent 40px), repeating-linear-gradient(30deg, var(--color), var(--color) 10px, transparent 10px, transparent 40px, var(--color) 40px), repeating-linear-gradient(120deg, transparent, transparent 10px, transparent 10px, transparent 40px, transparent 40px), repeating-linear-gradient(210deg, transparent, transparent 10px, transparent 10px, transparent 40px, transparent 40px);
+    background-size: 1px calc(100% + 80px), calc(100% + 80px) 1px, 1px calc(100% + 80px) , calc(100% + 80px) 1px;
     background-position: 0 0, 0 0, 100% 0, 0 100%;
     background-repeat: no-repeat;
     animation: borderAnimation 3s infinite linear;
@@ -83,6 +83,6 @@
     }
     
     @keyframes borderAnimation {
-    from { background-position: 0 0, -120px 0, 100% -120px, 0 100%; }
-    to { background-position: 0 -120px, 0 0, 100% 0, -120px 100%; }
+        from { background-position: 0 0, -80px 0, 100% -80px, 0 100%; }
+        to { background-position: 0 -80px, 0 0, 100% 0, -80px 100%; }
     }
