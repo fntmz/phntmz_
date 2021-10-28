@@ -27,3 +27,7 @@
 .list-group-item {
     background-color: transparent;
 }
+
+.feature-language {
+    font-size: 12px;
+}
