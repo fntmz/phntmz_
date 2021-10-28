@@ -78,6 +78,8 @@
     bottom: 15vh;
     left: 0;
     width: 100vw;
+    margin-top: 5vh; 
+    height: 1px;
     }
     
     @keyframes borderAnimation {
