@@ -33,14 +33,12 @@
 }
 
 .scroll-down {
-	position: absolute;
+    position: absolute;;
 	left: 50%;
-	bottom: 100px;
+	bottom: 7vh;
 	display: block;
 	text-align: center;
 	font-size: 20px;
-	text-decoration: none;
-	text-shadow: 0;
     width: 16px;
     height: 16px;
     border-bottom: 2px solid var(--color);
@@ -54,7 +52,6 @@
 	animation: fade_move_down 4s ease-in-out infinite;
 }
 
-/*animated scroll arrow animation*/
 @-webkit-keyframes fade_move_down {
     0%   { -webkit-transform:translate(0,-10px) rotate(45deg); opacity: 0;  }
     50%  { opacity: 1;  }
@@ -70,3 +67,20 @@
     50%  { opacity: 1;  }
     100% { transform:translate(0,10px) rotate(45deg); opacity: 0; }
 }
+
+.border-box {
+    background-image: repeating-linear-gradient(60deg, transparent, transparent 30px, transparent 30px, transparent 60px, transparent 60px), repeating-linear-gradient(150deg, var(--color), var(--color) 30px, transparent 30px, transparent 60px, var(--color) 60px), repeating-linear-gradient(240deg, transparent, transparent 30px, transparent 30px, transparent 60px, transparent 60px), repeating-linear-gradient(330deg, transparent, transparent 30px, transparent 30px, transparent 60px, transparent 60px);
+    background-size: 1px calc(100% + 120px), calc(100% + 120px) 1px, 1px calc(100% + 120px) , calc(100% + 120px) 1px;
+    background-position: 0 0, 0 0, 100% 0, 0 100%;
+    background-repeat: no-repeat;
+    animation: borderAnimation 3s infinite linear;
+    position: absolute;
+    bottom: 15vh;
+    left: 0;
+    width: 100vw;
+    }
+    
+    @keyframes borderAnimation {
+    from { background-position: 0 0, -120px 0, 100% -120px, 0 100%; }
+    to { background-position: 0 -120px, 0 0, 100% 0, -120px 100%; }
+    }
