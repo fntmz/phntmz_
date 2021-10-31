@@ -79,8 +79,8 @@
     margin-top: 5vh; 
     height: 1px;
     }
-    
-    @keyframes borderAnimation {
-        from { background-position: 0 0, -80px 0, 100% -80px, 0 100%; }
-        to { background-position: 0 -80px, 0 0, 100% 0, -80px 100%; }
-    }
+
+@keyframes borderAnimation {
+    from { background-position: 0 0, -80px 0, 100% -80px, 0 100%; }
+    to { background-position: 0 -80px, 0 0, 100% 0, -80px 100%; }
+}
