@@ -26,6 +26,10 @@ def projects(request):
     return render(request, "projects.html")
 
 
+def gallery(request):
+    return render(request, "gallery.html")
+
+
 def db(request):
 
     greeting = Greeting()

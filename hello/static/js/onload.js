@@ -1,0 +1,1 @@
+window.onload = console.log("Please refrain from steal any code or images used in this website, everything belongs to phntmz and is protected by copyright. Contact me at phntmz#6703 on Discord if you have any questions.")
