@@ -1,5 +1,5 @@
 var title = document.title;
-var blurMessage = "// 𝐰𝐚𝐢𝐭𝐢𝐧𝐠 : : . .";
+var blurMessage = "// 𝐩𝐡𝐧𝐭𝐦𝐳 : : . .";
 
 window.addEventListener("blur", function () {
     document.title = blurMessage;
