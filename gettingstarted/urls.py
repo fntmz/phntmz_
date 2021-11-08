@@ -18,7 +18,7 @@ admin.autodiscover()
 # Learn more here: https://docs.djangoproject.com/en/2.1/topics/http/urls/
 
 now = datetime.datetime.now()
-rand = random.randint(1000000, 10000000)
+rand = random.randint(10000000, 1000000000)
 
 print(rand)
 
