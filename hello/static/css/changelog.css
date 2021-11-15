@@ -1,12 +1,13 @@
 .changelog-timeline {
-  border-left: 5px solid var(--a-highlight);
+  border-left: 3px solid var(--a-highlight);
   min-height: 40px;
 }
 
 .changelog-date {
-  font-family: 'Raleway', sans-serif;
-  text-align: center;
-  font-size: 12px
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  letter-spacing: 1px;
 }
 
 #changelog-container {
@@ -15,8 +16,7 @@
 
 #changelog-container > * {
   font-family: 'Zen Kaku Gothic New', sans-serif;
-  font-weight: bold;
-  color: var(--color)
+  color: var(--color);
 }
 
 #changelog-body-section {
