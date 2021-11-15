@@ -1,15 +1,15 @@
 body[data-theme='dark_theme'] {
     --color: white;
     --background-color: black;
-    --background-image: url(../img/marble.jpg);
-    --header-image: url(../img/marble.jpg);
+    --background-image: url(../img/headertextbg.jpg);
+    --header-image: url(../img/headertextbg.jpg);
     --a-highlight: rgb(160, 160, 255);
 }
 
 body[data-theme='light_theme'] {
     --color: black;
     --background-color: white;
-    --background-image: url(../img/headertextbg.jpg);
-    --header-image: url(../img/headertextbg.jpg);
-    --a-highlight: rgb(121, 255, 199);
+    --background-image: url(../img/marble.jpg);
+    --header-image: url(../img/marble.jpg);
+    --a-highlight: rgb(252, 87, 96);
 }

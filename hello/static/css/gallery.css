@@ -1,0 +1,11 @@
+body {
+        cursor: none !important;
+}
+
+#gallery-cursor {
+        position: fixed;
+        border-radius: 50%;
+        background-color: rgba(255,44,96,.8);
+        height: 50px;
+        width: 50px;
+}
