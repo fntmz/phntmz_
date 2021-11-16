@@ -1,6 +1,6 @@
 .changelog-timeline {
   border-left: 3px solid var(--a-highlight);
-  min-height: 40px;
+  min-height: 48px;
 }
 
 .changelog-date {
@@ -21,7 +21,7 @@
 }
 
 #changelog-body-section {
-  height: 100vh
+  min-height: 100vh
 }
 
 .changelog-timeline > * {
