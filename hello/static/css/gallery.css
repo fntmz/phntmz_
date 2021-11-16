@@ -2,10 +2,22 @@ body {
         cursor: none !important;
 }
 
+a {
+        cursor: none !important;
+}
+
+a:hover ~ #gallery-cursor {
+        background-color: white;
+}
+
 #gallery-cursor {
-        position: fixed;
+        position: absolute;
+        transform: translate(-50%,-50%);
+        background-color: var(--a-highlight);
+        opacity: .8;
+        height: 40px;
+        width: 40px;
         border-radius: 50%;
-        background-color: rgba(255,44,96,.8);
-        height: 50px;
-        width: 50px;
+        z-index: 2;
+        pointer-events: none;
 }
