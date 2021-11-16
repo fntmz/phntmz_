@@ -8,7 +8,7 @@ from .models import Greeting
 context = {
     "changelog": [
         {"date": "16.11.2021",
-            "detail": "added some fonts (noto sans jp, roboto condensed, josefin sans), changed the font weights on the input and textarea tags, and optimized the css of some elements on the changelog page"},
+            "detail": "added some fonts (noto sans jp, roboto condensed, josefin sans), changed the font weights on the some changelog elements, input and textarea tags, and optimized the overall css of some elements on the changelog page"},
         {"date": "15.11.2021", "detail": "reworked the changelog page, drastically improved visuals. switched color, background color, and background image of light and dark css"},
         {"date": "08.11.2021",
             "detail": "disabled the url of the gallery page when the time in hours is not 0"},

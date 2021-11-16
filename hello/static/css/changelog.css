@@ -7,7 +7,7 @@
   font-family: 'Roboto Condensed', sans-serif;
   font-size: 13px;
   font-weight: 400;
-  letter-spacing: 1px;
+  letter-spacing: .01rem;
 }
 
 #changelog-container {
@@ -16,6 +16,7 @@
 
 #changelog-container > * {
   font-family: 'Zen Kaku Gothic New', sans-serif;
+  font-weight: 400;
   color: var(--color);
 }
 

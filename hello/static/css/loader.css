@@ -47,4 +47,5 @@
 .loading-title {
     font-family: 'Zen Kaku Gothic New', sans-serif;
     color: var(--color);
+    font-weight: 300
 }
