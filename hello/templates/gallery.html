@@ -11,15 +11,24 @@
 <link rel="stylesheet" href="{% static 'css/gallery.css' %}">
 <div id="gallery-cursor"></div>
 
-<div class="container" style="height: 50vh;">
-</div>
-
-<div class="gallery-body" style="height: 100vh">
-  <div class="container">
-
+<div class="container" id="gallery-body">
+  <div class="row g-0">
+    <div class="col-6">
+      <div class="btn from-top">I</div>
+    </div>
+    <div class="col-6">
+      <div class="btn from-top">II</div>
+    </div>
+  </div>
+  <div class="row g-0">
+    <div class="col-6">
+      <div class="btn from-top">III</div>
+    </div>
+    <div class="col-6">
+      <div class="btn from-top">IV</div>
+    </div>
   </div>
 </div>
-
 
 <script src="{% static 'js/gallerycursor.js' %}"></script>
 {% endblock %}

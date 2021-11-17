@@ -7,6 +7,7 @@ from .models import Greeting
 
 context = {
     "changelog": [
+        {"date": "18.11.2021", "detail": "added a few buttons in the gallery page, still not sure what layout to style off but suggestions are appreciated."},
         {"date": "17.11.2021",
             "detail": "successfully added a custom cursor into the gallery page after an absurd amount of time. honestly did not know why it took me more 2 days to work it out, but i finally found a very helpful answer on stackoverflow which helped me a lot in adding a very insignificant part of the website but i think its very cool for some reason."},
         {"date": "16.11.2021",
