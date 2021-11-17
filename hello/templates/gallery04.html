@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}
+𝐈𝐕
+{% endblock %}
+
+{% block tab-header %}04{% endblock %}
+
+{% block content %}
+<link rel="stylesheet" href="{% static 'css/gallery.css' %}">
+<div id="gallery-cursor"></div>
+<span class="border-box gallery-border-box-position"></span>
+
+<div class="container" id="gallery-body"></div>
+
+<script src="{% static 'js/gallerycursor.js' %}"></script>
+{% endblock %}

@@ -11,21 +11,31 @@
 <link rel="stylesheet" href="{% static 'css/gallery.css' %}">
 <div id="gallery-cursor"></div>
 
+<span class="border-box gallery-border-box-position"></span>
+
 <div class="container" id="gallery-body">
   <div class="row g-0">
     <div class="col-6">
-      <div class="btn from-top">I</div>
+      <a href="{% url 'gallery01' %}">
+        <div class="btn from-top">I</div>
+      </a>
     </div>
     <div class="col-6">
-      <div class="btn from-top">II</div>
+      <a href="{% url 'gallery02' %}">
+        <div class="btn from-top">II</div>
+      </a>
     </div>
   </div>
   <div class="row g-0">
     <div class="col-6">
-      <div class="btn from-top">III</div>
+      <a href="{% url 'gallery03' %}">
+        <div class="btn from-top">III</div>
+      </a>
     </div>
     <div class="col-6">
-      <div class="btn from-top">IV</div>
+      <a href="{% url 'gallery04' %}">
+        <div class="btn from-top">IV</div>
+      </a>
     </div>
   </div>
 </div>

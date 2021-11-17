@@ -7,7 +7,7 @@ from .models import Greeting
 
 context = {
     "changelog": [
-        {"date": "18.11.2021", "detail": "added a few buttons in the gallery page, still not sure what layout to style off but suggestions are appreciated."},
+        {"date": "18.11.2021", "detail": "added four buttons in the gallery page to link to four new pages. still not sure what to put on the gallery pages to make it worth the 1-hour midnight only exclusiveness but suggestions are appreciated."},
         {"date": "17.11.2021",
             "detail": "successfully added a custom cursor into the gallery page after an absurd amount of time. honestly did not know why it took me more 2 days to work it out, but i finally found a very helpful answer on stackoverflow which helped me a lot in adding a very insignificant part of the website but i think its very cool for some reason."},
         {"date": "16.11.2021",
@@ -50,6 +50,22 @@ def projects(request):
 
 def gallery(request):
     return render(request, "gallery.html")
+
+
+def gallery01(request):
+    return render(request, "gallery01.html")
+
+
+def gallery02(request):
+    return render(request, "gallery02.html")
+
+
+def gallery03(request):
+    return render(request, "gallery03.html")
+
+
+def gallery04(request):
+    return render(request, "gallery04.html")
 
 
 def db(request):
