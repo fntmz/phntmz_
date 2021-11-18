@@ -11,7 +11,7 @@ function setThemePreference() {
     };
 
     // remove the gallery at any time besides midnight
-    if (currentHour == 0) {
+    if (currentHour != 0) {
         document.getElementById("midnight-gallery").remove();
         document.getElementById("menu-button").style.top = "-10px";
     }
