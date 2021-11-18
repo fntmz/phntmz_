@@ -21,45 +21,53 @@
 <div class="container" id="gallery-body">
   <div class="row g-0">
     <div class="col-6">
-      <a href="#">
-        <div class="btn from-top">I</div>
+      <a href="javascript:void(0)" onclick="toggleSection1()">
+        <div class="btn from-top">I
+        </div>
       </a>
     </div>
     <div class="col-6">
-      <a href="#">
-        <div class="btn from-top">II</div>
+      <a href="javascript:void(0)" onclick="toggleSection2()">
+        <div class="btn from-top">II
+        </div>
       </a>
     </div>
   </div>
   <div class="row g-0">
     <div class="col-6">
-      <a href="#">
+      <a href="javascript:void(0)" onclick="toggleSection3()">
         <div class="btn from-top">III</div>
       </a>
     </div>
     <div class="col-6">
-      <a href="#">
+      <a href="javascript:void(0)" onclick="toggleSection4()">
         <div class="btn from-top">IV</div>
       </a>
     </div>
   </div>
+  <span class="scroll-down" id="gallery-scrolldown"></span>
 </div>
 
-<div class="section-1" onclick="toggleSection1()">
-
+<div class="gallery-section" id="section-1">
+  <img src="{% static 'img/gallery01.jpg' %}">
+</div>
 </div>
 
-<div class="section-2" onclick="toggleSection2()">
-
+<div class="gallery-section" id="section-2">
+  <img src="{% static 'img/gallery02.jpg' %}">
+</div>
 </div>
 
-<div class="section-3" onclick="toggleSection3()">
-
+<div class="gallery-section" id="section-3">
+  <img src="{% static 'img/gallery03.jpg' %}">
+</div>
 </div>
 
-<div class="section-4" onclick="toggleSection4()">
-
+<div class="gallery-section" id="section-4">
+  <img src="{% static 'img/gallery04.jpg' %}">
+</div>
 </div>
 
 <script src="{% static 'js/gallerycursor.js' %}"></script>
+<script src="{% static 'js/gallerysectiontoggle.js' %}"></script>
 {% endblock %}

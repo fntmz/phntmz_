@@ -7,14 +7,15 @@ from .models import Greeting
 
 context = {
     "changelog": [
-        {"date": "18.11.2021", "detail": "added four buttons in the gallery page that is going to reveal more content. still not sure what to put on the gallery page to make it worth the 1-hour midnight only exclusiveness but suggestions are appreciated."},
+        {"date": "19.11.2021", "detail": "added a few images that can be revealed by clicking on the buttons on the gallery page. the current version of the gallery page is the final layout, but the content are still far from being finished. this is only the foundation for more work to be dont in the future"},
+        {"date": "18.11.2021", "detail": "added four buttons in the gallery page that is going to reveal more content. still not sure what to put on the gallery page to make it worth the 1-hour midnight only exclusiveness but suggestions are appreciated"},
         {"date": "17.11.2021",
-            "detail": "successfully added a custom cursor into the gallery page after an absurd amount of time. honestly did not know why it took me more 2 days to work it out, but i finally found a very helpful answer on stackoverflow which helped me a lot in adding a very insignificant part of the website but i think its very cool for some reason."},
+            "detail": "successfully added a custom cursor into the gallery page after an absurd amount of time. honestly did not know why it took me more 2 days to work it out, but i finally found a very helpful answer on stackoverflow which helped me a lot in adding a very insignificant part of the website but i think its very cool for some reason"},
         {"date": "16.11.2021",
             "detail": "added some fonts (noto sans jp, roboto condensed, josefin sans), changed the font weights on the some changelog elements, input and textarea tags, and optimized the overall css of some elements on the changelog page"},
         {"date": "15.11.2021", "detail": "reworked the changelog page, drastically improved visuals. switched color, background color, and background image of light and dark css"},
         {"date": "08.11.2021",
-            "detail": "added an element that hides all contents on the gallery page that shows up when the time in hours is not 0 (not midnight)k"},
+            "detail": "added an element that hides all contents on the gallery page that shows up when the time in hours is not 0 (not midnight)"},
         {"date": "07.11.2021", "detail": "added a page filled with art that is only available at exactly midnight. also made some smaller changes"},
         {"date": "29.10.2021",
             "detail": "improved the css of the scroll down arrow element on index"},

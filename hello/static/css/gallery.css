@@ -50,6 +50,18 @@ a:hover {
   justify-content: center;
 }
 
+#gallery-scrolldown {
+	display: none;
+}
+
+.gallery-section {
+	display: none;
+}
+
+.gallery-section img {
+	width: 100%;
+}
+
 .btn {
 	position: relative;	
 	padding: 1.4rem 4.2rem;
