@@ -14,7 +14,7 @@ context = {
             "detail": "added some fonts (noto sans jp, roboto condensed, josefin sans), changed the font weights on the some changelog elements, input and textarea tags, and optimized the overall css of some elements on the changelog page"},
         {"date": "15.11.2021", "detail": "reworked the changelog page, drastically improved visuals. switched color, background color, and background image of light and dark css"},
         {"date": "08.11.2021",
-            "detail": "added an element that hides all contents on the gallery page that shows up when the time in hours is not 0 (not midnight)"},
+            "detail": "added an element that hides all contents on the gallery page that shows up when the time in hours is not 0 (not midnight)k"},
         {"date": "07.11.2021", "detail": "added a page filled with art that is only available at exactly midnight. also made some smaller changes"},
         {"date": "29.10.2021",
             "detail": "improved the css of the scroll down arrow element on index"},
