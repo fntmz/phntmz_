@@ -23,7 +23,7 @@
     height: 100%;
     width: 100vw;
     position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
+    z-index: 998; /* Sit on top */
     right: -100vw;
     top: 0;
     background-color: var(--background-color);
@@ -41,16 +41,20 @@
 
 .overlay .closebtn {
     position: absolute;
-    top: 20px;
     right: 45px;
     font-size: 64px;
+}
+
+.closebtn {
+    top: -10px;
 }
 
 #menu-button {
     top: -10vh;
     right: 43px;
     position: fixed;
-    transition: top 0.3s;
+    font-size: 64px;
+    z-index: 997;
 }
 
 #navbar-brand {

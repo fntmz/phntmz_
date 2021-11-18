@@ -9,7 +9,7 @@ const maxHeight = $(window).height() * 0.5;
 
 function scrollFunction() {
     if (document.body.scrollTop > maxHeight || document.documentElement.scrollTop > maxHeight) {
-        document.getElementById("menu-button").style.top = "20px";
+        document.getElementById("menu-button").style.top = "-10px";
     } else {
         document.getElementById("menu-button").style.top = "-10vh";
     }
