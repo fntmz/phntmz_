@@ -25,6 +25,10 @@ context = {
         {"date": "26.10.2021", "detail": "completely reworked the menu. now a fullscreen menu that slides in from the right when opened by a button"},
         {"date": "25.10.2021", "detail": "moved the header menu to base and edited positioning of multiple elements in index"},
         {"date": "24.10.2021", "detail": "added a changelog, removed dropdown tabs in the menu, and changed the body background image"},
+    ],
+    "featured": [
+        {"title": "YOASOBI 『群青』 reverbed", "subtitle": "on my soundcloud",
+            "url": "https://soundcloud.com/fntmz/gunjou-reverb"}
     ]
 }
 
@@ -34,7 +38,7 @@ def changelog(request):
 
 
 def index(request):
-    return render(request, "index.html")
+    return render(request, "index.html", context)
 
 
 def contact(request):

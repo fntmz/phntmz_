@@ -4,9 +4,11 @@
 {% block title %}𝐧𝐢𝐜𝐞𝐭𝐨𝐦𝐞𝐞𝐭𝐲𝐨𝐮{% endblock %}
 
 {% block tab-header %}Featured{% endblock %}
-{% block tab-header-subtitle %}<p><a href="https://github.com/fntmz/rio-chan"
-    class="feature-items easing-right">Rio-chan Discord Music Bot</a><br><span class="feature-items-subtitle"
-    style="position: relative; top: -8px">The experimental music bot that interacts with spotify API.</span></p>
+{% block tab-header-subtitle %}
+<p>
+  <a href="{{ featured.0.url }}" class="feature-items easing-right">{{ featured.0.title }}</a><br>
+  <span class="feature-items-subtitle" style="position: relative; top: -8px">{{ featured.0.subtitle}}</span>
+</p>
 {% endblock %}
 
 {% block content %}
@@ -21,7 +23,7 @@
     <div class="col-lg-5 offset-lg-1">
       <div style="padding-top: 2vh; padding-right: 3vw;">
         <p><a href="https://linktr.ee/phntmz_" class="feature-items easing-right">Linktree</a><br><span
-            class="feature-items-subtitle">Everything about phntmz_</span></p>
+            class="feature-items-subtitle">everything about me. basically</span></p>
       </div>
     </div>
   </div>
