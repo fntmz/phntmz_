@@ -109,3 +109,7 @@ a:hover {
 .from-top:hover:after {
 	height: 100%;
 }
+
+footer {
+	display: none;
+}
