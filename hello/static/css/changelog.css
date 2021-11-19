@@ -7,7 +7,7 @@
 
 .changelog-date {
   font-family: 'Roboto Condensed', sans-serif;
-  font-size: 13px;
+  font-size: .85rem;
   font-weight: 400;
   letter-spacing: .01rem;
 }
@@ -30,4 +30,8 @@
 .changelog-timeline > * {
   display: flex;
   align-items: center;
+}
+
+.changelog-description {
+  font-size: 1rem;
 }

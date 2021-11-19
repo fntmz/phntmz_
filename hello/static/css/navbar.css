@@ -42,7 +42,7 @@
 .overlay .closebtn {
     position: absolute;
     right: 45px;
-    font-size: 64px;
+    font-size: 4rem;
 }
 
 .closebtn {
@@ -53,7 +53,7 @@
     top: -10vh;
     right: 45px;
     position: fixed;
-    font-size: 64px;
+    font-size: 4rem;
     z-index: 997;
 }
 
