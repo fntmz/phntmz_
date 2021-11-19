@@ -58,25 +58,18 @@ textarea {
     color: black;
 }
 
-.base-body {
-    background-color: var(--background-color); 
-    z-index: -1;
-}
-
-::-moz-selection { /* Code for Firefox */
-    color: var(--background-color);
-    background: var(--a-highlight);
-}
-
-::selection {
-    color: var(--background-color);
-    background: var(--a-highlight);
+.disable-select {
+    user-select: none; /* supported by Chrome and Opera */
+   -webkit-user-select: none; /* Safari */
+   -khtml-user-select: none; /* Konqueror HTML */
+   -moz-user-select: none; /* Firefox */
+   -ms-user-select: none; /* Internet Explorer/Edge */
 }
 
 .tab-header {
     height: 50vh; 
     margin: 0; 
-    background-color: var(--header-color);
+    background-color: var(--background-color);
 }
 
 .body-section {
