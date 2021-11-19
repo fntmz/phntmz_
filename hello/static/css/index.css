@@ -1,11 +1,11 @@
 .feature-items-subtitle {
     font-family: 'Raleway', sans-serif;
-    font-size: 16px;
+    font-size: 1rem;
     color: var(--color);
 }
 
 .feature-items {
-    font-size: 24px;
+    font-size: 1.5rem;
     font-family: 'Montserrat', sans-serif;
     color: var(--color);
 }
@@ -13,7 +13,7 @@
 .index-header-text {
     font-family: 'Montserrat', sans-serif;
     color: var(--background-color);
-    font-size: 84px;
+    font-size: 5.25rem;
     background-color: var(--color);
     background-attachment: fixed;
     width: 0;
@@ -28,18 +28,14 @@
     background-color: transparent;
 }
 
-.feature-language {
-    font-size: 12px;
-}
-
 .scroll-down {
     position: absolute;;
 	left: 50%;
 	bottom: 7vh;
 	display: block;
 	text-align: center;
-    width: 12px;
-    height: 12px;
+    width: .75rem;
+    height: .75rem;
     border-bottom: 2px solid var(--color);
     border-right: 2px solid var(--color);
     -webkit-transform: translate(-50%, 0%) rotate(45deg);
