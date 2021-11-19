@@ -21,14 +21,3 @@
     resize: none;
     color: var(--color);
 }
-
-.contact-submit {
-    width: 100%;
-    background-color: transparent;
-    height: 50px;
-    color: var(--color);
-    font-family: 'Raleway', sans-serif;
-    border-radius: 0px;
-    border: 2px solid var(--color);
-    color: var(--color);
-}

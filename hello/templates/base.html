@@ -11,14 +11,11 @@
     integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
   <link rel="icon" type="image/png" href="{% static 'img/favicon.jpg' %}" />
   <script src="{% static 'js/onload.js' %}"></script>
+  {% block css %}{% endblock %}
   <link rel="stylesheet" href="{% static 'css/style.css' %}">
-  <link rel="stylesheet" href="{% static 'css/changelog.css' %}">
-  <link rel="stylesheet" href="{% static 'css/contact.css' %}">
   <link rel="stylesheet" href="{% static 'css/easing.css' %}">
-  <link rel="stylesheet" href="{% static 'css/index.css' %}">
   <link rel="stylesheet" href="{% static 'css/loader.css' %}">
   <link rel="stylesheet" href="{% static 'css/navbar.css' %}">
-  <link rel="stylesheet" href="{% static 'css/profile.css' %}">
   <link rel="stylesheet" href="{% static 'css/darkmode.css' %}">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -32,7 +29,7 @@
     crossorigin="anonymous"></script>
 </head>
 
-<body class="disable-select" style="background-color: var(--background-color); z-index: -1;">
+<body id="base-body">
   <main>
     <!-- loader -->
     <div class="loader-wrapper h-100 w-100" style="position: fixed;">
@@ -195,6 +192,7 @@
   <script src="{% static 'js/darkmode.js' %}"></script>
   <script src="{% static 'js/titletransform.js' %}"></script>
   <script src="{% static 'js/navbar.js' %}"></script>
+  {% block js %}{% endblock %}
 </body>
 
 </html>
