@@ -17,6 +17,7 @@
   <link rel="stylesheet" href="{% static 'css/loader.css' %}">
   <link rel="stylesheet" href="{% static 'css/navbar.css' %}">
   <link rel="stylesheet" href="{% static 'css/darkmode.css' %}">
+  <link rel="stylesheet" href="{% static 'css/footer.css' %}">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
@@ -29,24 +30,25 @@
     crossorigin="anonymous"></script>
 </head>
 
-<body class="disable-select" style="background-color: var(--background-color); z-index: -1;">
+<body class="base-body">
   <main>
     <!-- loader -->
-    <div class="loader-wrapper h-100 w-100" style="position: fixed;">
-      <span class="loader"><span class="loader-inner"></span></span>
-      <h1 class="loading-title">M Y N A M E I S // P H N T M Z _ // N I C E T
-        O M E E T Y O U : : . .</h1>
+    <div class="loader-wrapper h-100 w-100">
+      <span class="loader">
+        <span class="loader-inner"></span>
+      </span>
+      <h1 class="loading-title">
+        M Y N A M E I S // P H N T M Z _ // N I C E T O M E E T Y O U : : . .
+      </h1>
     </div>
 
-    <!-- Use any element to open/show the overlay navigation menu -->
     <a href="javascript:void(0)" id="menu-button" onclick="openNav()">&equals;</a>
 
     <div id="myNav" class="overlay">
-      <h2 class="loading-title" id="navbar-brand" style="margin-left: 5vw;">M Y N A M E I S // P H N T M Z _ // N I C E
-        T O M E E T Y O U : : . .</h2>
-      <!-- Button to close the overlay navigation -->
+      <h2 class="loading-title" id="navbar-brand">
+        M Y N A M E I S // P H N T M Z _ // N I C E T O M E E T Y O U : : . .
+      </h2>
       <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-      <!-- Overlay content -->
       <div class="overlay-content">
         <ul class="navbar-nav">
           <li class="nav-item active">
@@ -79,8 +81,8 @@
             </a>
           </li>
         </ul>
-        <div class="container" style="margin-top: 30vh">
-          <div class="row d-flex justify-content-around" style="width: 100%">
+        <div class="container" id="navbar-socials">
+          <div class="row d-flex justify-content-around">
             <span class="col-2">
               <a href="https://www.instagram.com/phntmz_/" target="_blank">
                 <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="var(--color)"
@@ -143,7 +145,7 @@
 
     <div class="tab-header">
       <div class="container">
-        <ul class="list-group list-group-horizontal d-flex justify-content-between" style="padding-top: 2.5vh;">
+        <ul class="list-group list-group-horizontal d-flex justify-content-between" id="tab-header-menu">
           <li class="list-group-item header-menu border-0"><a href="{% url 'index' %}" class="header-menu-text">Home</a>
           </li>
           <li class="list-group-item header-menu border-0"><a href="{% url 'projects' %}"
@@ -155,16 +157,13 @@
               class="header-menu-text">Profile</a>
           </li>
         </ul>
-        <div class="row" style="margin-top: 15vh;">
+        <div class="row" id="feature-header">
           <div class="col-lg-6">
-            <div style="align-items: right;">
-              <h1 class="index-header-text">{% block tab-header %}{% endblock %}</h1>
-              <hr class="hr-animate">
-              </h1>
-            </div>
+            <h1 class="index-header-text">{% block tab-header %}{% endblock %}</h1>
+            <hr class="hr-animate">
           </div>
-          <div class="col-lg-5 offset-lg-1" style="padding-top: 3vh">
-            <div style="color: var(--color)" class="feature-items">{% block tab-header-subtitle %}{% endblock %}</div>
+          <div class="col-lg-5 offset-lg-1">
+            <div class="feature-items">{% block tab-header-subtitle %}{% endblock %}</div>
           </div>
         </div>
       </div>
@@ -173,8 +172,8 @@
     {% block content %}{% endblock %}
 
     <!-- footer -->
-    <footer class="text-center" style="z-index: -1; background-color: var(--background-color); color: var(--color);">
-      <div class="text-center p-3" style="font-family: 'Raleway', sans-serif;">
+    <footer class="text-center footer-base">
+      <div class="text-center p-3">
         © 2021 copyright:
         <a id="footer-href" href="https://linktr.ee/phntmz_">phntmz_</a>
       </div>

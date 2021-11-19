@@ -60,9 +60,14 @@
 #navbar-brand {
     position: relative;
     top: 25px;
-    left: -50px
+    left: -50px;
+    margin-left: 5vw;
 }
 
 #midnight-gallery {
     color: rgb(252, 87, 96) !important;
+}
+
+#navbar-socials {
+    margin-top: 30vh"
 }

@@ -23,10 +23,6 @@
   color: var(--color);
 }
 
-#changelog-body-section {
-  min-height: 100vh
-}
-
 .changelog-timeline > * {
   display: flex;
   align-items: center;
