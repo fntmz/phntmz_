@@ -31,3 +31,14 @@ $(window).on("load", function () {
             window.removeEventListener('scroll', noScroll);
         }, 2000)
 })
+
+function scrollUp() {
+    $(document).ready(function () {
+        $(this).scrollTop(0);
+    });
+}
+
+// auto scroll to top on reload
+$(document).ready(function () {
+    $(this).scrollTop(0);
+});
