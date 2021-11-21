@@ -36,8 +36,7 @@ a:hover {
 }
 
 #gallery-cursor {
-	position: absolute;
-	transform: translate(-50%,-50%);
+	position: absolute;  
 	background-color: var(--a-highlight);
 	opacity: .8;
 	height: 30px;

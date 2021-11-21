@@ -17,6 +17,7 @@ function setThemePreference() {
 
     if (window.location.href.indexOf("gallery") > -1) {
         if (currentHour != 0) {
+            document.body.setAttribute("data-theme", "dark_theme");
             document.getElementById("menu-button").style.top = "-10px";
         }
         else {
