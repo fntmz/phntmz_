@@ -1,5 +1,6 @@
 window.addEventListener('scroll', noScroll);
 window.onscroll = function () { scrollFunction() };
+// ("%cthanks for visiting, amazing human. 104 103 32 60 51", "color: rgb(252, 87, 96)")
 
 function noScroll() {
     window.scrollTo(0, 0);
@@ -30,6 +31,7 @@ $(window).on("load", function () {
             };
             window.removeEventListener('scroll', noScroll);
         }, 2000)
+    console.log("%cthanks for visiting, amazing human. 104 103 32 60 51", "color: rgb(252, 87, 96); font-size: 16px")
 })
 
 function scrollUp() {
