@@ -102,6 +102,7 @@ a:hover {
 	transition-delay: .35s;
 }
 
+/* from top styled button */
 .from-top:before, 
 .from-top:after {
 	left: 0;
@@ -123,6 +124,31 @@ a:hover {
 
 .from-top:hover:before,
 .from-top:hover:after {
+	height: 100%;
+}
+
+/* from bottom styled button */
+.from-bottom:before, 
+.from-bottom:after {
+	left: 0;
+	height: 0;
+	width: 100%;
+}
+
+.from-bottom:before {
+	top: 0;	
+	border: 1px solid var(--color);
+	border-top: 0;
+	border-bottom: 0;
+}
+
+.from-bottom:after {
+	bottom: 0;
+	height: 0;
+}
+
+.from-bottom:hover:before,
+.from-bottom:hover:after {
 	height: 100%;
 }
 
