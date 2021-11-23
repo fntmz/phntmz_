@@ -1,10 +1,10 @@
 
 /* Open when someone clicks on the span element */
 function openNav() {
-  document.getElementById("myNav").style.right = "0";
+  $("#myNav").css("right", "0");
 }
 
 /* Close when someone clicks on the "x" symbol inside the overlay */
 function closeNav() {
-  document.getElementById("myNav").style.right = "-100vw";
+  $("#myNav").css("right", "-100vw");
 }

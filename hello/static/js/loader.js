@@ -1,46 +1,29 @@
 window.addEventListener('scroll', noScroll);
-window.onscroll = function () { scrollFunction() };
-// ("%cthanks for visiting, amazing human. 104 103 32 60 51", "color: rgb(252, 87, 96)")
 
 function noScroll() {
     window.scrollTo(0, 0);
 }
 
+$(document).ready(function () {
+    $(this).scrollTop(0);
+});
+
 const maxHeight = $(window).height() * 0.5;
-
-function scrollFunction() {
-    if (document.body.scrollTop > maxHeight || document.documentElement.scrollTop > maxHeight) {
-        document.getElementById("menu-button").style.top = "-10px";
+window.onscroll = function () {
+    if (document.documentElement.scrollTop > maxHeight) {
+        $("#menu-button").css("top", "-10px");
     } else {
-        document.getElementById("menu-button").style.top = "-10vh";
+        $("#menu-button").css("top", "-10vh");
     }
-}
+};
 
-// loader js
 $(window).on("load", function () {
     setTimeout(
         function () {
             $(".loader-wrapper").fadeOut("slow");
-            var hrAnimate = document.getElementsByClassName("hr-animate");
-            var indexHeaderText = document.getElementsByClassName("index-header-text");
-            for (var i = 0; i < hrAnimate.length; i++) {
-                hrAnimate[i].style.width = "25%";
-            };
-            for (var i = 0; i < indexHeaderText.length; i++) {
-                indexHeaderText[i].style.width = "100%";
-            };
+            $(".hr-animate").css("width", "25%");
+            $(".index-header-text").css("width", "100%");
             window.removeEventListener('scroll', noScroll);
         }, 2000)
     console.log("%cthanks for visiting, amazing human. 104 103 32 60 51", "color: rgb(252, 87, 96); font-size: 16px")
 })
-
-function scrollUp() {
-    $(document).ready(function () {
-        $(this).scrollTop(0);
-    });
-}
-
-// auto scroll to top on reload
-$(document).ready(function () {
-    $(this).scrollTop(0);
-});
