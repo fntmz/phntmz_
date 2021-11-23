@@ -9,13 +9,13 @@ $(document).ready(function () {
 });
 
 const maxHeight = $(window).height() * 0.5;
-window.onscroll = function () {
+$(window).on("scroll", function () {
     if (document.documentElement.scrollTop > maxHeight) {
         $("#menu-button").css("top", "-10px");
     } else {
         $("#menu-button").css("top", "-10vh");
     }
-};
+})
 
 $(window).on("load", function () {
     setTimeout(
@@ -25,5 +25,4 @@ $(window).on("load", function () {
             $(".index-header-text").css("width", "100%");
             window.removeEventListener('scroll', noScroll);
         }, 2000)
-    console.log("%cthanks for visiting, amazing human. 104 103 32 60 51", "color: rgb(252, 87, 96); font-size: 16px")
 })

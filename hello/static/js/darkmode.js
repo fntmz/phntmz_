@@ -5,9 +5,15 @@ function setThemePreference() {
     // changes the website theme to dark at 6pm and back at 6am
     if (currentHour >= 18 || currentHour <= 6) {
         $("body").attr("data-theme", "dark_theme");
+        $(window).on("load", function () {
+            console.log("%cgood evening, amazing person. 104 103 32 60 51", "color: rgb(160, 160, 255); font-size: 16px")
+        })
     }
     else {
         $("body").attr("data-theme", "light_theme");
+        $(window).on("load", function () {
+            console.log("%cgood morning, amazing person. 104 103 32 60 51", "color: rgb(252, 87, 96); font-size: 16px")
+        })
     };
 
     // remove the gallery at any time besides midnight
@@ -27,4 +33,4 @@ function setThemePreference() {
     };
 }
 
-window.onload = setThemePreference;
+$(window).on("load", setThemePreference())
