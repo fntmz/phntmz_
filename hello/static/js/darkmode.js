@@ -19,9 +19,10 @@ function setThemePreference() {
         if (currentHour != 0) {
             document.body.setAttribute("data-theme", "dark_theme");
             document.getElementById("menu-button").style.top = "-10px";
+            document.getElementById("gallery-body").remove();
         }
         else {
-            document.getElementById("gallery-cover").style.display = "none";
+            document.getElementById("gallery-cover").remove();
         };
     };
 }
