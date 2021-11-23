@@ -7,6 +7,7 @@ from .models import Greeting
 
 context = {
     "changelog": [
+        {"date": "23.11.2021", "detail": "fixed a bug with the custom css cursor on the gallery page that causes the cursor to move along with the page while scrolling"},
         {"date": "21.11.2021",
             "detail": "changed the animation of the third and fourth button on the gallery page."},
         {"date": "20.11.2021", "detail": "changed caret-color on input and textarea fields from transparent to white for visibility and accesibility reasons. this was originally transparent to improve aesthetics but it can tick people off"},

@@ -68,6 +68,10 @@ textarea {
     background: var(--a-highlight);
 }
 
+.loader-wrapper, .loader-wrapper > * {
+    pointer-events: none;
+}
+
 .tab-header {
     height: 50vh; 
     margin: 0; 
