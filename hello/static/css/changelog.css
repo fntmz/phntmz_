@@ -48,3 +48,36 @@
 .changelog-description {
   font-size: 1rem;
 }
+
+@keyframes flash {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: .5;
+  }
+  15% {
+    opacity: .3;
+  }
+  40% {
+    opacity: .3;
+  }
+  50% {
+    opacity: .7;
+  }
+  55% {
+    opacity: .3;
+  }
+  60% {
+    opacity: .7;
+  }
+  65% {
+    opacity: .2;
+  }
+  70% {
+    opacity: .5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
