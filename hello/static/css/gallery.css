@@ -51,6 +51,14 @@ p {
 	height: 30px;
 	width: 30px;
 	border-radius: 50%;
+
+	transition: width 1s cubic-bezier(.08,.82,.17,1), height 1s cubic-bezier(.08,.82,.17,1), background-color 1s cubic-bezier(.08,.82,.17,1)
+}
+
+.cursor-hover {
+	width: 80px !important;
+	height: 80px !important;
+	background-color: rgb(252, 87, 96) !important;
 }
 
 #gallery-body {
