@@ -35,20 +35,23 @@ function openNav() {
       $("#navbar-socials").css("opacity", "1")
     }, 1800
   )
+  setTimeout(
+    function () {
+      $(".closebtn").css("top", "-10px")
+      $(".closebtn").css("opacity", "1")
+    }, 2000
+  )
 }
 
 function closeNav() {
   $("#myNav").css("right", "-100vw");
   setTimeout(
     function () {
-      $("#navbar-item-1").css("bottom", "-10px")
-      $("#navbar-item-2").css("bottom", "-10px")
-      $("#navbar-item-3").css("bottom", "-10px")
-      $("#navbar-item-4").css("bottom", "-10px")
-      $("#navbar-brand").css("left", "-60px")
-      $("#navbar-brand").css("opacity", "0")
+      $("#navbar-item-1, #navbar-item-2, #navbar-item-3, #navbar-item-4").css("bottom", "-10px")
+      $("#navbar-brand").css({ "left": "-60px", "opacity": "0" })
       $(".navbar-item").css("opacity", "0")
       $("#navbar-socials").css("opacity", "0")
+      $(".closebtn").css({ "top": "100vh", "opacity": "0" })
     }, 500
   )
 }
