@@ -35,7 +35,7 @@ context = {
         {"date": "24.10.2021", "detail": "added a changelog, removed dropdown tabs in the menu, and changed the body background image"},
     ],
     "featured": [
-        {"title": "YOASOBI 「群青」 reverbed", "subtitle": "on my soundcloud",
+        {"title": "「 blue 」", "subtitle": "on my soundcloud",
             "url": "https://soundcloud.com/fntmz/gunjou-reverb"}
     ]
 }
