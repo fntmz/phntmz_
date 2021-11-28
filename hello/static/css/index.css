@@ -5,3 +5,36 @@
     height: 1px;
     bottom: 15vh;
 }
+
+#index-body {
+    height: 100%;
+    padding-top: 150px
+}
+
+.index-posts-img {
+    height: 100%
+}
+
+.index-posts-title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+    font-weight: 500;
+    letter-spacing: .5rem;
+}
+
+.index-posts-subtitle{
+    font-family: 'Noto Sans JP', sans-serif;
+    color: var(--color);
+    margin-top: 3%;
+    letter-spacing: .05rem;
+}
+
+#index-featured-items-subtitle {
+    position: relative; 
+    top: -8px
+}
+
+#index-posts-text {
+    display: flex;
+    align-items: center;
+}

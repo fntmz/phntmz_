@@ -8,7 +8,7 @@ from .models import Greeting
 context = {
     "changelog": [
         {"date": "28.11.2021",
-            "detail": "fixed some issues with transition timings overriding each other"},
+            "detail": "fixed some issues with transition timings overriding each other. added content to the index page, the project page is still incomplete though"},
         {"date": "26.11.2021",
             "detail": "added animations to most child elements of the navbar"},
         {"date": "25.11.2021", "detail": "added animation to gallery cursor upon the event of hovering on an interactive element"},
@@ -39,6 +39,10 @@ context = {
     "featured": [
         {"title": "「 blue 」 reverbed", "subtitle": "on my soundcloud",
             "url": "https://soundcloud.com/fntmz/gunjou-reverb"}
+    ],
+    "index_posts": [
+        {"title": "MIDNIGHT // GALLERY",
+            "subtitle": "features photos captured by phntmz. only available at 0:00", "img": "static/img/index-midnight-gallery.png", "url": "gallery"}
     ]
 }
 

@@ -9,10 +9,8 @@
 
 {% block tab-header %}Featured{% endblock %}
 {% block tab-header-subtitle %}
-<p>
-  <a href="{{ featured.0.url }}" target="_blank" class="feature-items easing-right">{{ featured.0.title }}</a><br>
-  <span class="feature-items-subtitle" style="position: relative; top: -8px">{{ featured.0.subtitle }}</span>
-</p>
+<a href="{{ featured.0.url }}" target="_blank" class="feature-items easing-right">{{ featured.0.title }}</a><br>
+<span class="feature-items-subtitle" id="index-featured-items-subtitle">{{ featured.0.subtitle }}</span>
 {% endblock %}
 
 {% block content %}
@@ -26,8 +24,8 @@
     </div>
     <div class="col-lg-5 offset-lg-1">
       <div style="padding-top: 2vh; padding-right: 3vw;">
-        <p><a href="https://linktr.ee/phntmz_" target="_blank" class="feature-items easing-right">Linktree</a><br><span
-            class="feature-items-subtitle">everything about me. basically</span></p>
+        <a href="https://linktr.ee/phntmz_" target="_blank" class="feature-items easing-right">Linktree</a><br><span
+          class="feature-items-subtitle">everything about me. basically</span>
       </div>
     </div>
   </div>
@@ -35,12 +33,23 @@
   <span class="scroll-down"></span>
 </div>
 
-<div class="body-section" style="height: 100vh;">
-  <div class="container" style="padding-top: 150px">
-    <span class="profile-title">
-      <h5>Website is still in development. Please view on 1920 by 1080 resolution for the best
-        experience. I probably also will not make the website responsive on mobile because it's a brainfug to code.</h5>
-    </span>
+<div class="body-section">
+  <div class="container" id="index-body">
+    {% for item in index_posts %}
+    <div class="row g-5">
+      <div class="col-xl-6">
+        <img src="{{ item.img }}" class="index-posts-img">
+      </div>
+      <div class="col-xl-6" id="index-posts-text">
+        <div>
+          <a href="{{ item.url }}">
+            <div class="index-posts-title easing-right">{{ item.title }}</div>
+          </a>
+          <div class="index-posts-subtitle">{{ item.subtitle }}</div>
+        </div>
+      </div>
+    </div>
+    {% endfor %}
   </div>
 </div>
 {% endblock %}
