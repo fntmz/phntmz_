@@ -1,9 +1,9 @@
 function openNav() {
-  $("#myNav").css("right", "0");
+  $(".overlay").css("right", "0");
   setTimeout(
     function () {
-      $("#navbar-brand").css({ "opacity": "1", "left": "-3%" })
-    }, 400
+      $("#navbar-brand").css("opacity", "1")
+    }, 500
   )
   setTimeout(
     function () {
@@ -37,8 +37,7 @@ function openNav() {
   )
   setTimeout(
     function () {
-      $(".closebtn").css("top", "-10px")
-      $(".closebtn").css("opacity", "1")
+      $(".closebtn").css({ "opacity": "1", "visibility": "visible" })
     }, 2000
   )
 }
@@ -48,8 +47,13 @@ function closeNav() {
 
   setTimeout(
     function () {
+      $(".closebtn").css("visibility", "hidden")
+    }, 300
+  )
+  setTimeout(
+    function () {
       $("#navbar-socials").css("opacity", "0")
-    }, 400
+    }, 500
   )
   setTimeout(
     function () {
@@ -78,13 +82,12 @@ function closeNav() {
   )
   setTimeout(
     function () {
-      $("#navbar-brand").css({ "opacity": "0", "left": "0" })
+      $("#navbar-brand").css("opacity", "0")
     }, 1800
   )
   setTimeout(
     function () {
-      $("#myNav").css("right", "-100vw");
-      $(".closebtn").css("top", "100vh")
+      $(".overlay").css("right", "-100vw");
     }, 2000
   )
 
