@@ -3,8 +3,7 @@ const onMouseMove = (e) => {
   var x = e.clientX - rect.left;
   var y = e.clientY - rect.top;
 
-  $("#gallery-cursor").css("left", x + 'px');
-  $("#gallery-cursor").css("top", y + 'px');
+  $("#gallery-cursor").css({ "left": x + "px", "top": y + "px", "opacity": ".8" });
 }
 
 document.addEventListener('mousemove', onMouseMove);

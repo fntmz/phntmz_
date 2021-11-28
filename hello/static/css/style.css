@@ -118,7 +118,7 @@ textarea {
     font-family: 'Montserrat', sans-serif;
     color: var(--color);
     padding-top: 3vh;
-    transition: all .3s ease-out !important;
+    transition: color .3s, right .3s ease-out !important;
 }
 
 #feature-header {

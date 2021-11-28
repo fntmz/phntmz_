@@ -47,12 +47,11 @@ p {
 	position: absolute;  
 	transform: translate(-50%,-50%);
 	background-color: var(--a-highlight);
-	opacity: .8;
 	height: 30px;
 	width: 30px;
 	border-radius: 50%;
-
-	transition: width 1s cubic-bezier(.08,.82,.17,1), height 1s cubic-bezier(.08,.82,.17,1), background-color 1s cubic-bezier(.08,.82,.17,1)
+	opacity: 0;
+	transition: width 1s cubic-bezier(.08,.82,.17,1), height 1s cubic-bezier(.08,.82,.17,1), background-color 1s cubic-bezier(.08,.82,.17,1), opacity .8s
 }
 
 .cursor-hover {

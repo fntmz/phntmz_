@@ -7,6 +7,8 @@ from .models import Greeting
 
 context = {
     "changelog": [
+        {"date": "28.11.2021",
+            "detail": "fixed some issues with transition timings overriding each other"},
         {"date": "26.11.2021",
             "detail": "added animations to most child elements of the navbar"},
         {"date": "25.11.2021", "detail": "added animation to gallery cursor upon the event of hovering on an interactive element"},
