@@ -1,3 +1,4 @@
+from django.contrib.staticfiles.storage import staticfiles_storage
 from django.shortcuts import render
 from django.http import HttpResponse
 
@@ -7,6 +8,8 @@ from .models import Greeting
 
 context = {
     "changelog": [
+        {"date": "01.12.2021", "detail": "added a section that displays the most recent post in the homepage. many changes made to the posts page"},
+        {"date": "29.11.2021", "detail": "changed the link to the projects page on the navbar to link to a page for posts. the link to the projects page will be in the profile page"},
         {"date": "28.11.2021",
             "detail": "fixed some issues with transition timings overriding each other. added content to the index page, the project page is still incomplete though"},
         {"date": "26.11.2021",
@@ -40,9 +43,13 @@ context = {
         {"title": "「 blue 」 reverbed", "subtitle": "on my soundcloud",
             "url": "https://soundcloud.com/fntmz/gunjou-reverb"}
     ],
-    "index_posts": [
-        {"title": "MIDNIGHT // GALLERY",
-            "subtitle": "features photos captured by phntmz. only available at 0:00", "img": "static/img/index-midnight-gallery.png", "url": "gallery"}
+    "posts": [
+        {"title": "「 blue 」 reverbed", "date": "11.11.2021", "subtitle": "a little edit i tried to make in adobe audition. i think it sounds pretty nice",
+            "img": staticfiles_storage.url('img/posts/posts-gunjou.png'), "url": "https://soundcloud.com/fntmz/gunjou-reverb"},
+        {"title": "MIDNIGHT // GALLERY", "date": "09.11.2021", "subtitle": "displays visually-satisfying photos that are captured by me (and my phone). all images found on the gallery page are posted on my instagram. only available at 0:00", "img": staticfiles_storage.url(
+            'img/posts/posts-midnight-gallery.png'), "url": "gallery"},
+        {"title": "CONTROLLERS", "date": "23.05.2021", "subtitle": "the org-less esports team. with players in valorant, apex legends and counter-strike",
+            "img": staticfiles_storage.url('img/posts/posts-controllers.png'), "url": "https://discord.gg/Ysy2SV88kv"},
     ]
 }
 
@@ -53,6 +60,10 @@ def changelog(request):
 
 def index(request):
     return render(request, "index.html", context)
+
+
+def posts(request):
+    return render(request, "posts.html", context)
 
 
 def contact(request):

@@ -35,21 +35,17 @@
 
 <div class="body-section">
   <div class="container" id="index-body">
-    {% for item in index_posts %}
-    <div class="row g-5">
-      <div class="col-xl-6">
-        <img src="{{ item.img }}" class="index-posts-img">
-      </div>
-      <div class="col-xl-6" id="index-posts-text">
-        <div>
-          <a href="{{ item.url }}">
-            <div class="index-posts-title easing-right">{{ item.title }}</div>
-          </a>
-          <div class="index-posts-subtitle">{{ item.subtitle }}</div>
-        </div>
+    <div id="index-latest-posts">L A T E S T // P O S T</div>
+    <div class="index-posts">
+      <img src="{{ posts.0.img }}" alt="">
+      <div class="index-posts-content">
+        <a href="{{ posts.0.url }}" target="_blank">
+          <div class="index-posts-title easing-right">{{ posts.0.title }}</div>
+        </a>
+        <div class="index-posts-subtitle">{{ posts.0.subtitle }}</div>
+        <div class="index-posts-date">posted on {{ posts.0.date }}</div>
       </div>
     </div>
-    {% endfor %}
   </div>
 </div>
 {% endblock %}

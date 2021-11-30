@@ -33,7 +33,7 @@
   <link rel="stylesheet" href="{% static 'css/footer.css' %}">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@300;400&display=swap" rel="stylesheet">
@@ -116,8 +116,8 @@
             </a>
           </li>
           <li class="nav-item">
-            <a href="{% url 'projects' %}">
-              <h6 class="navbar-item easing-right" id="navbar-item-2">Projects</h6>
+            <a href="{% url 'posts' %}">
+              <h6 class="navbar-item easing-right" id="navbar-item-2">Posts</h6>
             </a>
           </li>
           <li class="nav-item">
@@ -207,8 +207,8 @@
         <ul class="list-group list-group-horizontal d-flex justify-content-between" id="tab-header-menu">
           <li class="list-group-item header-menu border-0"><a href="{% url 'index' %}" class="header-menu-text">Home</a>
           </li>
-          <li class="list-group-item header-menu border-0"><a href="{% url 'projects' %}"
-              class="header-menu-text">Projects</a></li>
+          <li class="list-group-item header-menu border-0"><a href="{% url 'posts' %}"
+              class="header-menu-text">Posts</a></li>
           <li class="list-group-item header-menu border-0"><a href="{% url 'contact' %}"
               class="header-menu-text">Contact</a>
           </li>

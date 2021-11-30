@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}𝐩𝐨𝐬𝐭𝐬{% endblock %}
+
+{% block css %}
+<link rel="stylesheet" href="{% static 'css/posts.css' %}">
+{% endblock %}
+
+{% block tab-header %}Posts{% endblock %}
+{% block tab-header-subtitle %}Status updates{% endblock %}
+
+{% block content %}
+<div class="body-section">
+    <div class="container" id="posts-body">
+        {% for item in posts %}
+        <div class="row g-5 posts-row">
+            <div class="col-xl-6">
+                <img src="{{ item.img }}" class="posts-img">
+            </div>
+            <div class="col-xl-6" id="posts-text">
+                <div>
+                    <a href="{{ item.url }}" target="_blank">
+                        <div class="posts-title easing-right">{{ item.title }}</div>
+                    </a>
+                    <div class="posts-subtitle">{{ item.subtitle }}</div>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}
