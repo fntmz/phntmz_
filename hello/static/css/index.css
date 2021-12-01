@@ -16,12 +16,11 @@
     position: absolute;
     top: 0;
     left: 0;
-    padding-top: 5%;
-    padding-left: 5%;
-    padding-bottom: 5%;
-    padding-right: 5%;
+    padding-top: 3%;
+    padding-left: 3%;
+    padding-bottom: 3%;
+    padding-right: 3%;
     background-color: var(--background-color);
-    z-index: 1;
 }
 
 .index-posts {
@@ -29,6 +28,7 @@
     background-size: cover;
     position: relative;
     margin-top: 50px;
+    z-index: 0;
 }
 
 .index-posts-title {
@@ -41,14 +41,14 @@
 .index-posts-subtitle {
     font-family: 'Noto Sans JP', sans-serif;
     color: var(--color);
-    margin-top: 3%;
+    margin-top: 1%;
     letter-spacing: .05rem;
 }
 
 .index-posts-date {
     font-family: 'Roboto Condensed', sans-serif;
     letter-spacing: .05rem;
-    font-size: 1rem;
+    font-size: .8rem;
     color: var(--color);
     margin-top: 3%;
 }
