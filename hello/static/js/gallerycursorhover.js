@@ -1,4 +1,4 @@
-$(".btn, #menu-button, a").hover(
+$(".btn, #menu-button, a, #gallery-cover > p").hover(
   function () {
     $("#gallery-cursor").addClass("cursor-hover")
   },
