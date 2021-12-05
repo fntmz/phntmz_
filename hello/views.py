@@ -9,6 +9,8 @@ from .models import Greeting
 
 context = {
     "changelog": [
+        {"date": "05.12.2021",
+            "detail": "apply display none to loader title and navbar socials when viewport width is less than 1300px and 576px, respectively"},
         {"date": "01.12.2021",
             "detail": "added a section that displays the most recent post in the homepage. many changes made to the posts page"},
         {"date": "29.11.2021",

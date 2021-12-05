@@ -81,3 +81,9 @@
     margin-top: 30vh;
     transition: opacity 0.3s;
 }
+
+@media only screen and (max-width: 576px) {
+    #navbar-socials {
+        display: none;
+    }
+}
