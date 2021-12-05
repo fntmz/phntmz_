@@ -11,12 +11,12 @@
 .navbar-item {
     opacity: 0;
     position: relative;
-    font-family: 'Raleway', sans-serif;
-    transition: opacity .3s, bottom .3s ease-out, right .3s ease-out;
-    bottom: -10px
+    font-family: "Raleway", sans-serif;
+    transition: opacity 0.3s, bottom 0.3s ease-out, right 0.3s ease-out;
+    bottom: -10px;
 }
 
-.overlay {  
+.overlay {
     height: 100%;
     width: 100vw;
     position: fixed;
@@ -30,11 +30,11 @@
 
 .overlay-content {
     position: relative;
-    top: 30vh; 
-    width: 100%; 
-    margin-top: 30px; 
-    transition: opacity .3s ease-out;
-    text-align: center; 
+    top: 30vh;
+    width: 100%;
+    margin-top: 30px;
+    transition: opacity 0.3s ease-out;
+    text-align: center;
 }
 
 .overlay .closebtn {
@@ -47,7 +47,7 @@
     visibility: hidden;
     opacity: 0;
     top: -10px;
-    transition: opacity .3s, color .3s;
+    transition: opacity 0.3s, color 0.3s;
 }
 
 #menu-button {
@@ -56,7 +56,7 @@
     position: fixed;
     font-size: 4rem;
     z-index: 997;
-    transition: all .3s;
+    transition: all 0.3s;
 }
 
 #navbar-brand {
@@ -65,11 +65,11 @@
     position: relative;
     top: 25px;
     left: 45px;
-    transition: opacity .5s;
-    font-family: 'Montserrat', sans-serif;
+    transition: opacity 0.5s;
+    font-family: "Montserrat", sans-serif;
     font-weight: 700;
     font-size: 32px;
-    letter-spacing: .05rem;
+    letter-spacing: 0.05rem;
 }
 
 #midnight-gallery {
@@ -79,5 +79,5 @@
 #navbar-socials {
     opacity: 0;
     margin-top: 30vh;
-    transition: opacity .3s;
+    transition: opacity 0.3s;
 }

@@ -5,57 +5,53 @@ var s4 = document.getElementById("section-4");
 var sd = document.getElementById("gallery-scrolldown");
 
 function toggleSection1() {
-  if (s1.style.display == "initial") {
-    sd.style.display = "none";
-    s1.style.display = "none";
-  }
-  else {
-    sd.style.display = "initial";
-    s1.style.display = "initial";
-  }
-  s2.style.display = "none";
-  s3.style.display = "none";
-  s4.style.display = "none";
-};
+    if (s1.style.display == "initial") {
+        sd.style.display = "none";
+        s1.style.display = "none";
+    } else {
+        sd.style.display = "initial";
+        s1.style.display = "initial";
+    }
+    s2.style.display = "none";
+    s3.style.display = "none";
+    s4.style.display = "none";
+}
 
 function toggleSection2() {
-  if (s2.style.display == "initial") {
-    sd.style.display = "none";
-    s2.style.display = "none";
-  }
-  else {
-    sd.style.display = "initial";
-    s2.style.display = "initial";
-  }
-  s1.style.display = "none";
-  s3.style.display = "none";
-  s4.style.display = "none";
-};
+    if (s2.style.display == "initial") {
+        sd.style.display = "none";
+        s2.style.display = "none";
+    } else {
+        sd.style.display = "initial";
+        s2.style.display = "initial";
+    }
+    s1.style.display = "none";
+    s3.style.display = "none";
+    s4.style.display = "none";
+}
 
 function toggleSection3() {
-  if (s3.style.display == "initial") {
-    sd.style.display = "none";
-    s3.style.display = "none";
-  }
-  else {
-    sd.style.display = "initial";
-    s3.style.display = "initial";
-  }
-  s1.style.display = "none";
-  s2.style.display = "none";
-  s4.style.display = "none";
-};
+    if (s3.style.display == "initial") {
+        sd.style.display = "none";
+        s3.style.display = "none";
+    } else {
+        sd.style.display = "initial";
+        s3.style.display = "initial";
+    }
+    s1.style.display = "none";
+    s2.style.display = "none";
+    s4.style.display = "none";
+}
 
 function toggleSection4() {
-  if (s4.style.display == "initial") {
-    sd.style.display = "none";
-    s4.style.display = "none";
-  }
-  else {
-    sd.style.display = "initial";
-    s4.style.display = "initial";
-  }
-  s2.style.display = "none";
-  s3.style.display = "none";
-  s1.style.display = "none";
-};
+    if (s4.style.display == "initial") {
+        sd.style.display = "none";
+        s4.style.display = "none";
+    } else {
+        sd.style.display = "initial";
+        s4.style.display = "initial";
+    }
+    s2.style.display = "none";
+    s3.style.display = "none";
+    s1.style.display = "none";
+}

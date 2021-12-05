@@ -1,4 +1,4 @@
-window.addEventListener('scroll', noScroll);
+window.addEventListener("scroll", noScroll);
 
 function noScroll() {
     window.scrollTo(0, 0);
@@ -15,14 +15,13 @@ $(window).on("scroll", function () {
     } else {
         $("#menu-button").css("top", "-10vh");
     }
-})
+});
 
 $(window).on("load", function () {
-    setTimeout(
-        function () {
-            $(".loader-wrapper").fadeOut("slow");
-            $(".hr-animate").css("width", "25%");
-            $(".index-header-text").css("width", "100%");
-            window.removeEventListener('scroll', noScroll);
-        }, 2000)
-})
+    setTimeout(function () {
+        $(".loader-wrapper").fadeOut("slow");
+        $(".hr-animate").css("width", "25%");
+        $(".index-header-text").css("width", "100%");
+        window.removeEventListener("scroll", noScroll);
+    }, 2000);
+});

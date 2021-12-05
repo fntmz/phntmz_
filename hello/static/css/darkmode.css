@@ -1,4 +1,4 @@
-body[data-theme='dark_theme'] {
+body[data-theme="dark_theme"] {
     --color: white;
     --background-color: black;
     --background-image: url(../img/headertextbg.jpg);
@@ -6,7 +6,7 @@ body[data-theme='dark_theme'] {
     --a-highlight: rgb(160, 160, 255);
 }
 
-body[data-theme='light_theme'] {
+body[data-theme="light_theme"] {
     --color: black;
     --background-color: white;
     --background-image: url(../img/marble.jpg);

@@ -1,6 +1,6 @@
 .footer-base {
-  z-index: -1; 
-  background-color: var(--background-color); 
-  color: var(--color);
-  font-family: 'Raleway', sans-serif;
+    z-index: -1;
+    background-color: var(--background-color);
+    color: var(--color);
+    font-family: "Raleway", sans-serif;
 }

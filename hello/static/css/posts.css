@@ -1,23 +1,23 @@
 .posts-row {
-    padding-bottom: 150px
+    padding-bottom: 150px;
 }
 
 .posts-img {
-    height: 100%
+    height: 100%;
 }
 
 .posts-title {
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-size: 2rem;
     font-weight: 500;
-    letter-spacing: .4rem;
+    letter-spacing: 0.4rem;
 }
 
-.posts-subtitle{
-    font-family: 'Noto Sans JP', sans-serif;
+.posts-subtitle {
+    font-family: "Noto Sans JP", sans-serif;
     color: var(--color);
     margin-top: 1%;
-    letter-spacing: .05rem;
+    letter-spacing: 0.05rem;
 }
 
 #posts-text {
@@ -27,13 +27,13 @@
 
 #posts-body {
     height: 100%;
-    padding-top: 150px
+    padding-top: 150px;
 }
 
 .posts-date {
-    font-family: 'Roboto Condensed', sans-serif;
-    letter-spacing: .05rem;
-    font-size: .85rem;
+    font-family: "Roboto Condensed", sans-serif;
+    letter-spacing: 0.05rem;
+    font-size: 0.85rem;
     color: var(--color);
     margin-top: 5%;
 }

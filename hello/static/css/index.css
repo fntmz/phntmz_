@@ -16,10 +16,7 @@
     position: absolute;
     top: 0;
     left: 0;
-    padding-top: 3%;
-    padding-left: 3%;
-    padding-bottom: 3%;
-    padding-right: 3%;
+    padding: 3%;
     background-color: var(--background-color);
 }
 
@@ -32,29 +29,29 @@
 }
 
 .index-posts-title {
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-size: 2rem;
     font-weight: 500;
-    letter-spacing: .4rem;
+    letter-spacing: 0.4rem;
 }
 
 .index-posts-subtitle {
-    font-family: 'Noto Sans JP', sans-serif;
+    font-family: "Noto Sans JP", sans-serif;
     color: var(--color);
     margin-top: 1%;
-    letter-spacing: .05rem;
+    letter-spacing: 0.05rem;
 }
 
 .index-posts-date {
-    font-family: 'Roboto Condensed', sans-serif;
-    letter-spacing: .05rem;
-    font-size: .8rem;
+    font-family: "Roboto Condensed", sans-serif;
+    letter-spacing: 0.05rem;
+    font-size: 0.8rem;
     color: var(--color);
     margin-top: 3%;
 }
 
 #index-latest-posts {
-    font-family: 'Raleway', sans-serif;
+    font-family: "Raleway", sans-serif;
     font-weight: 500;
     font-size: 3rem;
     color: var(--color);
@@ -62,8 +59,8 @@
 }
 
 #index-featured-items-subtitle {
-    position: relative; 
-    top: -8px
+    position: relative;
+    top: -8px;
 }
 
 #index-posts-text {
