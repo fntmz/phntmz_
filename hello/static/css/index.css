@@ -67,3 +67,7 @@
     display: flex;
     align-items: center;
 }
+
+#index-featured-url {
+    transition: color 0.3s, right 0.3s ease-out;
+}
