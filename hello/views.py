@@ -30,7 +30,7 @@ context = {
         {"date": "21.11.2021",
             "detail": "changed the animation of the third and fourth button on the gallery page."},
         {"date": "20.11.2021",
-            "detail": "changed caret-color on input and textarea fields from transparent to white for visibility and accesibility reasons. this was originally transparent to improve aesthetics but it can tick people off"},
+            "detail": "changed caret-color on input and textarea fields from transparent to white for visibility and accessibility reasons. this was originally transparent to improve aesthetics but it can tick people off"},
         {"date": "19.11.2021",
             "detail": "added a few images that can be revealed by clicking on the buttons on the gallery page. the current version of the gallery page is the final layout, but the content are still far from being finished. this is only the foundation for more work to be dont in the future"},
         {"date": "18.11.2021",
