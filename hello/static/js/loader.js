@@ -13,7 +13,7 @@ $(window).on("scroll", function () {
     if (document.documentElement.scrollTop > maxHeight) {
         $("#menu-button").css("top", "-10px");
     } else {
-        $("#menu-button").css("top", "-10vh");
+        $("#menu-button").css("top", "-100px");
     }
 });
 

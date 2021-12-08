@@ -9,6 +9,8 @@ from .models import Greeting
 
 context = {
     "changelog": [
+        {"date": "08.12.2021",
+            "detail": "changed the top attribute of the menu button when it is not in view. also fixed bug where scrollbar was not disabled on firefox"},
         {"date": "05.12.2021",
             "detail": "apply display none to loader title and navbar socials when viewport width is less than 1300px and 576px, respectively"},
         {"date": "01.12.2021",
