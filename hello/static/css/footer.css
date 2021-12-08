@@ -3,4 +3,12 @@
     background-color: var(--background-color);
     color: var(--color);
     font-family: "Raleway", sans-serif;
+    height: 56px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-base > a::before {
+    content: "© 2021 copyright: ";
 }

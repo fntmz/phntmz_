@@ -77,6 +77,9 @@ textarea {
     height: 50vh;
     margin: 0;
     background-color: var(--background-color);
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    padding-top: 2.5vh;
 }
 
 .body-section {
@@ -127,11 +130,6 @@ textarea {
     background-attachment: fixed;
     width: 0;
     transition: 2s cubic-bezier(0.65, 0.05, 0.36, 1);
-}
-
-.header-menu-text {
-    font-family: "Montserrat", sans-serif;
-    font-weight: 700;
 }
 
 .list-group-item {
@@ -254,10 +252,6 @@ textarea {
     border-radius: 0px;
     border: 2px solid var(--color);
     color: var(--color);
-}
-
-#tab-header-menu {
-    padding-top: 2.5vh;
 }
 
 .base-body {
