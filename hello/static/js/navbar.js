@@ -4,19 +4,19 @@ function openNav() {
         $("#navbar-brand").css("opacity", "1");
     }, 500);
     setTimeout(function () {
-        $("#navbar-item-1").css({ opacity: "1", bottom: "0" });
+        $("#navbar-item-1").css({ opacity: "1", top: "0" });
     }, 700);
     setTimeout(function () {
-        $("#navbar-item-2").css({ opacity: "1", bottom: "0" });
+        $("#navbar-item-2").css({ opacity: "1", top: "0" });
     }, 900);
     setTimeout(function () {
-        $("#navbar-item-3").css({ opacity: "1", bottom: "0" });
+        $("#navbar-item-3").css({ opacity: "1", top: "0" });
     }, 1100);
     setTimeout(function () {
-        $("#navbar-item-4").css({ opacity: "1", bottom: "0" });
+        $("#navbar-item-4").css({ opacity: "1", top: "0" });
     }, 1300);
     setTimeout(function () {
-        $("#navbar-item-5").css({ opacity: "1", bottom: "0" });
+        $("#navbar-item-5").css({ opacity: "1", top: "0" });
     }, 1500);
     setTimeout(function () {
         $("#navbar-socials").css("opacity", "1");
@@ -28,7 +28,6 @@ function openNav() {
 
 function closeNav() {
     $(".closebtn").css("opacity", "0");
-
     setTimeout(function () {
         $(".closebtn").css("visibility", "hidden");
     }, 300);
@@ -36,19 +35,19 @@ function closeNav() {
         $("#navbar-socials").css("opacity", "0");
     }, 500);
     setTimeout(function () {
-        $("#navbar-item-5").css({ opacity: "0", bottom: "-10px" });
+        $("#navbar-item-5").css({ opacity: "0", top: "10px" });
     }, 700);
     setTimeout(function () {
-        $("#navbar-item-4").css({ opacity: "0", bottom: "-10px" });
+        $("#navbar-item-4").css({ opacity: "0", top: "10px" });
     }, 900);
     setTimeout(function () {
-        $("#navbar-item-3").css({ opacity: "0", bottom: "-10px" });
+        $("#navbar-item-3").css({ opacity: "0", top: "10px" });
     }, 1100);
     setTimeout(function () {
-        $("#navbar-item-2").css({ opacity: "0", bottom: "-10px" });
+        $("#navbar-item-2").css({ opacity: "0", top: "10px" });
     }, 1300);
     setTimeout(function () {
-        $("#navbar-item-1").css({ opacity: "0", bottom: "-10px" });
+        $("#navbar-item-1").css({ opacity: "0", top: "10px" });
     }, 1500);
     setTimeout(function () {
         $("#navbar-brand").css("opacity", "0");
