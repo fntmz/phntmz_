@@ -1,6 +1,6 @@
 function setThemePreference() {
     var d = new Date();
-    var currentHour = 0;
+    var currentHour = d.getHours;
 
     if (currentHour >= 18 || currentHour <= 6) {
         $("body").attr("data-theme", "dark_theme");

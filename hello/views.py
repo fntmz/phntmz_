@@ -9,6 +9,8 @@ from .models import Greeting
 
 context = {
     "changelog": [
+        {"date": "09.12.2021",
+            "detail": "optimized css on navbar"},
         {"date": "08.12.2021",
             "detail": "changed the top attribute of the menu button when it is not in view. also fixed bug where scrollbar was not disabled on firefox"},
         {"date": "05.12.2021",
