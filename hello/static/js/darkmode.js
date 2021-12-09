@@ -21,7 +21,7 @@ function setThemePreference() {
     }
 
     if (currentHour != 0) {
-        $("#midnight-gallery").remove();
+        $("#navbar-item-5").remove();
     }
 
     if (window.location.href.indexOf("gallery") > -1) {
