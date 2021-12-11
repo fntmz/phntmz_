@@ -20,12 +20,11 @@ img {
 
 a {
     text-decoration: none;
-    color: var(--color);
-    transition: 0.3s;
+    transition: color 0.3s;
 }
 
 a:hover {
-    color: var(--a-highlight);
+    color: var(--a-highlight) !important;
 }
 
 hr {

@@ -1,3 +1,7 @@
+a {
+    color: var(--color);
+}
+
 .nav-item {
     background-color: transparent;
 }
@@ -16,6 +20,10 @@
     top: 10px;
     margin-bottom: 0.2rem;
     overflow: hidden;
+}
+
+.navbar-item:hover > a {
+    color: var(--a-highlight) !important;
 }
 
 .navbar-item:after {
@@ -42,13 +50,6 @@
 .navbar-item:hover:after {
     width: 50%;
     transition: 1s cubic-bezier(0.23, 1, 0.32, 1);
-}
-
-@media only screen and (max-width: 768px) {
-    .navbar-item:hover:before,
-    .navbar-item:hover:after {
-        display: none;
-    }
 }
 
 .overlay {
@@ -126,6 +127,13 @@
 #navbar-socials > div {
     width: calc(100% / 6);
     text-align: center;
+}
+
+@media only screen and (max-width: 768px) {
+    .navbar-item:hover:before,
+    .navbar-item:hover:after {
+        display: none;
+    }
 }
 
 @media only screen and (max-width: 768px) {
