@@ -9,6 +9,8 @@ from .models import Greeting
 
 context = {
     "changelog": [
+        {"date": "12.12.2021",
+            "detail": "improved css on profile page"},
         {"date": "09.12.2021",
             "detail": "optimized css on navbar. added animation on the event of navbar item hover"},
         {"date": "08.12.2021",
@@ -80,6 +82,31 @@ context = {
             "subtitle": "the org-less esports team. with players in valorant, apex legends and counter-strike",
             "img": static('img/posts/posts-controllers.png'),
             "url": "https://discord.gg/Ysy2SV88kv"},
+    ],
+    "profile": [
+        {"name": "hieu minh nguyen",
+            "identity": "phntmz_",
+            "img": static('img/profile/phntmz.jpg'),
+            "subtitle": "autobiography",
+            "content": """<p>I am a high-school student at the time of writing. I am
+            from Vietnam and I have lived on earth for 14 years. I like computers and I had my first interaction with
+            computer programming since middle-school, not that long ago. I have been developing my skills in Python,
+            HTML, JavaScript, C++, and the two website frameworks Django and React. I created this website as nothing
+            more than a weekend project so it is nice if someone actually likes it.</p><p>That's all, thanks for visiting.</p>""",
+            "author": "phntmz_",
+            "date": "October 23 2021",
+            "projects": "https://phntmz.herokuapp.com/projects"},
+        # {"name": "hieu minh nguyen",
+        #     "identity": "phntmz_",
+        #     "img": static('img/profile/futaba.jpg'),
+        #     "subtitle": "autobiography",
+        #     "content": """<p>I am a high-school student at the time of writing. I am
+        #     from Vietnam and I have lived on earth for 14 years. I like computers and I had my first interaction with
+        #     computer programming since middle-school, not that long ago. I have been developing my skills in Python,
+        #     HTML, JavaScript, C++, and the two website frameworks Django and React. I created this website as nothing
+        #     more than a weekend project so it is nice if someone actually likes it.</p><p>That's all, thanks for visiting.</p>""",
+        #     "author": "phntmz_",
+        #     "date": "October 23 2021"},
     ]
 }
 
@@ -101,7 +128,7 @@ def contact(request):
 
 
 def profile(request):
-    return render(request, "profile.html")
+    return render(request, "profile.html", context)
 
 
 def projects(request):

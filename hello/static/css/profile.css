@@ -1,10 +1,29 @@
+.profile-content {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+    color: var(--color);
+}
+
+.profile-subtitle {
+    margin-bottom: 1em;
+    padding-top: 10px;
+}
+
+.profile-subtitle,
+.profile-author,
 .profile-title {
     font-family: "Raleway", sans-serif;
     color: var(--color);
 }
 
-.profile-content {
-    font-family: "Montserrat", sans-serif;
-    font-weight: 300;
-    color: var(--color);
+.profile-title {
+    font-size: 2rem;
+}
+
+.profile-section {
+    margin-bottom: 15%;
+}
+
+.profile-button {
+    margin-top: 3%;
 }

@@ -15,39 +15,35 @@
 {% block content %}
 <div class="body-section">
   <div class="container" style="padding-top: 150px;">
-    <div class="row">
-      <div class="col-4">
-        <img style="width: 100%;" src="../static/img/face.jpg" alt="">
+    {% for item in profile %}
+    <div class="profile-section">
+      <div class="row">
+        <div class="col-lg-4">
+          <img style="width: 100%;" src="{{ item.img }}" alt="">
+        </div>
+        <div class="col-lg-8">
+          <div class="profile-title">{{ item.name }} // {{ item.identity }}</div>
+          <div class="profile-subtitle">{{ item.subtitle }}</div>
+          <div class="profile-content">
+            {{ item.content|safe }}
+          </div>
+          <div class="profile-author">Posted by {{ item.author }} on {{ item.date }}</div>
+        </div>
       </div>
-      <div class="col-8">
-        <h2 class="profile-title">hieu minh nguyen // phntmz_</h2>
-        <p class="profile-title" style="padding-top: 10px">autobiography</p>
-        <p class="profile-content" style="padding-top: 10px">I am a high-school student at the time of writing. I am
-          from Vietnam and I have lived on earth for 14 years. I like computers and I had my first interaction with
-          computer programming since middle-school, not that long ago. I have been developing my skills in Python,
-          HTML, JavaScript, C++, and the two website frameworks Django and React. I created this website as nothing more
-          than a weekend project so it is nice if someone actually likes it.<br><br>
-
-          That's all, thanks for visiting.<br><br>
-        </p>
-        <p class="profile-title">Posted by phntmz_ on Oct // 23 : : . . 2021</p>
-      </div>
-    </div>
-  </div>
-
-  <div class="container" style="padding-top: 150px">
-    <div class="row g-2">
-      <div class="col-sm-12 col-lg-6">
-        <a href="/projects">
-          <button class="contact-submit">Projects</button>
-        </a>
-      </div>
-      <div class="col-sm-12 col-lg-6">
-        <a href="/changelog">
-          <button class="contact-submit">Changelog</button>
-        </a>
+      <div class="row g-2 profile-button">
+        <div class="col-sm-12 col-lg-6">
+          <a href="{{ item.projects }}">
+            <button class="contact-submit">Projects</button>
+          </a>
+        </div>
+        <div class="col-sm-12 col-lg-6">
+          <a href="/changelog">
+            <button class="contact-submit">Changelog</button>
+          </a>
+        </div>
       </div>
     </div>
+    {% endfor %}
   </div>
 </div>
 
