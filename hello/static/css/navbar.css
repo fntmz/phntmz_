@@ -109,7 +109,7 @@ a {
     letter-spacing: 0.05rem;
 }
 
-#navbar-item-5 > * {
+.navbar-item:nth-last-child(1) > * {
     color: rgb(252, 87, 96) !important;
 }
 

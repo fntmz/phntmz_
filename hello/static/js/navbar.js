@@ -1,23 +1,19 @@
 function openNav() {
     $(".overlay").css("right", "0");
+
     setTimeout(function () {
         $("#navbar-brand").css("opacity", "1");
     }, 500);
-    setTimeout(function () {
-        $("#navbar-item-1").css({ opacity: "1", top: "0" });
-    }, 700);
-    setTimeout(function () {
-        $("#navbar-item-2").css({ opacity: "1", top: "0" });
-    }, 900);
-    setTimeout(function () {
-        $("#navbar-item-3").css({ opacity: "1", top: "0" });
-    }, 1100);
-    setTimeout(function () {
-        $("#navbar-item-4").css({ opacity: "1", top: "0" });
-    }, 1300);
-    setTimeout(function () {
-        $("#navbar-item-5").css({ opacity: "1", top: "0" });
-    }, 1500);
+
+    for (let i = 0; i < 6; i++) {
+        setTimeout(function () {
+            $(".overlay-content > .navbar-item:nth-child(" + i + ")").css({
+                opacity: "1",
+                top: "0",
+            });
+        }, 200 * i + 500);
+    }
+
     setTimeout(function () {
         $("#navbar-socials").css("opacity", "1");
     }, 1800);
@@ -34,21 +30,14 @@ function closeNav() {
     setTimeout(function () {
         $("#navbar-socials").css("opacity", "0");
     }, 500);
-    setTimeout(function () {
-        $("#navbar-item-5").css({ opacity: "0", top: "10px" });
-    }, 700);
-    setTimeout(function () {
-        $("#navbar-item-4").css({ opacity: "0", top: "10px" });
-    }, 900);
-    setTimeout(function () {
-        $("#navbar-item-3").css({ opacity: "0", top: "10px" });
-    }, 1100);
-    setTimeout(function () {
-        $("#navbar-item-2").css({ opacity: "0", top: "10px" });
-    }, 1300);
-    setTimeout(function () {
-        $("#navbar-item-1").css({ opacity: "0", top: "10px" });
-    }, 1500);
+    for (let i = 0; i < 6; i++) {
+        setTimeout(function () {
+            $(".overlay-content > .navbar-item:nth-last-child(" + i + ")").css({
+                opacity: "0",
+                top: "10px",
+            });
+        }, 200 * i + 500);
+    }
     setTimeout(function () {
         $("#navbar-brand").css("opacity", "0");
     }, 1800);
