@@ -9,11 +9,17 @@
 <link rel="stylesheet" href="{% static 'css/error.css' %}">
 {% endblock %}
 
-{% block tab-header %}500{% endblock %}
+{% block tab-header %}404{% endblock %}
 {% block tab-header-subtitle %}Page Not Found{% endblock %}
 
 {% block content %}
 <div id="error-page-message">
-    <div>You must be lost. <a href="{% url 'index' %}">Here</a>, let me get you back on track.</div>
+    <div>You must be lost. Use the menu to get back on track.</div>
 </div>
+{% endblock %}
+
+{% block js %}
+<script>
+    $("#menu-button").css("top", "-10px");
+</script>
 {% endblock %}
