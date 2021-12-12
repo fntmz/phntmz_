@@ -21,7 +21,7 @@ function setThemePreference() {
     }
 
     if (currentHour != 0) {
-        $(".overlay-content > .navbar-item:nth-last-child(1)").remove();
+        $(".overlay-content > .navbar-item:last-child").remove();
     }
 
     if (window.location.href.indexOf("gallery") > -1) {
