@@ -6,13 +6,14 @@
 {% endblock %}
 
 {% block css %}
+<link rel="stylesheet" href="{% static 'css/error.css' %}">
 {% endblock %}
 
 {% block tab-header %}500{% endblock %}
 {% block tab-header-subtitle %}Page Not Found{% endblock %}
 
 {% block content %}
-<div id="error-page-message">
+<div id=" error-page-message">
     <div>You must be lost. <a href="{% url 'index' %}">Here</a>, let me get you back on track.</div>
 </div>
 {% endblock %}
