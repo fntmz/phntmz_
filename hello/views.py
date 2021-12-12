@@ -10,7 +10,7 @@ from .models import Greeting
 context = {
     "changelog": [
         {"date": "12.12.2021",
-            "detail": "improved css on profile page"},
+            "detail": "improved css on profile page. added error page for 500 and 404 error codes"},
         {"date": "09.12.2021",
             "detail": "optimized css on navbar. added animation on the event of navbar item hover"},
         {"date": "08.12.2021",
