@@ -168,7 +168,7 @@ p {
 }
 
 footer {
-    display: none;
+    display: none !important;
 }
 
 @media only screen and (max-width: 600px) {
