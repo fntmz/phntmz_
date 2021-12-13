@@ -15,6 +15,14 @@
     transform: translate(-50%, -50%);
 }
 
+.error-border-box-position {
+    position: absolute;
+    top: 0;
+    width: 100vw;
+    height: 1px;
+    top: 50vh;
+}
+
 footer {
     display: none !important;
 }
