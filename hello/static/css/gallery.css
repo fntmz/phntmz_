@@ -26,10 +26,9 @@ p {
 
 .gallery-border-box-position {
     position: absolute;
-    left: 0;
+    top: 0;
     width: 100vw;
     height: 1px;
-    top: 50vh;
 }
 
 #cursor-area {
@@ -64,6 +63,7 @@ p {
 }
 
 #gallery-body {
+    position: relative;
     height: 50vh;
     display: flex;
     flex-direction: column;
