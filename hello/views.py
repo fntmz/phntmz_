@@ -9,8 +9,6 @@ from .models import Greeting
 
 context = {
     "changelog": [
-        {"date": "13.12.2021",
-            "detail": "minor css changes to error and gallery page."}
         {"date": "12.12.2021",
             "detail": "improved css on profile page. added error page for 500 and 404 error codes"},
         {"date": "09.12.2021",
