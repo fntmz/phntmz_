@@ -1,6 +1,6 @@
 *,
 *:hover {
-    cursor: none;
+    cursor: none !important;
 }
 
 #gallery-cover {
