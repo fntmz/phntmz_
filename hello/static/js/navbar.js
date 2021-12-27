@@ -2,15 +2,15 @@ function openNav() {
     $(".overlay").css("right", "0");
 
     setTimeout(function () {
-        $("#navbar-brand").css("opacity", "1");
+        $("#navbar-brand").fadeIn(500);
     }, 500);
 
     for (let i = 0; i < 6; i++) {
         setTimeout(function () {
-            $(".overlay-content > .navbar-item:nth-child(" + i + ")").css({
-                opacity: "1",
-                top: "0",
-            });
+            $(".overlay-content > .navbar-item:nth-child(" + i + ")").fadeIn(300);
+            $(".overlay-content > .navbar-item:nth-child(" + i + ")").css(
+                "transform", "translateY(0)"
+            );
         }, 200 * i + 500);
     }
 
@@ -32,14 +32,14 @@ function closeNav() {
     }, 500);
     for (let i = 0; i < 6; i++) {
         setTimeout(function () {
-            $(".overlay-content > .navbar-item:nth-last-child(" + i + ")").css({
-                opacity: "0",
-                top: "10px",
-            });
+            $(".overlay-content > .navbar-item:nth-last-child(" + i + ")").fadeOut(300);
+            $(".overlay-content > .navbar-item:nth-last-child(" + i + ")").css(
+                "transform", "translateY(10px)"
+            );
         }, 200 * i + 500);
     }
     setTimeout(function () {
-        $("#navbar-brand").css("opacity", "0");
+        $("#navbar-brand").fadeOut(500);
     }, 1800);
     setTimeout(function () {
         $(".overlay").css("right", "-100vw");

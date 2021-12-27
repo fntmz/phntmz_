@@ -9,10 +9,10 @@ from .models import Greeting
 
 context = {
     "changelog": [
-        {"date": "18.12.2021",
-            "detail": "suspending changes for this website. rebuilding the website based on the nuxt.js framework. new website is at https://phntmz__nuxt.herokuapp.com"},
+        {"date": "27.12.2021",
+            "detail": "made improvements to the navbar styling"},
         {"date": "13.12.2021",
-            "detail": "minor css changes to error and gallery page."},
+            "detail": "minor css changes to error and gallery page"},
         {"date": "12.12.2021",
             "detail": "improved css on profile page. added error page for 500 and 404 error codes"},
         {"date": "09.12.2021",

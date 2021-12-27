@@ -27,7 +27,7 @@ function setThemePreference() {
     if (window.location.href.indexOf("gallery") > -1) {
         if (currentHour != 0) {
             $("body").attr("data-theme", "dark_theme");
-            $("#menu-button").css("top", "-10px");
+            $("#menu-button").css("transform", "translateY(-10px)");
             $("#gallery-body").remove();
         } else {
             $("#gallery-cover").remove();

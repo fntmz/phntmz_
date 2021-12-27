@@ -2,22 +2,11 @@ a {
     color: var(--color);
 }
 
-.nav-item {
-    background-color: transparent;
-}
-
-#navbar {
-    top: -10vh;
-    width: 100%;
-    transition: top 0.3s;
-}
-
 .navbar-item {
-    opacity: 0;
-    position: relative;
+    display: none;
     font-family: "Raleway", sans-serif;
-    transition: opacity 0.3s, top 0.3s ease-out;
-    top: 10px;
+    transition: transform 0.3s ease-out;
+    transform: translateY(10px);
     margin-bottom: 0.2rem;
     overflow: hidden;
 }
@@ -66,21 +55,17 @@ a {
 
 .overlay-content {
     position: relative;
-    top: 32vh;
-    transition: opacity 0.3s ease-out;
+    top: 35%;
     text-align: center;
     left: 50%;
     transform: translate(-50%, 0);
     width: 68.75%;
 }
 
-.overlay .closebtn {
-    position: absolute;
-    right: 45px;
-    font-size: 4rem;
-}
-
 .closebtn {
+    position: absolute;
+    right: 30px;
+    font-size: 4rem;
     visibility: hidden;
     opacity: 0;
     top: -10px;
@@ -88,8 +73,8 @@ a {
 }
 
 #menu-button {
-    top: -100px;
-    right: 45px;
+    transform: translateY(-100px);
+    right: 30px;
     position: fixed;
     font-size: 4rem;
     z-index: 997;
@@ -97,12 +82,11 @@ a {
 }
 
 #navbar-brand {
+    display: none;
     color: var(--color);
-    opacity: 0;
-    position: relative;
+    position: absolute;
     top: 25px;
-    left: 45px;
-    transition: opacity 0.5s;
+    left: 30px;
     font-family: "Montserrat", sans-serif;
     font-weight: 700;
     font-size: 32px;
