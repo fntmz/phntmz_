@@ -19,7 +19,6 @@ admin.autodiscover()
 
 urlpatterns = [
     path("", hello.views.index, name="index"),
-    path("db/", hello.views.db, name="db"),
     path("contact/", hello.views.contact, name="contact"),
     path("profile/", hello.views.profile, name="profile"),
     path("projects/", hello.views.projects, name="projects"),
