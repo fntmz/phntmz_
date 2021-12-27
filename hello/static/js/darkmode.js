@@ -6,7 +6,7 @@ function setThemePreference() {
         $("body").attr("data-theme", "dark_theme");
         $(window).on("load", function () {
             console.log(
-                "%cgood evening, amazing person. 104 103 32 60 51",
+                "%cgood evening. 104 103 32 60 51",
                 "color: rgb(160, 160, 255); font-size: 16px"
             );
         });
@@ -14,7 +14,7 @@ function setThemePreference() {
         $("body").attr("data-theme", "light_theme");
         $(window).on("load", function () {
             console.log(
-                "%cgood morning, amazing person. 104 103 32 60 51",
+                "%cgood morning. 104 103 32 60 51",
                 "color: rgb(252, 87, 96); font-size: 16px"
             );
         });
