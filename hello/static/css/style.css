@@ -102,6 +102,10 @@ input {
     color: var(--color);
 }
 
+.feature-items-subtitle {
+    font-size: 1rem;
+}
+
 .profile-title,
 .feature-items-subtitle {
     font-family: "Raleway", sans-serif;
