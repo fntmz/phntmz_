@@ -1,48 +1,65 @@
-{% extends "base.html" %}
-{% load static %}
-
-{% block title %}
-𝐜𝐨𝐧𝐭𝐚𝐜𝐭
-{% endblock %}
-
+{% extends "base.html" %} {% load static %}
+<!--  -->
+{% block title %} 𝐜𝐨𝐧𝐭𝐚𝐜𝐭 {% endblock %}
+<!--  -->
 {% block css %}
-<link rel="stylesheet" href="{% static 'css/contact.css' %}">
+<link rel="stylesheet" href="{% static 'css/contact.css' %}" />
 {% endblock %}
-
+<!--  -->
 {% block tab-header %}Contact{% endblock %}
+<!--  -->
 {% block tab-header-subtitle %}Leave me a note{% endblock %}
-
+<!--  -->
 {% block content %}
 <div class="body-section">
-  <div class="container" style="padding-top: 150px;">
-    <form action="https://formspree.io/f/meqvwlwr" method="POST">
-      <div class="row">
-        <div class="col-6">
-          <label style="width: 100%;">
-            <span class="contact-label">Name</span><br>
-            <input class="contact-input" type="text" name="name" spellcheck="false" required>
-          </label>
-        </div>
-        <div class="col-6">
-          <label style="width: 100%;">
-            <span class="contact-label">Email</span><br>
-            <input class="contact-input" type="email" name="_replyto" spellcheck="false" required>
-          </label>
-        </div>
-      </div>
-      <label style="margin-top: 20px; width: 100%;">
-        <span class="contact-label">Leave a message</span><br>
-        <textarea style="margin-top: 10px" class="contact-textarea" name="message" rows="5" maxlength="1000"
-          spellcheck="false" required></textarea>
-      </label>
-      <!-- your other form fields go here -->
-      <div class="row d-flex flex-row-reverse" style="margin-top: 20px;">
-        <div class="col-lg-3 col-sm-6">
-          <button class="contact-submit" type="submit">Submit</button>
-        </div>
-      </div>
-    </form>
-  </div>
+    <div class="container" style="padding-top: 150px">
+        <form action="https://formspree.io/f/meqvwlwr" method="POST">
+            <div class="row">
+                <div class="col-6">
+                    <label style="width: 100%">
+                        <span class="contact-label">Name</span><br />
+                        <input
+                            class="contact-input"
+                            type="text"
+                            name="name"
+                            spellcheck="false"
+                            required
+                        />
+                    </label>
+                </div>
+                <div class="col-6">
+                    <label style="width: 100%">
+                        <span class="contact-label">Email</span><br />
+                        <input
+                            class="contact-input"
+                            type="email"
+                            name="_replyto"
+                            spellcheck="false"
+                            required
+                        />
+                    </label>
+                </div>
+            </div>
+            <label style="margin-top: 20px; width: 100%">
+                <span class="contact-label">Leave a message</span><br />
+                <textarea
+                    style="margin-top: 10px"
+                    class="contact-textarea"
+                    name="message"
+                    rows="5"
+                    maxlength="1000"
+                    spellcheck="false"
+                    required
+                ></textarea>
+            </label>
+            <!-- your other form fields go here -->
+            <div class="row d-flex flex-row-reverse" style="margin-top: 20px">
+                <div class="col-lg-3 col-sm-6">
+                    <button class="contact-submit" type="submit">Submit</button>
+                </div>
+            </div>
+        </form>
+    </div>
 </div>
 
 {% endblock %}

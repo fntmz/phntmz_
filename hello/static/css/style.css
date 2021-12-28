@@ -14,6 +14,10 @@ img {
     max-width: 100%;
 }
 
+section {
+    min-height: 50vh;
+}
+
 .bg-black {
     background-color: black;
 }
@@ -47,14 +51,8 @@ button:focus {
     outline: none;
 }
 
+textarea,
 input {
-    font-size: 1rem;
-    font-family: "Zen Kaku Gothic New", sans-serif;
-    caret-color: var(--color);
-    color: black;
-}
-
-textarea {
     font-size: 1rem;
     font-family: "Zen Kaku Gothic New", sans-serif;
     caret-color: var(--color);
@@ -104,14 +102,9 @@ textarea {
     color: var(--color);
 }
 
-.profile-title {
-    font-family: "Raleway", sans-serif;
-    color: var(--color);
-}
-
+.profile-title,
 .feature-items-subtitle {
     font-family: "Raleway", sans-serif;
-    font-size: 1rem;
     color: var(--color);
 }
 
