@@ -58,11 +58,6 @@
     position: relative;
 }
 
-#index-featured-items-subtitle {
-    position: relative;
-    top: -8px;
-}
-
 #index-posts-text {
     display: flex;
     align-items: center;

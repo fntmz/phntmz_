@@ -134,6 +134,12 @@ input {
     background-attachment: fixed;
     width: 0;
     transition: 2s cubic-bezier(0.65, 0.05, 0.36, 1);
+    overflow: hidden;
+}
+
+.index-header-text > div {
+    transform: translateY(100px);
+    transition: transform 1.5s cubic-bezier(0.23, 1, 0.32, 1);
 }
 
 .list-group-item {

@@ -24,4 +24,7 @@ $(window).on("load", function () {
         $(".index-header-text").css("width", "100%");
         window.removeEventListener("scroll", noScroll);
     }, 2000);
+    setTimeout(function () {
+        $(".index-header-text > div").css("transform", "translateY(0)");
+    }, 3000);
 });
