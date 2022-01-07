@@ -28,4 +28,7 @@ $(window).on("load", function () {
         $(".index-header-text > div").css("transform", "translateY(0)");
         $("#gallery-cover > div > div").css("transform", "translateY(0)");
     }, 3000);
+    setTimeout(function () {
+        $("#gallery-cover > div > span").fadeOut(300);
+    }, 4000);
 });

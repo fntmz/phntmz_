@@ -46,7 +46,7 @@ a {
     width: 100%;
     position: fixed;
     z-index: 998;
-    right: -100vw;
+    transform: translateX(100vw);
     top: 0;
     background-color: var(--background-color);
     overflow: hidden;
@@ -62,22 +62,12 @@ a {
     width: 68.75%;
 }
 
-.closebtn {
-    position: absolute;
-    right: 30px;
-    font-size: 4rem;
-    visibility: hidden;
-    opacity: 0;
-    top: -10px;
-    transition: opacity 0.3s, color 0.3s;
-}
-
 #menu-button {
     transform: translateY(-100px);
     right: 30px;
     position: fixed;
     font-size: 4rem;
-    z-index: 997;
+    z-index: 999;
     transition: all 0.3s;
 }
 

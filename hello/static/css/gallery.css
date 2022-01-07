@@ -20,6 +20,19 @@
     justify-content: center;
 }
 
+#gallery-cover > div {
+    position: relative;
+}
+
+#gallery-cover > div > span {
+    background-color: white;
+    height: 1px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
 .gallery-border-box-position {
     position: absolute;
     left: 0;
@@ -36,7 +49,7 @@
     left: 0;
     width: 100vw;
     height: 100vh;
-    z-index: 999;
+    z-index: 1000;
     pointer-events: none;
 }
 
