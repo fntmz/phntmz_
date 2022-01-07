@@ -82,7 +82,6 @@ a {
 }
 
 #navbar-brand {
-    display: none;
     color: var(--color);
     position: absolute;
     top: 25px;

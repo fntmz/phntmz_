@@ -2,7 +2,7 @@ function openNav() {
     $(".overlay").css("right", "0");
 
     setTimeout(function () {
-        $("#navbar-brand").fadeIn(500);
+        $("#navbar-brand > div").css("transform", "translateY(0)");
     }, 500);
 
     for (let i = 0; i < 6; i++) {
@@ -39,7 +39,7 @@ function closeNav() {
         }, 200 * i + 500);
     }
     setTimeout(function () {
-        $("#navbar-brand").fadeOut(500);
+        $("#navbar-brand > div").css("transform", "translateY(48px)");
     }, 1800);
     setTimeout(function () {
         $(".overlay").css("right", "-100vw");

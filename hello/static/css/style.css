@@ -134,12 +134,30 @@ input {
     background-attachment: fixed;
     width: 0;
     transition: 2s cubic-bezier(0.65, 0.05, 0.36, 1);
-    overflow: hidden;
+}
+
+#gallery-cover > div > div,
+#navbar-brand > div,
+.index-header-text > div {
+    transition: transform 1.5s cubic-bezier(0.23, 1, 0.32, 1);
 }
 
 .index-header-text > div {
     transform: translateY(100px);
-    transition: transform 1.5s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+#gallery-cover > div > div {
+    transform: translateY(60px);
+}
+
+#navbar-brand > div {
+    transform: translateY(48px);
+}
+
+.index-header-text,
+#gallery-cover > div,
+#navbar-brand {
+    overflow: hidden;
 }
 
 .list-group-item {
@@ -267,4 +285,10 @@ input {
 .base-body {
     background-color: var(--background-color);
     z-index: -1;
+}
+
+@media only screen and (max-width: 600px) {
+    #gallery-cover > div > div {
+        transform: translateY(561px);
+    }
 }

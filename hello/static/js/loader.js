@@ -26,5 +26,6 @@ $(window).on("load", function () {
     }, 2000);
     setTimeout(function () {
         $(".index-header-text > div").css("transform", "translateY(0)");
+        $("#gallery-cover > div > div").css("transform", "translateY(0)");
     }, 3000);
 });

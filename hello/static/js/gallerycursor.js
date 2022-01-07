@@ -8,7 +8,7 @@ const onMouseMove = (e) => {
 
 document.addEventListener("mousemove", onMouseMove);
 
-$(".btn, #menu-button, a, #cover-text, .navbar-item").hover(
+$(".btn, #menu-button, a, #gallery-cover > div > div, .navbar-item").hover(
     function () {
         $("#gallery-cursor").addClass("cursor-hover");
     },
