@@ -21,6 +21,7 @@ function setThemePreference() {
     }
 
     if (currentHour != 0) {
+        $("#filter").remove();
         $(".overlay-content > .navbar-item:last-child").remove();
     }
 

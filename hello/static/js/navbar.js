@@ -7,7 +7,7 @@ function toggleNavbar() {
 
         setTimeout(function () {
             $("#navbar-brand > div").css("transform", "translateY(0)");
-        }, 300);
+        }, 400);
 
         for (let i = 0; i < 6; i++) {
             setTimeout(function () {
