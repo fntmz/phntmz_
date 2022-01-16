@@ -21,10 +21,12 @@ function setThemePreference() {
     }
 
     if (currentHour != 0) {
+        $(".gallery-notif").remove()
         $(".overlay-content > .navbar-item:last-child").remove();
     }
 
     if (window.location.href.indexOf("gallery") > -1) {
+        $("#gallery-notif").remove()
         if (currentHour != 0) {
             $("body").attr("data-theme", "dark_theme");
             $("#menu-button").css("transform", "translateY(-10px)");

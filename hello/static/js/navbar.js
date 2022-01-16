@@ -3,11 +3,12 @@ var toggler = false
 function toggleNavbar() {
     if (toggler == false) {
         toggler = true;
-        $(".overlay").css("transform", "translateX(0)");
+        $("main > *").css("transform", "scale(.7)")
+        $(".overlay").css("transform", "translateY(0)");
 
         setTimeout(function () {
             $("#navbar-brand > div").css("transform", "translateY(0)");
-        }, 400);
+        }, 800);
 
         for (let i = 0; i < 6; i++) {
             setTimeout(function () {
@@ -15,12 +16,12 @@ function toggleNavbar() {
                 $(".overlay-content > .navbar-item:nth-child(" + i + ")").css(
                     "transform", "translateY(0)"
                 );
-            }, 200 * i + 400);
+            }, 200 * i + 800);
         }
 
         setTimeout(function () {
             $("#navbar-socials").css("opacity", "1");
-        }, 1500);
+        }, 2000);
     } else {
         toggler = false;
         $("#navbar-socials").css("opacity", "0");
@@ -36,7 +37,8 @@ function toggleNavbar() {
             $("#navbar-brand > div").css("transform", "translateY(48px)");
         }, 1100);
         setTimeout(function () {
-            $(".overlay").css("transform", "translateX(100vw)");
+            $(".overlay").css("transform", "translateY(-100vh)");
+            $("main > *").css("transform", "scale(1)")
         }, 1500);
     }
 }

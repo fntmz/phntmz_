@@ -3,7 +3,7 @@
     left: 0;
     width: 100vw;
     height: 1px;
-    bottom: 15vh;
+    bottom: 20vh;
 }
 
 section {
@@ -11,6 +11,7 @@ section {
 }
 
 .index-header {
+    position: relative;
     background-color: var(--background-color);
     height: 50vh;
     width: 100vw;

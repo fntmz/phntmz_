@@ -10,12 +10,12 @@ body {
     margin: 0;
 }
 
-img {
-    max-width: 100%;
+main * {
+    transition: transform 1s;
 }
 
-section {
-    min-height: 50vh;
+img {
+    max-width: 100%;
 }
 
 .bg-black {
@@ -80,6 +80,52 @@ input {
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
+}
+
+#gallery-notif > *:first-child {
+    height: 0;
+    background-color: var(--color);
+    width: 2px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: height 1s;
+}
+
+#gallery-notif {
+    display: grid;
+    align-content: center;
+    height: 50px;
+    position: fixed;
+    bottom: 30px;
+    left: 60px;
+    z-index: 1;
+    color: var(--color);
+    font-family: "Montserrat", sans-serif;
+}
+
+#gallery-url {
+    display: block;
+    font-weight: 700;
+    transition: color 0.3s, transform 1s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+#notif-close {
+    position: absolute;
+    left: -30px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#gallery-notif-description {
+    font-size: 10px;
+    transition-delay: 50ms !important;
+    transition: transform 1s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+#gallery-url,
+#gallery-notif-description {
+    padding-left: 10px;
 }
 
 #header-menu {
@@ -164,21 +210,21 @@ section {
     transition: transform 1.5s cubic-bezier(0.23, 1, 0.32, 1);
 }
 
-.index-header-text > div {
-    transform: translateY(100px);
-}
-
-#gallery-cover > div > div {
-    transform: translateY(60px);
-}
-
+.index-header-text > div,
+#gallery-cover > div > div,
 #navbar-brand > div {
-    transform: translateY(48px);
+    transform: translateY(100%);
+}
+
+#gallery-url,
+#gallery-notif-description {
+    transform: translateX(-100%);
 }
 
 .index-header-text,
 #gallery-cover > div,
-#navbar-brand {
+#navbar-brand,
+#gallery-notif > div {
     overflow: hidden;
 }
 
@@ -189,7 +235,7 @@ section {
 .scroll-down {
     position: absolute;
     left: 50%;
-    bottom: 7vh;
+    bottom: 12vh;
     display: block;
     text-align: center;
     width: 12px;
@@ -202,142 +248,6 @@ section {
     -webkit-animation: fade_move_down 4s ease-in-out infinite;
     -moz-animation: fade_move_down 4s ease-in-out infinite;
     animation: fade_move_down 4s ease-in-out infinite;
-}
-
-@-webkit-keyframes fade_move_down {
-    0% {
-        -webkit-transform: translate(0, -10px) rotate(45deg);
-        opacity: 0;
-    }
-    50% {
-        opacity: 1;
-    }
-    100% {
-        -webkit-transform: translate(0, 10px) rotate(45deg);
-        opacity: 0;
-    }
-}
-@-moz-keyframes fade_move_down {
-    0% {
-        -moz-transform: translate(0, -10px) rotate(45deg);
-        opacity: 0;
-    }
-    50% {
-        opacity: 1;
-    }
-    100% {
-        -moz-transform: translate(0, 10px) rotate(45deg);
-        opacity: 0;
-    }
-}
-@keyframes fade_move_down {
-    0% {
-        transform: translate(0, -10px) rotate(45deg);
-        opacity: 0;
-    }
-    50% {
-        opacity: 1;
-    }
-    100% {
-        transform: translate(0, 10px) rotate(45deg);
-        opacity: 0;
-    }
-}
-
-@keyframes flicker {
-    0% {
-        opacity: 1;
-    }
-    4% {
-        opacity: 0.9;
-    }
-    6% {
-        opacity: 0.85;
-    }
-    8% {
-        opacity: 0.95;
-    }
-    10% {
-        opacity: 0.9;
-    }
-    11% {
-        opacity: 0.922;
-    }
-    12% {
-        opacity: 0.9;
-    }
-    14% {
-        opacity: 0.95;
-    }
-    16% {
-        opacity: 0.98;
-    }
-    17% {
-        opacity: 0.9;
-    }
-    19% {
-        opacity: 0.93;
-    }
-    20% {
-        opacity: 0.99;
-    }
-    24% {
-        opacity: 1;
-    }
-    26% {
-        opacity: 0.94;
-    }
-    28% {
-        opacity: 0.98;
-    }
-    37% {
-        opacity: 0.93;
-    }
-    38% {
-        opacity: 0.5;
-    }
-    39% {
-        opacity: 0.96;
-    }
-    42% {
-        opacity: 1;
-    }
-    44% {
-        opacity: 0.97;
-    }
-    46% {
-        opacity: 0.94;
-    }
-    56% {
-        opacity: 0.9;
-    }
-    58% {
-        opacity: 0.9;
-    }
-    60% {
-        opacity: 0.99;
-    }
-    68% {
-        opacity: 1;
-    }
-    70% {
-        opacity: 0.9;
-    }
-    72% {
-        opacity: 0.95;
-    }
-    93% {
-        opacity: 0.93;
-    }
-    95% {
-        opacity: 0.95;
-    }
-    97% {
-        opacity: 0.93;
-    }
-    to {
-        opacity: 1;
-    }
 }
 
 .border-box {

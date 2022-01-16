@@ -8,7 +8,7 @@ from django.templatetags.static import static
 context = {
     "changelog": [
         {"date": "16.01.2022",
-            "detail": "completely reworked the entire styling on base and index. removed a lot of code"},
+            "detail": "completely reworked the entire styling on base and index. removed a lot of code. also added animation on the event of opening the menu"},
         {"date": "07.01.2022",
             "detail": "added more animation on the gallery page"},
         {"date": "06.01.2022",
@@ -44,7 +44,7 @@ context = {
         {"date": "20.11.2021",
             "detail": "changed caret-color on input and textarea fields from transparent to white for visibility and accessibility reasons. this was originally transparent to improve aesthetics but it can tick people off"},
         {"date": "19.11.2021",
-            "detail": "added a few images that can be revealed by clicking on the buttons on the gallery page. the current version of the gallery page is the final layout, but the content are still far from being finished. this is only the foundation for more work to be dont in the future"},
+            "detail": "added a few images that can be revealed by clicking on the buttons on the gallery page. the current version of the gallery page is the final layout, but the content are still far from being finished. this is only the foundation for more work to be done in the future"},
         {"date": "18.11.2021",
             "detail": "added four buttons in the gallery page that is going to reveal more content. still not sure what to put on the gallery page to make it worth the 1-hour midnight only exclusiveness but suggestions are appreciated"},
         {"date": "17.11.2021",
