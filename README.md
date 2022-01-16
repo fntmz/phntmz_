@@ -2,4 +2,5 @@
 
 Repository of the source code for my [website](https://devcenter.heroku.com/articles/getting-started-with-python).
 
-> have a nice day. 104 103 32 60 51
+- Framework: [Django](https://www.djangoproject.com)
+- Languages: [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML), [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS), [JS](https://www.javascript.com/), [Python](https://www.python.org/)
