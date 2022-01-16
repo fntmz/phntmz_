@@ -21,7 +21,7 @@ function setThemePreference() {
     }
 
     if (currentHour != 0) {
-        $(".gallery-notif").remove()
+        $("#gallery-notif").remove()
         $(".overlay-content > .navbar-item:last-child").remove();
     }
 

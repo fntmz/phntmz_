@@ -15,7 +15,8 @@ $(window).on("scroll", function () {
 
 $(window).on("load", function () {
     setTimeout(function () {
-        $(".loader-wrapper").fadeOut("slow");
+        $(".loader-wrapper").css("transform", "translateY(-100vh)");
+        $("main > *").css("transform", "scale(1)")
         $(".hr-animate").css("width", "25%");
         $(".index-header-text").css("width", "100%");
         $("#gallery-notif > *:first-child").css("height", "100%");
