@@ -2,7 +2,7 @@ var s1 = document.getElementById("section-1");
 var s2 = document.getElementById("section-2");
 var s3 = document.getElementById("section-3");
 var s4 = document.getElementById("section-4");
-var sd = document.getElementById("gallery-scrolldown");
+var sd = document.getElementById("gallery-scroll-down");
 
 function toggleSection1() {
     if (s1.style.display == "initial") {

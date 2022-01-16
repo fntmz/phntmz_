@@ -187,18 +187,30 @@
         </div>
     </div>
 
-    <main>
-        <!-- gallery -->
-        <div id="gallery-notif">
-            <div></div>
-            <a href="javascript:void(0)" onclick="togglenotif()" id="notif-close">&times;</a>
-            <div>
-                <div><a href="{% url 'gallery' %}" id="gallery-url">midnight gallery</a></div>
-            </div>
-            <div>
-                <div id="gallery-notif-description">only available at midnight</div>
-            </div>
+    <!-- gallery -->
+    <div id="gallery-notif">
+        <div></div>
+        <a href="javascript:void(0)" onclick="togglenotif()" id="notif-close">&times;</a>
+        <div>
+            <div><a href="{% url 'gallery' %}" id="gallery-url">midnight gallery</a></div>
         </div>
+        <div>
+            <div id="gallery-notif-description">only available at midnight</div>
+        </div>
+    </div>
+
+    <div id="gallery-cover" class="no-select">
+        <div>
+            <div>M I D N I G H T // G A L L E R Y</div>
+            <span></span>
+        </div>
+    </div>
+
+    <div id="cursor-area">
+        <div id="gallery-cursor"></div>
+    </div>
+
+    <main>
         <div class="container tab-header">
             <div id="header-menu">
                 <a href="{% url 'index' %}">Home</a>

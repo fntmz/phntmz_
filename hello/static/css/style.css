@@ -10,8 +10,7 @@ body {
     margin: 0;
 }
 
-main > * {
-    transform: scale(0.7);
+main {
     transition: transform 1s;
 }
 
@@ -236,7 +235,6 @@ section {
 .scroll-down {
     position: absolute;
     left: 50%;
-    bottom: 12vh;
     display: block;
     text-align: center;
     width: 12px;

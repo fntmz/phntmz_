@@ -76,3 +76,7 @@ section {
 #index-featured-url {
     transition: color 0.3s, right 0.3s ease-out;
 }
+
+#index-scroll-down {
+    bottom: 12vh;
+}

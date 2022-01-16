@@ -3,7 +3,7 @@ var toggler = false
 function toggleNavbar() {
     if (toggler == false) {
         toggler = true;
-        $("main > *").css("transform", "scale(.7)")
+        $("main").css("transform", "scale(.5)")
         $(".overlay").css("transform", "translateY(0)");
 
         setTimeout(function () {
@@ -38,7 +38,9 @@ function toggleNavbar() {
         }, 1100);
         setTimeout(function () {
             $(".overlay").css("transform", "translateY(-100vh)");
-            $("main > *").css("transform", "scale(1)")
         }, 1500);
+        setTimeout(function () {
+            $("main").css("transform", "scale(1)")
+        }, 1700)
     }
 }

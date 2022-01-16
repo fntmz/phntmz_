@@ -14,13 +14,12 @@ $(window).on("scroll", function () {
 });
 
 $(window).on("load", function () {
+    window.removeEventListener("scroll", noScroll);
     setTimeout(function () {
         $(".loader-wrapper").css("transform", "translateY(-100vh)");
-        $("main > *").css("transform", "scale(1)")
         $(".hr-animate").css("width", "25%");
         $(".index-header-text").css("width", "100%");
         $("#gallery-notif > *:first-child").css("height", "100%");
-        window.removeEventListener("scroll", noScroll);
     }, 2000);
     setTimeout(function () {
         $('#gallery-url, #gallery-notif-description').css("transform", "translateX(0)");

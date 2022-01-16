@@ -1,3 +1,8 @@
+section {
+    min-height: 0 !important;
+    padding: 0 !important;
+}
+
 #error-page-message {
     position: relative;
     font-family: "Montserrat", sans-serif;
