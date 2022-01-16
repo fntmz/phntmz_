@@ -186,37 +186,23 @@
             </div>
         </div>
 
-        <div class="tab-header">
-            <div class="container">
-                <ul class="
-                            list-group list-group-horizontal
-                            d-flex
-                            justify-content-between
-                        ">
-                    <li class="list-group-item border-0">
-                        <a href="{% url 'index' %}">Home</a>
-                    </li>
-                    <li class="list-group-item border-0">
-                        <a href="{% url 'posts' %}">Posts</a>
-                    </li>
-                    <li class="list-group-item border-0">
-                        <a href="{% url 'contact' %}">Contact</a>
-                    </li>
-                    <li class="list-group-item border-0">
-                        <a href="{% url 'profile' %}">Profile</a>
-                    </li>
-                </ul>
-                <div class="row" id="feature-header">
-                    <div class="col-lg-6">
-                        <h1 class="index-header-text">
-                            <div>{% block tab-header %}{% endblock %}</div>
-                        </h1>
-                        <hr class="hr-animate" />
-                    </div>
-                    <div class="col-lg-5 offset-lg-1">
-                        <div class="feature-items">
-                            {% block tab-header-subtitle %}{% endblock %}
-                        </div>
+        <div class="container tab-header">
+            <div id="header-menu">
+                <a href="{% url 'index' %}">Home</a>
+                <a href="{% url 'posts' %}">Posts</a>
+                <a href="{% url 'contact' %}">Contact</a>
+                <a href="{% url 'profile' %}">Profile</a>
+            </div>
+            <div class="row">
+                <div class="col-lg-6">
+                    <h1 class="index-header-text">
+                        <div>{% block tab-header %}{% endblock %}</div>
+                    </h1>
+                    <hr class="hr-animate" />
+                </div>
+                <div class="col-lg-5 offset-lg-1">
+                    <div class="feature-items">
+                        {% block tab-header-subtitle %}{% endblock %}
                     </div>
                 </div>
             </div>

@@ -6,10 +6,19 @@
     bottom: 15vh;
 }
 
+section {
+    padding-top: 0 !important;
+}
+
+.index-header {
+    background-color: var(--background-color);
+    height: 50vh;
+    width: 100vw;
+}
+
 #index-body {
     height: 100%;
-    padding-top: 150px;
-    padding-bottom: 150px;
+    padding-top: 150px !important;
 }
 
 .index-posts-content {

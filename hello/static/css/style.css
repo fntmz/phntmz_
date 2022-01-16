@@ -31,6 +31,10 @@ a:hover {
     color: var(--a-highlight) !important;
 }
 
+.container {
+    padding: 0 !important;
+}
+
 hr {
     opacity: 1;
 }
@@ -78,16 +82,34 @@ input {
     user-select: none;
 }
 
+#header-menu {
+    width: 100%;
+    position: absolute;
+    top: 2.5vh;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .tab-header {
+    position: relative;
     height: 50vh;
-    margin: 0;
     background-color: var(--background-color);
     font-family: "Montserrat", sans-serif;
     font-weight: 700;
-    padding-top: 2.5vh;
+    display: grid;
+    align-content: center;
 }
 
-.body-section {
+.tab-header > *:last-child {
+    position: relative;
+    top: 2.5vh;
+}
+
+section {
+    padding-top: 150px;
+    padding-bottom: 150px;
     background-image: var(--background-image);
     background-attachment: fixed;
     background-size: cover;

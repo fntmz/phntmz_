@@ -16,20 +16,22 @@
 {% endblock %}
 
 {% block content %}
-<div class="container" style="height: 50vh;">
-  <div class="row" style="margin-top: 5vh">
-    <div class="col-lg-6">
-      <div>
-        <h1 class="index-header-text">
-          <div>Socials</div>
-        </h1>
-        <hr class="hr-animate">
+<div class="index-header">
+  <div class="container">
+    <div class="row" style="margin-top: 5vh">
+      <div class="col-lg-6">
+        <div>
+          <h1 class="index-header-text">
+            <div>Socials</div>
+          </h1>
+          <hr class="hr-animate">
+        </div>
       </div>
-    </div>
-    <div class="col-lg-5 offset-lg-1">
-      <div style="padding-top: 2vh; padding-right: 3vw;">
-        <a href="https://linktr.ee/phntmz_" target="_blank" class="feature-items easing-right">Linktree</a>
-        <div class="feature-items-subtitle">everything about me. basically</div>
+      <div class="col-lg-5 offset-lg-1">
+        <div style="padding-top: 2vh; padding-right: 3vw;">
+          <a href="https://linktr.ee/phntmz_" target="_blank" class="feature-items easing-right">Linktree</a>
+          <div class="feature-items-subtitle">everything about me. basically</div>
+        </div>
       </div>
     </div>
   </div>
@@ -37,18 +39,16 @@
   <span class="scroll-down"></span>
 </div>
 
-<div class="body-section">
-  <div class="container" id="index-body">
-    <div id="index-latest-posts">L A T E S T // P O S T</div>
-    <div class="index-posts">
-      <img src="{{ posts.0.img }}" alt="">
-      <div class="index-posts-content">
-        <a href="{{ posts.0.url }}" target="_blank">
-          <div class="index-posts-title easing-right">{{ posts.0.title }}</div>
-        </a>
-        <div class="index-posts-subtitle">{{ posts.0.subtitle }}</div>
-        <div class="index-posts-date">posted on {{ posts.0.date }}</div>
-      </div>
+<div class="container" id="index-body">
+  <div id="index-latest-posts">L A T E S T // P O S T</div>
+  <div class="index-posts">
+    <img src="{{ posts.0.img }}" alt="">
+    <div class="index-posts-content">
+      <a href="{{ posts.0.url }}" target="_blank">
+        <div class="index-posts-title easing-right">{{ posts.0.title }}</div>
+      </a>
+      <div class="index-posts-subtitle">{{ posts.0.subtitle }}</div>
+      <div class="index-posts-date">posted on {{ posts.0.date }}</div>
     </div>
   </div>
 </div>
