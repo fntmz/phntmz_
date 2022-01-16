@@ -10,8 +10,7 @@ body {
     margin: 0;
 }
 
-main > * {
-    transform: scale(0.7);
+main {
     transition: transform 1s;
 }
 

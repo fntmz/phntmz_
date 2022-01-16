@@ -39,6 +39,7 @@ section {
 }
 
 #gallery-body {
+    position: relative;
     height: 50vh;
     background-color: var(--background-color);
     display: grid;
@@ -48,9 +49,9 @@ section {
 .gallery-border-box-position {
     position: absolute;
     left: 0;
+    top: 0;
     width: 100vw;
     height: 1px;
-    top: 50vh;
 }
 
 #cursor-area {
