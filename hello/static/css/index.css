@@ -3,7 +3,7 @@
     left: 0;
     width: 100vw;
     height: 1px;
-    bottom: 20vh;
+    bottom: 16vh;
 }
 
 section {
@@ -11,6 +11,7 @@ section {
 }
 
 .index-header {
+    padding-top: 5vh;
     position: relative;
     background-color: var(--background-color);
     height: 50vh;
@@ -78,5 +79,9 @@ section {
 }
 
 #index-scroll-down {
-    bottom: 12vh;
+    bottom: 8vh;
+}
+
+#index-second-header {
+    padding-top: 2vh;
 }
