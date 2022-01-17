@@ -38,9 +38,7 @@ function toggleNavbar() {
         }, 1100);
         setTimeout(function () {
             $(".overlay").css("transform", "translateY(-100vh)");
-        }, 1500);
-        setTimeout(function () {
             $("main").css("transform", "scale(1)")
-        }, 1700)
+        }, 1500);
     }
 }

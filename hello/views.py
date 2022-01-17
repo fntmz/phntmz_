@@ -7,6 +7,8 @@ from django.templatetags.static import static
 
 context = {
     "changelog": [
+        {"date": "17.01.2022",
+            "detail": "minor changes to menu animation"},
         {"date": "16.01.2022",
             "detail": "completely reworked the entire styling on base and index. removed a lot of code. also added animation on the event of opening the menu"},
         {"date": "07.01.2022",
