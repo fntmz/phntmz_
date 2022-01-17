@@ -48,7 +48,7 @@ a {
     z-index: 998;
     transform: translateY(-100vh);
     top: 0;
-    background-color: var(--background-color);
+    backdrop-filter: blur(50px);
     overflow: hidden;
     transition: transform 1s cubic-bezier(0.8, 0, 0.2, 1);
     border-bottom: 2px solid var(--color);
