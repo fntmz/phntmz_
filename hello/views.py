@@ -74,19 +74,19 @@ context = {
         {"date": "24.10.2021",
             "detail": "added a changelog, removed dropdown tabs in the menu, and changed the body background image"},
     ],
-    "featured": [
-        {"title": "「 blue 」 reverbed", "subtitle": "on my soundcloud",
+    "featured": 
+        {"title": "「 blue 」 reverbed", "subtitle": "a yoasobi mix.",
             "url": "https://soundcloud.com/fntmz/gunjou-reverb"}
-    ],
+    ,
     "posts": [
         {"title": "「 blue 」 reverbed",
             "date": "11.11.2021",
-            "subtitle": "a little edit i tried to make in adobe audition. i think it sounds pretty nice",
+            "subtitle": "had some fun with music",
             "img": static('img/posts/posts-gunjou.png'),
             "url": "https://soundcloud.com/fntmz/gunjou-reverb"},
         {"title": "MIDNIGHT // GALLERY",
             "date": "09.11.2021",
-            "subtitle": "displays visually-satisfying photos that are captured by me (and my phone). all images found on the gallery page are posted on my instagram. only available at 0:00",
+            "subtitle": "cool photography stuff. only available at 0:00",
             "img": static('img/posts/posts-midnight-gallery.png'),
             "url": "https://phntmz.herokuapp.com/gallery"},
         {"title": "CONTROLLERS",
