@@ -117,6 +117,7 @@ section {
     content: "";
     position: absolute;
     transition: inherit;
+    z-index: -1;
 }
 
 .btn:hover {

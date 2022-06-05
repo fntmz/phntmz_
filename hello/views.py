@@ -8,7 +8,7 @@ from django.templatetags.static import static
 context = {
     "changelog": [
         {"date": "05.06.2022",
-            "detail": "reverted navbar background to solid black color. the blur filter caused compatibility and performance issues"},
+            "detail": "reverted navbar background to solid black color. the blur filter caused compatibility and performance issues. also fixed layering issues with buttons on gallery"},
         {"date": "17.01.2022",
             "detail": "minor changes to menu animation"},
         {"date": "16.01.2022",
