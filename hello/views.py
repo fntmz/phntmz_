@@ -100,25 +100,10 @@ context = {
             "identity": "phntmz_",
             "img": static('img/profile/phntmz.jpg'),
             "subtitle": "autobiography",
-            "content": """<p>I am a high-school student at the time of writing. I am
-            from Vietnam and I have lived on earth for 14 years. I like computers and I had my first interaction with
-            computer programming since middle-school, not that long ago. I have been developing my skills in Python,
-            HTML, JavaScript, C++, and the two website frameworks Django and React. I created this website as nothing
-            more than a weekend project so it is nice if someone actually likes it.</p><p>That's all, thanks for visiting.</p>""",
+            "content": """<p>hey, i'm 15 by the time of writing. i'm a high school student who is addicted to computers. i've dumped everything cool i made with a computer here, including this website, this is the <a href="https://github.com/fntmz/phntmz_">source code</a>. </p><p>thanks for visiting. 104 103 32 60 51</p>""",
             "author": "phntmz_",
-            "date": "October 23 2021",
+            "date": "October 23 2021, updated on June 06, 2022",
             "projects": "https://phntmz.herokuapp.com/projects"},
-        # {"name": "hieu minh nguyen",
-        #     "identity": "phntmz_",
-        #     "img": static('img/profile/futaba.jpg'),
-        #     "subtitle": "autobiography",
-        #     "content": """<p>I am a high-school student at the time of writing. I am
-        #     from Vietnam and I have lived on earth for 14 years. I like computers and I had my first interaction with
-        #     computer programming since middle-school, not that long ago. I have been developing my skills in Python,
-        #     HTML, JavaScript, C++, and the two website frameworks Django and React. I created this website as nothing
-        #     more than a weekend project so it is nice if someone actually likes it.</p><p>That's all, thanks for visiting.</p>""",
-        #     "author": "phntmz_",
-        #     "date": "October 23 2021"},
     ]
 }
 
