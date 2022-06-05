@@ -7,6 +7,8 @@ from django.templatetags.static import static
 
 context = {
     "changelog": [
+        {"date": "05.06.2022",
+            "detail": "reverted navbar background to solid black color. the blur filter caused compatibility and performance issues"},
         {"date": "17.01.2022",
             "detail": "minor changes to menu animation"},
         {"date": "16.01.2022",
@@ -44,13 +46,13 @@ context = {
         {"date": "21.11.2021",
             "detail": "changed the animation of the third and fourth button on the gallery page."},
         {"date": "20.11.2021",
-            "detail": "changed caret-color on input and textarea fields from transparent to white for visibility and accessibility reasons. this was originally transparent to improve aesthetics but it can tick people off"},
+            "detail": "changed caret-color on input and textarea fields from transparent to white for visibility and accessibility reasons. this was originally transparent to improve aesthetics"},
         {"date": "19.11.2021",
-            "detail": "added a few images that can be revealed by clicking on the buttons on the gallery page. the current version of the gallery page is the final layout, but the content are still far from being finished. this is only the foundation for more work to be done in the future"},
+            "detail": "added a few images that can be revealed by clicking on the buttons on the gallery page"},
         {"date": "18.11.2021",
-            "detail": "added four buttons in the gallery page that is going to reveal more content. still not sure what to put on the gallery page to make it worth the 1-hour midnight only exclusiveness but suggestions are appreciated"},
+            "detail": "added content to gallery"},
         {"date": "17.11.2021",
-            "detail": "successfully added a custom cursor into the gallery page after an absurd amount of time. honestly did not know why it took me more 2 days to work it out, but i finally found a very helpful answer on stackoverflow which helped me a lot in adding a very insignificant part of the website but i think its very cool for some reason"},
+            "detail": "added custom cursor to gallery page"},
         {"date": "16.11.2021",
             "detail": "added some fonts (noto sans jp, roboto condensed, josefin sans), changed the font weights on the some changelog elements, input and textarea tags, and optimized the overall css of some elements on the changelog page"},
         {"date": "15.11.2021",
