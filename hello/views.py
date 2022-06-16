@@ -6,8 +6,6 @@ from django.templatetags.static import static
 
 context = {
     "changelog": [
-        {"date": "16.06.2022",
-            "detail": "when navigating to a page from another page, no longer displays the loading screen"},
         {"date": "14.06.2022",
             "detail": "updated metadata"},
         {"date": "06.06.2022",
