@@ -13,20 +13,36 @@ $(window).on("scroll", function () {
     }
 });
 
+
 $(window).on("load", function () {
     window.removeEventListener("scroll", noScroll);
-    setTimeout(function () {
-        $(".loader-wrapper").css("transform", "translateY(-100vh)");
+    if (document.referrer.includes("phntmz.herokuapp.com")) {
+        $(".loader-wrapper").css("display", "none");
         $(".hr-animate").css("width", "25%");
         $(".index-header-text").css("width", "100%");
         $("#gallery-notif > *:first-child").css("height", "100%");
-    }, 2000);
-    setTimeout(function () {
-        $('#gallery-url, #gallery-notif-description').css("transform", "translateX(0)");
-        $(".index-header-text > div").css("transform", "translateY(0)");
-        $("#gallery-cover > div > div").css("transform", "translateY(0)");
-    }, 3000);
-    setTimeout(function () {
-        $("#gallery-cover > div > span").fadeOut(300);
-    }, 4000);
-});
+        setTimeout(function () {
+            $('#gallery-url, #gallery-notif-description').css("transform", "translateX(0)");
+            $(".index-header-text > div").css("transform", "translateY(0)");
+            $("#gallery-cover > div > div").css("transform", "translateY(0)");
+        }, 1000);
+        setTimeout(function () {
+            $("#gallery-cover > div > span").fadeOut(300);
+        }, 2000);
+    } else {
+        setTimeout(function () {
+            $(".loader-wrapper").css("transform", "translateY(-100vh)");
+            $(".hr-animate").css("width", "25%");
+            $(".index-header-text").css("width", "100%");
+            $("#gallery-notif > *:first-child").css("height", "100%");
+        }, 2000);
+        setTimeout(function () {
+            $('#gallery-url, #gallery-notif-description').css("transform", "translateX(0)");
+            $(".index-header-text > div").css("transform", "translateY(0)");
+            $("#gallery-cover > div > div").css("transform", "translateY(0)");
+        }, 3000);
+        setTimeout(function () {
+            $("#gallery-cover > div > span").fadeOut(300);
+        }, 4000);
+    }
+})
