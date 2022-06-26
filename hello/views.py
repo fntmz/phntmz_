@@ -6,6 +6,8 @@ from django.templatetags.static import static
 
 context = {
     "changelog": [
+        {"date":
+            "new domain. address is https://www.phntmz.com"},
         {"date": "14.06.2022",
             "detail": "updated metadata"},
         {"date": "06.06.2022",
@@ -74,30 +76,15 @@ context = {
     "posts": [
         {"title": "「 blue 」 reverbed",
             "date": "11.11.2021",
-            "subtitle": "had some fun with music",
+            "subtitle": "a yoasobi mix",
             "img": static('img/posts/posts-gunjou.png'),
             "url": "https://soundcloud.com/fntmz/gunjou-reverb"},
         {"title": "MIDNIGHT // GALLERY",
             "date": "09.11.2021",
             "subtitle": "cool photography stuff. only available at 0:00",
             "img": static('img/posts/posts-midnight-gallery.png'),
-            "url": "https://phntmz.herokuapp.com/gallery"},
-        {"title": "CONTROLLERS",
-            "date": "23.05.2021",
-            "subtitle": "the org-less esports team. with players in valorant, apex legends and counter-strike",
-            "img": static('img/posts/posts-controllers.png'),
-            "url": "https://discord.gg/Ysy2SV88kv"},
+            "url": "https://www.phntmz.com/gallery"},
     ],
-    "profile": [
-        {"name": "hieu minh nguyen",
-            "identity": "phntmz_",
-            "img": static('img/profile/phntmz.jpg'),
-            "subtitle": "autobiography",
-            "content": """<p>hey, i'm 15 by the time of writing. i'm a high school student who is addicted to computers. i've dumped everything cool i made with a computer here, including this website, this is the <a href="https://github.com/fntmz/phntmz_">source code</a>. </p><p>thanks for visiting. 104 103 32 60 51</p>""",
-            "author": "phntmz_",
-            "date": "October 23 2021, updated on June 06, 2022",
-            "projects": "https://phntmz.herokuapp.com/projects"},
-    ]
 }
 
 
