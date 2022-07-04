@@ -9,7 +9,7 @@ context = {
         {"date": "05.07.2022",
             "detail": "made the line before and after gallery link in menu red instead of purple"},
         {"date": "25.06.2022",
-            "detail": "new domain. address is https://www.phntmz.com"},
+            "detail": "new website domain. users will be redirected to https://www.phntmz.com when visiting the old url"},
         {"date": "14.06.2022",
             "detail": "updated metadata"},
         {"date": "06.06.2022",
