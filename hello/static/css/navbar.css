@@ -35,6 +35,11 @@ a {
     transition: width 0.3s;
 }
 
+#gallery-link:after,
+#gallery-link:before {
+    border-top: 2px solid rgb(252, 87, 96);
+}
+
 .navbar-item:hover:before,
 .navbar-item:hover:after {
     width: 50%;
