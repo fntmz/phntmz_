@@ -7,7 +7,7 @@ from django.templatetags.static import static
 context = {
     "changelog": [
         {"date": "05.07.2022",
-            "detail": "made the line before and after gallery link in menu red instead of purple"},
+            "detail": "improved visuals in menu. fixed an issue where the featured link was not working"},
         {"date": "25.06.2022",
             "detail": "new website domain. users will be redirected to https://www.phntmz.com when visiting the old url"},
         {"date": "14.06.2022",
@@ -72,8 +72,8 @@ context = {
             "detail": "added a changelog, removed dropdown tabs from the menu, and changed the body background image"},
     ],
     "featured": 
-        {"title": "「 blue 」 reverbed", "subtitle": "a yoasobi mix.",
-            "url": "https://soundcloud.com/fntmz/gunjou-reverb"}
+        {"title": "M I D N I G H T // G A L L E R Y", "subtitle": "only available at midnight.",
+            "url": "https://www.phntmz.com/gallery"}
     ,
     "posts": [
         {"title": "「 blue 」 reverbed",
@@ -83,7 +83,7 @@ context = {
             "url": "https://soundcloud.com/fntmz/gunjou-reverb"},
         {"title": "MIDNIGHT // GALLERY",
             "date": "09.11.2021",
-            "subtitle": "cool photography stuff. only available at 0:00",
+            "subtitle": "exclusive gallery. only available for one hour at midnight.",
             "img": static('img/posts/posts-midnight-gallery.png'),
             "url": "https://www.phntmz.com/gallery"},
     ],
