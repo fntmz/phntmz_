@@ -1,8 +1,8 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-    {% load static %}
     <!-- 
            \****__              ____                                              
          |    *****\_      --/ *\-__                                          
@@ -47,7 +47,7 @@
         integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
 </head>
 
-<body class="base-body">
+<body>
     <!--
                                               _\/
                                         .-'.'`)
@@ -100,8 +100,7 @@
             <span class="loader-inner"></span>
         </span>
         <h1 class="loading-title">
-            M Y N A M E I S // P H N T M Z _ // N I C E T O M E E T Y O
-            U : : . .
+            {% block loader %}{% endblock %}
         </h1>
     </div>
 
@@ -266,6 +265,7 @@
     <script src="{% static 'js/loader.js' %}"></script>
     <script src="{% static 'js/darkmode.js' %}"></script>
     <script src="{% static 'js/titletransform.js' %}"></script>
+    <script src="{% static 'js/menubutton.js' %}"></script>
     <script src="{% static 'js/navbar.js' %}"></script>
     <script src="{% static 'js/togglenotif.js' %}"></script>
     {% block js %}{% endblock %}

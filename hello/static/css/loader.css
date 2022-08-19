@@ -33,6 +33,7 @@
 .loading-title {
     font-family: "Zen Kaku Gothic New", sans-serif;
     color: var(--color);
+    font-size: 40px;
     font-weight: 300;
     margin-left: 5vw;
 }

@@ -6,6 +6,8 @@ from django.templatetags.static import static
 
 context = {
     "changelog": [
+        {"date": "19.08.2022",
+            "detail": "revamped"},
         {"date": "06.08.2022",
             "detail": "updated twitter link in menu"},
         {"date": "05.07.2022",
@@ -91,6 +93,9 @@ context = {
     ],
 }
 
+def welcome(request):
+    return render(request, "welcome.html")
+
 
 def changelog(request):
     return render(request, "changelog.html", context)
@@ -109,7 +114,7 @@ def contact(request):
 
 
 def profile(request):
-    return render(request, "profile.html", context)
+    return render(request, "profile.html")
 
 
 def projects(request):

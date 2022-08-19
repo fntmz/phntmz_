@@ -1,5 +1,5 @@
 if (window.location.href.indexOf("phntmz.herokuapp.com") > -1) {
-    window.location.replace("https://www.phntmz.com")
+    window.location.replace("https://www.phntmz.com");
 }
 
 window.addEventListener("scroll", noScroll);
@@ -7,15 +7,6 @@ window.addEventListener("scroll", noScroll);
 function noScroll() {
     window.scrollTo(0, 0);
 }
-
-const maxHeight = $(window).height() * 0.5;
-$(window).on("scroll", function () {
-    if (document.documentElement.scrollTop > maxHeight) {
-        $("#menu-button").css("transform", "translateY(-10px)");
-    } else {
-        $("#menu-button").css("transform", "translateY(-100px)");
-    }
-});
 
 $(window).on("load", function () {
     window.removeEventListener("scroll", noScroll);
@@ -26,7 +17,10 @@ $(window).on("load", function () {
         $("#gallery-notif > *:first-child").css("height", "100%");
     }, 2000);
     setTimeout(function () {
-        $('#gallery-url, #gallery-notif-description').css("transform", "translateX(0)");
+        $("#gallery-url, #gallery-notif-description").css(
+            "transform",
+            "translateX(0)",
+        );
         $(".index-header-text > div").css("transform", "translateY(0)");
         $("#gallery-cover > div > div").css("transform", "translateY(0)");
     }, 3000);

@@ -7,7 +7,8 @@ html {
 }
 
 body {
-    margin: 0;
+    background-color: var(--background-color);
+    z-index: -1;
 }
 
 main {
@@ -290,11 +291,6 @@ section {
     border-radius: 0px;
     border: 2px solid var(--color);
     color: var(--color);
-}
-
-.base-body {
-    background-color: var(--background-color);
-    z-index: -1;
 }
 
 @media only screen and (max-width: 600px) {

@@ -18,7 +18,8 @@ admin.autodiscover()
 # Learn more here: https://docs.djangoproject.com/en/2.1/topics/http/urls/
 
 urlpatterns = [
-    path("", hello.views.index, name="index"),
+    path("", hello.views.welcome, name="welcome"),
+    path("home/", hello.views.index, name="index"),
     path("contact/", hello.views.contact, name="contact"),
     path("profile/", hello.views.profile, name="profile"),
     path("projects/", hello.views.projects, name="projects"),
