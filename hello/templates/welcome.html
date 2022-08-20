@@ -28,7 +28,29 @@
 
 <body>
     <!-- template -->
-    <div id="settings-btn" onclick="DarkmodeToggle()"></div>
+    <div id="settings-toggle" onclick="SettingsToggle()"></div>
+    <div id="settings-wrapper">
+        <div id="settings-menu">
+            <div class="settings">
+                <span class="settings-icon">&#9989;</span>
+                <a href="javascript:void(0)" onclick="DarkmodeToggle()">
+                    enable / disable darkmode [ enabled by default ]
+                </a>
+            </div>
+            <div class="settings">
+                <span class="settings-icon">&#10060;</span>
+                <a href="javascript:void(0)" onclick="LowwhiteToggle()">
+                    enable / disable dim white colors [ disabled by default ]
+                </a>
+            </div>
+            <div class="settings">
+                <span class="settings-icon">&#10060;</span>
+                <a href="javascript:void(0)" onclick="RedirectToggle()">
+                    enable / disable redirecting to official website [ disabled by default ]
+                </a>
+            </div>
+        </div>
+    </div>
 
     <main>
         <section>
@@ -66,31 +88,41 @@
                     </g>
                 </g>
             </svg> -->
-            <a href="https://github.com/fntmz">github // profile</a>&nbsp;(&nbsp;
-            <a href="https://github.com/fntmz/phntmz">source code</a>&nbsp;)
+            <a href="https://github.com/fntmz">github // profile</a>&nbsp;[&nbsp;
+            <a href="https://github.com/fntmz/phntmz_">source code</a>&nbsp;]
         </section>
         <section>
-            <a href="{% url 'index' %}">official // website</a>&nbsp;(&nbsp;
-            <a href="{% url 'profile' %}">profile</a>&nbsp;)
+            <div>
+                <a href="{% url 'index' %}">official // website</a>&nbsp;[
+                <a href="{% url 'profile' %}">profile</a>&nbsp;]
+            </div>
+            <div class="blind-warning">note: website is in light mode</div>
         </section>
         <div class="border-box"></div>
     </main>
 
-    <div id="settings-wrapper">
-        <div class="settings">
-            <a href="javascript:void(0)">enable // disable darkmode (enabled by default)</a>
-        </div>
-        <div class="settings">
-            <a href="javascript:void(0)">
-                enable // disable darker white color (so you don't get your eyes seared) (disabled by default)
-            </a>
-        </div>
-    </div>
-
     <!-- scripts -->
     <script src="{% static 'js/titletransform.js' %}"></script>
+    <script src="{% static 'js/lowwhite.js' %}"></script>
     <script>
+        if (localStorage.getItem('redirect') == 'true') {
+            window.location.href = "{% url 'index' %}";
+        }
+
+        var currentHour = new Date().getHours();
+        if (currentHour >= 18 || currentHour <= 6) {
+            $(".blind-warning").remove();
+        }
+
         window.onload = function () {
+            if (localStorage.getItem("darkmode") == "light_theme") {
+                $(".settings-icon").eq(0).text("❌");
+            } if (localStorage.getItem("lowwhite") == "true") {
+                $(".settings-icon").eq(1).text("✅");
+            } if (localStorage.getItem("redirect") == "true") {
+                $(".settings-icon").eq(2).text("✅");
+            }
+
             if (localStorage.getItem("darkmode")) {
                 document.body.setAttribute("data-theme", localStorage.getItem('darkmode'));
             } else {
@@ -102,9 +134,54 @@
             if (localStorage.getItem("darkmode") == "light_theme") {
                 localStorage.setItem("darkmode", "dark_theme");
                 document.body.setAttribute("data-theme", "dark_theme");
+                $(".settings-icon").eq(0).text("✅");
             } else {
                 localStorage.setItem("darkmode", "light_theme");
                 document.body.setAttribute("data-theme", "light_theme");
+                $(".settings-icon").eq(0).text("❌");
+            }
+        }
+
+        function LowwhiteToggle() {
+            if (localStorage.getItem("lowwhite") == "true") {
+                localStorage.setItem("lowwhite", false);
+                $('body[data-theme="light_theme"]').prop("--background-color", "white");
+                $(".settings-icon").eq(1).text("❌");
+            } else {
+                localStorage.setItem("lowwhite", true);
+                $('body[data-theme="light_theme"]').prop("--background-color", "whitesmoke");
+                $(".settings-icon").eq(1).text("✅");
+            }
+        }
+
+        function RedirectToggle() {
+            if (localStorage.getItem("redirect") == "true") {
+                localStorage.setItem("redirect", false);
+                $(".settings-icon").eq(2).text("❌");
+            } else {
+                localStorage.setItem("redirect", true);
+                $(".settings-icon").eq(2).text("✅");
+            }
+        }
+
+        function SettingsToggle() {
+            if ($("#settings-wrapper").hasClass("settings-opened") == false) {
+                settingsOpened = true;
+                $("#settings-toggle").css("pointer-events", "none");
+                $("#settings-wrapper").removeClass("settings-opened");
+                $("#settings-wrapper").addClass("settings-opened");
+                $("#settings-wrapper").css("left", "-2px");
+                setTimeout(function () {
+                    $("#settings-toggle").css("pointer-events", "initial");
+                }, 800)
+            } else {
+                $("#settings-toggle").css("pointer-events", "none");
+                $("#settings-wrapper").css("left", "calc(-100vw - 4px)");
+                setTimeout(function () {
+                    $("#settings-wrapper").removeClass("settings-opened");
+                    $("#settings-wrapper").css("left", "100vw");
+                    $("#settings-toggle").css("pointer-events", "initial");
+                }, 800);
             }
         }
     </script>

@@ -26,20 +26,57 @@ body {
     float: left;
 }
 
-#settings-btn {
+#settings-toggle {
+    z-index: 2;
     position: fixed;
     top: -25px;
     right: -50px;
     width: 100px;
     height: 100px;
+    background-color: var(--background-color);
     border: 2px solid var(--color);
     border-radius: 30px;
     transform: rotate(50deg);
     transition: border 0.3s;
 }
 
-#settings-btn:hover {
+#settings-toggle:hover {
     border: 2px solid var(--a-highlight);
+}
+
+#settings-wrapper {
+    z-index: 1;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 100vw;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--background-color);
+    border-left: 2px solid var(--color);
+    border-right: 2px solid var(--color);
+    clip: rect(0, auto, auto, 0);
+}
+
+.settings-opened {
+    transition: left 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+#settings-menu {
+    position: fixed;
+    top: 50vh;
+    left: 50vw;
+    transform: translate(-50%, -50%);
+}
+
+.settings {
+    color: var(--color);
+    font-family: "Zen Kaku Gothic New", sans-serif;
+    line-height: 2;
+}
+
+.settings:nth-child(3):hover {
+    color: grey;
 }
 
 main {
@@ -54,6 +91,7 @@ main {
 }
 
 section {
+    position: relative;
     width: 50%;
     height: 100%;
     display: flex;
@@ -64,13 +102,10 @@ section {
     font-family: "Zen Kaku Gothic New", sans-serif;
 }
 
-#settings-wrapper {
-    position: fixed;
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.blind-warning {
+    position: absolute;
+    color: grey;
+    bottom: 25%;
 }
 
 .border-box {
@@ -125,11 +160,18 @@ section {
 
 @media only screen and (max-width: 991px) {
     main {
+        width: calc(100% - 80px);
+        height: calc(100% - 80px);
         padding: 0;
+        margin: 40px;
     }
     section {
         width: 100%;
         height: 50%;
+    }
+    #settings-toggle {
+        width: 90px;
+        height: 90px;
     }
     .border-box {
         top: 50%;
