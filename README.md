@@ -1,4 +1,4 @@
-# phntmz
+# phntmz_
 
 Repository of the source code for my [website](https://phntmz.herokuapp.com).
 
