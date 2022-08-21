@@ -27,6 +27,47 @@ body {
     float: left;
 }
 
+#loader {
+    z-index: 1000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: calc(100vh - 2px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--background-color);
+    border-bottom: 2px solid var(--color);
+    transition: transform 1.5s cubic-bezier(0.8, 0, 0.2, 1);
+    pointer-events: none;
+}
+
+#letters-wrapper {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    transition: width 1.5s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.loader-letters {
+    color: var(--color);
+    font-size: 40px;
+    font-weight: 300;
+    font-family: "Zen Kaku Gothic New", sans-serif;
+    transform: translateY(100%);
+    transition: transform 1.5s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+#letters-wrapper span {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: var(--color);
+}
+
 #settings-toggle {
     z-index: 2;
     position: fixed;
@@ -60,7 +101,7 @@ body {
 }
 
 .settings-opened {
-    transition: left 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+    transition: left 1.2s cubic-bezier(0.23, 1, 0.32, 1);
 }
 
 #settings-menu {
