@@ -110,9 +110,15 @@
             window.location.href = "{% url 'index' %}";
         }
 
-        var currentHour = new Date().getHours();
-        if (currentHour >= 18 || currentHour <= 6) {
-            $(".blind-warning").remove();
+        switch (new Date().getHours()) {
+            default:
+                $(".blind-warning").text("note: website is in light mode");
+                break;
+            case 0:
+                $(".blind-warning").text("note: midnight // gallery is available");
+                break;
+            case 18, 19, 20, 22, 23, 0, 1, 2, 3, 4, 5, 6:
+                $(".blind-warning").remove();
         }
 
         window.onload = function () {

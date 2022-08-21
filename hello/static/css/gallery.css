@@ -193,4 +193,7 @@ footer {
         writing-mode: vertical-rl;
         text-orientation: mixed;
     }
+    #cursor-area {
+        display: none;
+    }
 }
