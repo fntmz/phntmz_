@@ -167,17 +167,25 @@
 
         function SettingsToggle() {
             if ($("#settings-wrapper").hasClass("settings-opened") == false) {
-                settingsOpened = true;
                 $("#settings-toggle").css("pointer-events", "none");
-                $("#settings-wrapper").removeClass("settings-opened");
                 $("#settings-wrapper").addClass("settings-opened");
                 $("#settings-wrapper").css("left", "-2px");
+                for (let i = 0; i < $(".settings").length + 1; i++) {
+                    setTimeout(function () {
+                        $(".settings").eq(i).css("transform", "translateX(0)");
+                    }, i * 50);
+                }
                 setTimeout(function () {
                     $("#settings-toggle").css("pointer-events", "initial");
                 }, 800)
             } else {
                 $("#settings-toggle").css("pointer-events", "none");
                 $("#settings-wrapper").css("left", "calc(-100vw - 4px)");
+                for (let i = 0; i < $(".settings").length + 1; i++) {
+                    setTimeout(function () {
+                        $(".settings").eq(i).css("transform", "translateX(10%)");
+                    }, i * 50);
+                }
                 setTimeout(function () {
                     $("#settings-wrapper").removeClass("settings-opened");
                     $("#settings-wrapper").css("left", "100vw");

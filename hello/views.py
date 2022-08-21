@@ -5,7 +5,9 @@ from django.templatetags.static import static
 # Create your views here.
 
 context = {
-    "changelog": [    
+    "changelog": [ 
+        {"date": "21.08.2022",
+            "detail": "added animation to items in settings menu on welcome"},
         {"date": "20.08.2022",
             "detail": "added settings menu on welcome"},
         {"date": "19.08.2022",

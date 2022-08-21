@@ -73,10 +73,8 @@ body {
     color: var(--color);
     font-family: "Zen Kaku Gothic New", sans-serif;
     line-height: 2;
-}
-
-.settings:nth-child(3):hover {
-    color: grey;
+    transform: translateX(10%);
+    transition: transform 1.5s cubic-bezier(0.23, 1, 0.32, 1);
 }
 
 main {
