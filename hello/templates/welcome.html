@@ -16,8 +16,8 @@
     <link rel="stylesheet" href="{% static 'css/animations.css' %}" />
     <link rel="stylesheet" href="{% static 'css/welcome.css' %}" />
     <link rel="stylesheet" href="{% static 'css/darkmode.css' %}" />
-    <!-- <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap" rel="stylesheet" />
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&display=swap" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap" rel="stylesheet" /> -->
     <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@300;400&display=swap"
         rel="stylesheet" />
@@ -48,6 +48,8 @@
     <!-- template -->
     <div id="settings-toggle" onclick="SettingsToggle()"></div>
     <div id="settings-wrapper">
+        <div id="settings-blur"></div>
+        <div id="settings-title">settings</div>
         <div id="settings-menu">
             <div class="settings">
                 <span class="settings-icon">&#9989;</span>
@@ -57,8 +59,8 @@
             </div>
             <div class="settings">
                 <span class="settings-icon">&#10060;</span>
-                <a href="javascript:void(0)" onclick="LowwhiteToggle()">
-                    enable / disable dim white colors [ disabled by default ]
+                <a href="javascript:void(0)" onclick="BlurToggle()">
+                    enable / disable blur filter on menus [ disabled by default ]
                 </a>
             </div>
             <div class="settings">
@@ -127,22 +129,18 @@
 
     <!-- scripts -->
     <script src="{% static 'js/titletransform.js' %}"></script>
-    <script src="{% static 'js/lowwhite.js' %}"></script>
+    <script src="{% static 'js/blurnavbar.js' %}"></script>
     <script>
         if (localStorage.getItem('redirect') == 'true') {
             window.location.href = "{% url 'index' %}";
-        } switch (new Date().getHours()) {
-            default:
-                $(".blind-warning").text("note: website is in light mode");
-                break;
-            case 0:
-                $(".blind-warning").text("note: midnight // gallery is available");
-                break;
-            case 18, 19, 20, 22, 23, 0, 1, 2, 3, 4, 5, 6:
-                $(".blind-warning").remove();
+        } var currentHour = new Date().getHours();
+        if (currentHour >= 18 || currentHour <= 6) {
+            $(".blind-warning").remove();
+        } else {
+            $(".blind-warning").text("note: website is in light mode");
         } if (localStorage.getItem("darkmode") == "light_theme") {
             $(".settings-icon").eq(0).text("❌");
-        } if (localStorage.getItem("lowwhite") == "true") {
+        } if (localStorage.getItem("blur") == "true") {
             $(".settings-icon").eq(1).text("✅");
         } if (localStorage.getItem("loader") == "true") {
             $("#loader").css("display", "none");
@@ -181,15 +179,15 @@
             }
         }
 
-        function LowwhiteToggle() {
-            if (localStorage.getItem("lowwhite") == "true") {
-                localStorage.setItem("lowwhite", false);
-                $('body[data-theme="light_theme"]').prop("--background-color", "white");
-                $(".settings-icon").eq(1).text("❌");
-            } else {
-                localStorage.setItem("lowwhite", true);
-                $('body[data-theme="light_theme"]').prop("--background-color", "whitesmoke");
+        function BlurToggle() {
+            if (localStorage.getItem("blur") == "false") {
+                localStorage.setItem("blur", "true");
+                $("#settings-wrapper").css("background", "transparent");
                 $(".settings-icon").eq(1).text("✅");
+            } else {
+                localStorage.setItem("blur", "false");
+                $("#settings-wrapper").css("background", "black");
+                $(".settings-icon").eq(1).text("❌");
             }
         }
 
@@ -222,7 +220,9 @@
                     setTimeout(function () {
                         $(".settings").eq(i).css("transform", "translateX(0)");
                     }, i * 50);
-                }
+                } setTimeout(function () {
+                    $("#settings-title").css("transform", "translateX(0)");
+                }, $(".settings").length * 50 + 200);
                 setTimeout(function () {
                     $("#settings-toggle").css("pointer-events", "initial");
                 }, 1200)
@@ -232,8 +232,10 @@
                 for (let i = 0; i < $(".settings").length + 1; i++) {
                     setTimeout(function () {
                         $(".settings").eq(i).css("transform", "translateX(10%)");
-                    }, i * 20);
-                }
+                    }, i * 50);
+                } setTimeout(function () {
+                    $("#settings-title").css("transform", "translateX(10%)");
+                }, $(".settings").length * 50 + 100);
                 setTimeout(function () {
                     $("#settings-wrapper").removeClass("settings-opened");
                     $("#settings-wrapper").css("left", "100vw");

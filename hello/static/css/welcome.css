@@ -100,6 +100,28 @@ body {
     clip: rect(0, auto, auto, 0);
 }
 
+#settings-blur {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    backdrop-filter: blur(5px);
+}
+
+#settings-title {
+    position: fixed;
+    top: 25px;
+    left: 30px;
+    color: var(--color);
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 32px;
+    letter-spacing: 0.05rem;
+    transition: transform 1.5s cubic-bezier(0.23, 1, 0.32, 1);
+    transform: translateX(10%);
+}
+
 .settings-opened {
     transition: left 1.2s cubic-bezier(0.23, 1, 0.32, 1);
 }

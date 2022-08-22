@@ -5,7 +5,9 @@ from django.templatetags.static import static
 # Create your views here.
 
 context = {
-    "changelog": [ 
+    "changelog": [
+        {"date": "23.08.2022",
+            "detail": "added option to enable blur filter in menu"},
         {"date": "22.08.2022",
             "detail": "added loading screen and improved animation fluidity on welcome. also added a setting to disable loading screens"},
         {"date": "21.08.2022",
