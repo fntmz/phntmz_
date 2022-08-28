@@ -1,0 +1,55 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}
+𝐩𝐫𝐨𝐟𝐢𝐥𝐞
+{% endblock %}
+
+{% block loader %}
+L O A D I N G // P R O F I L E _ // : : . .
+{% endblock %}
+
+{% block css %}
+<link rel="stylesheet" href="{% static 'css/profile.css' %}">
+{% endblock %}
+
+{% block tab-header %}Profile{% endblock %}
+{% block tab-header-subtitle %}Information about me{% endblock %}
+
+{% block content %}
+<div class="container" style="padding-top: 150px;">
+  <div class="profile-section">
+    <div class="row">
+      <div class="col-lg-4">
+        <img style="width: 100%;" src="{% static 'img/profile/phntmz.jpg' %}" alt="">
+      </div>
+      <div class="col-lg-8">
+        <div class="profile-title">hieu minh nguyen // phntmz_</div>
+        <div class="profile-subtitle">autobiography</div>
+        <div class="profile-content">
+          <p>
+            hey, i'm 15 by the time of writing. i'm a high school student who is addicted to computers. i've dumped
+            everything cool i made with a computer here, including this website, this is the
+            <a href="https://github.com/fntmz/phntmz_">source code</a>.
+          </p>
+          <p>thanks for visiting. 104 103 32 60 51</p>
+        </div>
+        <div class="profile-author">Posted by phntmz_ on October 23 2021, updated on June 06, 2022</div>
+      </div>
+    </div>
+    <div class="row g-2 profile-button">
+      <div class="col-sm-12 col-lg-6">
+        <a href="{% url 'projects' %}">
+          <button class="contact-submit">Projects</button>
+        </a>
+      </div>
+      <div class="col-sm-12 col-lg-6">
+        <a href="{% url 'changelog' %}">
+          <button class="contact-submit">Changelog</button>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock %}

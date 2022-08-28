@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}𝐩𝐨𝐬𝐭𝐬{% endblock %}
+
+{% block css %}
+<link rel="stylesheet" href="{% static 'css/posts.css' %}">
+{% endblock %}
+
+{% block loader %}
+L O A D I N G // P O S T S _ // : : . .
+{% endblock %}
+
+{% block tab-header %}Posts{% endblock %}
+{% block tab-header-subtitle %}Status updates{% endblock %}
+
+{% block content %}
+<div class="container" id="posts-body">
+    {% for post in posts %}
+    <div class="row g-5 posts-row">
+        <div class="col-xl-6">
+            <img src="{{ post.img }}" class="posts-img">
+        </div>
+        <div class="col-xl-6" id="posts-text">
+            <div>
+                <a href="{{ post.url }}" target="_blank">
+                    <div class="posts-title easing-right">{{ post.title }}</div>
+                </a>
+                <div class="posts-subtitle">{{ post.subtitle }}</div>
+                <div class="posts-date">posted on {{ post.date }}</div>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+{% endblock %}

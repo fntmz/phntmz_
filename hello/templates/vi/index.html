@@ -1,0 +1,57 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}𝐡𝐨𝐦𝐞{% endblock %}
+
+{% block loader %}
+M Y N A M E I S // P H N T M Z _ // N I C E T O M E E T Y O U : : . .
+{% endblock %}
+
+{% block css %}
+<link rel="stylesheet" href="{% static 'css/index.css' %}">
+{% endblock %}
+
+{% block tab-header %}Featured{% endblock %}
+{% block tab-header-subtitle %}
+<a href="{{ featured.url }}" target="_blank" id="index-featured-url" class="easing-right">
+  {{ featured.title }}
+</a>
+<div class="feature-items-subtitle">{{ featured.subtitle }}</div>
+{% endblock %}
+
+{% block content %}
+<div class="index-header">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6">
+        <div>
+          <h1 class="index-header-text">
+            <div>Socials</div>
+          </h1>
+          <hr class="hr-animate">
+        </div>
+      </div>
+      <div class="col-lg-5 offset-lg-1" id="index-second-header">
+        <a href="https://linktr.ee/phntmz_" target="_blank" class="feature-items easing-right">Linktree</a>
+        <div class="feature-items-subtitle">everything about me.</div>
+      </div>
+    </div>
+  </div>
+  <span class="border-box index-border-box-position"></span>
+  <span class="scroll-down" id="index-scroll-down"></span>
+</div>
+
+<div class="container" id="index-body">
+  <div id="index-latest-posts">L A T E S T // P O S T</div>
+  <div class="index-posts">
+    <img src="{{ posts.0.img }}" alt="">
+    <div class="index-posts-content">
+      <a href="{{ posts.0.url }}" target="_blank">
+        <div class="index-posts-title easing-right">{{ posts.0.title }}</div>
+      </a>
+      <div class="index-posts-subtitle">{{ posts.0.subtitle }}</div>
+      <div class="index-posts-date">posted on {{ posts.0.date }}</div>
+    </div>
+  </div>
+</div>
+{% endblock %}

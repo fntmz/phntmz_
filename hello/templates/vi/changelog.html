@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}
+𝐜𝐡𝐚𝐧𝐠𝐞𝐥𝐨𝐠
+{% endblock %}
+
+{% block loader %}
+L O A D I N G // C H A N G E L O G _ // : : . .
+{% endblock %}
+
+{% block css %}
+<link rel="stylesheet" href="{% static 'css/changelog.css' %}">
+{% endblock %}
+
+{% block tab-header %}Changelog{% endblock %}
+{% block tab-header-subtitle %}Update history of the website : : . .{% endblock %}
+
+{% block content %}
+<div id="changelog-body-section">
+    <div id="changelog-container">
+        {% for item in changelog %}
+        <div class="row changelog-timeline">
+            <div class="col-2 changelog-date">
+                {{ item.date }}
+            </div>
+            <div class="col-lg-7 col-sm-9">
+                <div class="changelog-description">
+                    {{ item.detail }}
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}

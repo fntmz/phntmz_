@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}
+𝟒𝟎𝟒
+{% endblock %}
+
+{% block loader %}
+L O A D I N G // 4 0 4 _ // : : . .
+{% endblock %}
+
+{% block css %}
+<link rel="stylesheet" href="{% static 'css/error.css' %}">
+{% endblock %}
+
+{% block tab-header %}404{% endblock %}
+{% block tab-header-subtitle %}Page Not Found{% endblock %}
+
+{% block content %}
+<div id="error-page-message">
+    <span class="border-box error-border-box-position"></span>
+    <div>You must be lost. Use the menu to get back on track.</div>
+</div>
+{% endblock %}
+
+{% block js %}
+<script>
+    $("#menu-button").css("top", "-10px");
+</script>
+{% endblock %}

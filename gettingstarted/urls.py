@@ -1,5 +1,5 @@
 import hello.views
-from django.urls import path, include
+from django.urls import path, re_path
 
 from django.contrib import admin
 
@@ -18,7 +18,7 @@ admin.autodiscover()
 # Learn more here: https://docs.djangoproject.com/en/2.1/topics/http/urls/
 
 urlpatterns = [
-    path("", hello.views.welcome, name="welcome"),
+    re_path('', hello.views.welcome, name="welcome"),
     path("home/", hello.views.index, name="index"),
     path("contact/", hello.views.contact, name="contact"),
     path("profile/", hello.views.profile, name="profile"),

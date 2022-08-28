@@ -101,7 +101,9 @@ context = {
     ],
 }
 
-def welcome(request):
+def welcome(request, lang = None):
+    if lang and lang == "vi":
+        return render(request, "vi/welcome.html")
     return render(request, "welcome.html")
 
 
