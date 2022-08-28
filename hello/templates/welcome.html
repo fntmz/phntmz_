@@ -184,10 +184,12 @@
         function BlurToggle() {
             if (localStorage.getItem("blur") == "false") {
                 localStorage.setItem("blur", "true");
+                $("#settings-blur").css("display", "initial");
                 $("#settings-wrapper").css("background", "transparent");
                 $(".settings-icon").eq(1).text("✅");
             } else {
                 localStorage.setItem("blur", "false");
+                $("#settings-blur").css("display", "none");
                 $("#settings-wrapper").css("background", "var(--background-color)");
                 $(".settings-icon").eq(1).text("❌");
             }
