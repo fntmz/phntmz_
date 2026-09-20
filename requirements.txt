@@ -2,3 +2,4 @@ django
 gunicorn
 django-heroku
 django-livereload-server
+sycopg2-binary==2.9.9
